@@ -1,0 +1,8 @@
+H0 Mon Jan 10 10:43:07 2011
+O9
+T20
+D1 1
+M0 0
+V30 2  MI=2 
+
+//bad V token, RA=<T|F> missing

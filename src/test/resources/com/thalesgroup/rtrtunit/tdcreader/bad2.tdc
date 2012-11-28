@@ -1,0 +1,49 @@
+************************************************************************
+* TOOL : Unit Test Compiler VERSION 2002.05.21.468.004                 *
+*                                                                      *
+* COMMAND : attolprepro toto.ptu                                       *
+*                                                                      *
+*                                                                      *
+* FILE : out.tdc           											   *
+*                                                                      *
+* DATE : Mon Jan 10 10:43:05 2011                                      *
+************************************************************************
+E11 0 out.ptu
+C0 attolprepro toto.ptu 
+H0 Mon Jan 10 10:43:05 2011
+E7 PC/NT
+E8 2002.05.21.468.004
+E9 C C
+E6  StringUtilities_initializeStaticClass
+E4  
+E5  
+E1 StringUtilities
+E2 
+E10 
+E0 StringUtilities ,  , 
+C1 CSU Name .................... : StringUtilities
+C2 CSU Version ................. : PDS_FORMAL_V5.5
+C3 Ref .SDD COMMON ............. : PDS_FORMAL_V5.5
+C4 Issue ....................... : N/A
+C5 Level ....................... : A
+C6 Language .................... : C
+C7 Date ........................ : 11/09/08
+C8 Tester Name ................. : Toto
+E17 0 87
+E16 0 90
+O9 STRINGUTILITIE_1
+S10 EXTERN
+T11 1 
+F12 nominal
+C13 Tested requirement list : cf LLR_REFERENCE
+C14 
+C15 Objective: To verify that :
+C16 - StringUtilities Instance is initialized thanks to initialize method
+E14 0 102
+B17 1
+E12 0 103
+V19 
+E16 0 111
+
+
+// bad token V19

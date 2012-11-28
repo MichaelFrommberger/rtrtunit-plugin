@@ -1,0 +1,1474 @@
+************************************************************************
+* TOOL : Unit Test Compiler VERSION 2002.05.21.468.004                 *
+*                                                                      *
+* COMMAND : attolprepro toto.ptu                                       *
+*                                                                      *
+*                                                                      *
+* FILE : out.tdc           											   *
+*                                                                      *
+* DATE : Mon Jan 10 10:43:05 2011                                      *
+************************************************************************
+E11 0 out.ptu
+C0 attolprepro toto.ptu 
+H0 Mon Jan 10 10:43:05 2011
+E7 PC/NT
+E8 2002.05.21.468.004
+E9 C C
+E6  StringUtilities_initializeStaticClass
+E4  
+E5  
+E1 StringUtilities
+E2 
+E10 
+E0 StringUtilities ,  , 
+C1 CSU Name .................... : StringUtilities
+C2 CSU Version ................. : PDS_FORMAL_V5.5
+C3 Ref .SDD COMMON ............. : PDS_FORMAL_V5.5
+C4 Issue ....................... : N/A
+C5 Level ....................... : A
+C6 Language .................... : C
+C7 Date ........................ : 11/09/08
+C8 Tester Name ................. : Toto
+E17 0 87
+E16 0 90
+O9 STRINGUTILITIE_1
+S10 EXTERN
+T11 1
+F12 nominal
+C13 Tested requirement list : cf LLR_REFERENCE
+C14 
+C15 Objective: To verify that :
+C16 - StringUtilities Instance is initialized thanks to initialize method
+E14 0 102
+B17 1
+E12 0 103
+V18 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=1, VA=init,
+E12 0 104
+V19 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E16 0 111
+T20 2
+F21 nominal
+C22 Tested requirement list : cf LLR_REFERENCE
+C23 
+C24 
+C25 Objective: To verify that :
+C26 - StringUtilities Instance is initialized thanks to initialize method
+C27 - Both specified strings are null strings
+C28 - True value is returned
+E14 0 127
+B29 1
+E12 0 128
+V30 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=2, VA=init,
+E12 0 129
+V31 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 133
+V32 local_lReturn RA=FORM=CU8, INIT=99, VA=1,
+E12 0 134
+V33 local_pStr1[0] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V34 local_pStr1[1] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V35 local_pStr1[2] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V36 local_pStr1[3] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V37 local_pStr1[4] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V38 local_pStr1[5] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V39 local_pStr1[6] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V40 local_pStr1[7] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V41 local_pStr1[8] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V42 local_pStr1[9] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V43 local_pStr1[10] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V44 local_pStr1[11] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V45 local_pStr1[12] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V46 local_pStr1[13] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V47 local_pStr1[14] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V48 local_pStr2[0] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V49 local_pStr2[1] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V50 local_pStr2[2] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V51 local_pStr2[3] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V52 local_pStr2[4] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V53 local_pStr2[5] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V54 local_pStr2[6] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V55 local_pStr2[7] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V56 local_pStr2[8] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V57 local_pStr2[9] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V58 local_pStr2[10] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V59 local_pStr2[11] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V60 local_pStr2[12] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V61 local_pStr2[13] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V62 local_pStr2[14] RA=FORM=CU8, INIT='\0', VA=init,
+E16 0 142
+T63 3
+F64 nominal
+C65 Tested requirement list : cf LLR_REFERENCE
+C66 
+C67 
+C68 Objective: To verify that :
+C69 - StringUtilities Instance is initialized thanks to initialize method
+C70 - The first string is specified string
+C71 - The second specified string is null string
+C72 - False value is returned
+E14 0 158
+B73 1
+E12 0 159
+V74 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=3, VA=init,
+E12 0 160
+V75 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 165
+V76 local_lReturn RA=FORM=CU8, INIT=99, VA=0,
+E12 0 166
+V77 local_pStr1[0] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 166
+V78 local_pStr1[1] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 166
+V79 local_pStr1[2] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 166
+V80 local_pStr1[3] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 166
+V81 local_pStr1[4] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 166
+V82 local_pStr1[5] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 166
+V83 local_pStr1[6] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 166
+V84 local_pStr1[7] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 166
+V85 local_pStr1[8] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 166
+V86 local_pStr1[9] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 166
+V87 local_pStr1[10] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 166
+V88 local_pStr1[11] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 166
+V89 local_pStr1[12] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 166
+V90 local_pStr1[13] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 166
+V91 local_pStr1[14] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 167
+V92 local_pStr2[0] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 167
+V93 local_pStr2[1] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 167
+V94 local_pStr2[2] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 167
+V95 local_pStr2[3] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 167
+V96 local_pStr2[4] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 167
+V97 local_pStr2[5] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 167
+V98 local_pStr2[6] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 167
+V99 local_pStr2[7] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 167
+V100 local_pStr2[8] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 167
+V101 local_pStr2[9] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 167
+V102 local_pStr2[10] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 167
+V103 local_pStr2[11] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 167
+V104 local_pStr2[12] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 167
+V105 local_pStr2[13] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 167
+V106 local_pStr2[14] RA=FORM=CU8, INIT='\0', VA=init,
+E16 0 174
+T107 4
+F108 nominal
+C109 Tested requirement list : cf LLR_REFERENCE
+C110 
+C111 
+C112 Objective: To verify that :
+C113 - StringUtilities Instance is initialized thanks to initialize method
+C114 - The first string is specified string
+C115 - The second string is specified string
+C116 - Both strings are equal to each other
+C117 - True value is returned
+E14 0 191
+B118 1
+E12 0 192
+V119 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=4, VA=init,
+E12 0 193
+V120 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 197
+V121 local_lReturn RA=FORM=CU8, INIT=99, VA=1,
+E12 0 198
+V122 local_pStr1[0] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 198
+V123 local_pStr1[1] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 198
+V124 local_pStr1[2] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 198
+V125 local_pStr1[3] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 198
+V126 local_pStr1[4] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 198
+V127 local_pStr1[5] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 198
+V128 local_pStr1[6] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 198
+V129 local_pStr1[7] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 198
+V130 local_pStr1[8] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 198
+V131 local_pStr1[9] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 198
+V132 local_pStr1[10] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 198
+V133 local_pStr1[11] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 198
+V134 local_pStr1[12] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 198
+V135 local_pStr1[13] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 198
+V136 local_pStr1[14] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 199
+V137 local_pStr2[0] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 199
+V138 local_pStr2[1] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 199
+V139 local_pStr2[2] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 199
+V140 local_pStr2[3] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 199
+V141 local_pStr2[4] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 199
+V142 local_pStr2[5] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 199
+V143 local_pStr2[6] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 199
+V144 local_pStr2[7] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 199
+V145 local_pStr2[8] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 199
+V146 local_pStr2[9] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 199
+V147 local_pStr2[10] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 199
+V148 local_pStr2[11] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 199
+V149 local_pStr2[12] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 199
+V150 local_pStr2[13] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 199
+V151 local_pStr2[14] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E16 0 205
+T152 5
+F153 nominal
+C154 Tested requirement list : cf LLR_REFERENCE
+C155 
+C156 
+C157 Objective: To verify that :
+C158 - StringUtilities Instance is initialized thanks to initialize method
+C159 - The first string is specified string
+C160 - The second string is specified string
+C161 - Both strings are not equal to each other
+C162 - False value is returned
+E14 0 222
+B163 1
+E12 0 223
+V164 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=5, VA=init,
+E12 0 224
+V165 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 228
+V166 local_lReturn RA=FORM=CU8, INIT=99, VA=0,
+E12 0 229
+V167 local_pStr1[0] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 229
+V168 local_pStr1[1] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 229
+V169 local_pStr1[2] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 229
+V170 local_pStr1[3] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 229
+V171 local_pStr1[4] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 229
+V172 local_pStr1[5] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 229
+V173 local_pStr1[6] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 229
+V174 local_pStr1[7] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 229
+V175 local_pStr1[8] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 229
+V176 local_pStr1[9] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 229
+V177 local_pStr1[10] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 229
+V178 local_pStr1[11] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 229
+V179 local_pStr1[12] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 229
+V180 local_pStr1[13] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 229
+V181 local_pStr1[14] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 230
+V182 local_pStr2[0] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 230
+V183 local_pStr2[1] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 230
+V184 local_pStr2[2] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 230
+V185 local_pStr2[3] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 230
+V186 local_pStr2[4] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 230
+V187 local_pStr2[5] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 230
+V188 local_pStr2[6] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 230
+V189 local_pStr2[7] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 230
+V190 local_pStr2[8] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 230
+V191 local_pStr2[9] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 230
+V192 local_pStr2[10] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 230
+V193 local_pStr2[11] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 230
+V194 local_pStr2[12] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 230
+V195 local_pStr2[13] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 230
+V196 local_pStr2[14] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E16 0 236
+T197 6
+F198 nominal
+C199 Tested requirement list : cf LLR_REFERENCE
+C200 
+C201 
+C202 Objective: To verify that :
+C203 - StringUtilities Instance is initialized thanks to initialize method
+C204 - Both specified string are null strings
+C205 - True value is returned
+E14 0 251
+B206 1
+E12 0 252
+V207 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=6, VA=init,
+E12 0 253
+V208 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 256
+V209 local_lReturn RA=FORM=CU8, INIT=99, VA=1,
+E12 0 257
+V210 local_pSize RA=FORM=CU32, INIT=3, VA=init,
+E12 0 258
+V211 local_pStr1[0] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 258
+V212 local_pStr1[1] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 258
+V213 local_pStr1[2] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 258
+V214 local_pStr1[3] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 258
+V215 local_pStr1[4] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 258
+V216 local_pStr1[5] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 258
+V217 local_pStr1[6] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 258
+V218 local_pStr1[7] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 258
+V219 local_pStr1[8] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 258
+V220 local_pStr1[9] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 258
+V221 local_pStr1[10] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 258
+V222 local_pStr1[11] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 258
+V223 local_pStr1[12] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 258
+V224 local_pStr1[13] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 258
+V225 local_pStr1[14] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 259
+V226 local_pStr2[0] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 259
+V227 local_pStr2[1] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 259
+V228 local_pStr2[2] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 259
+V229 local_pStr2[3] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 259
+V230 local_pStr2[4] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 259
+V231 local_pStr2[5] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 259
+V232 local_pStr2[6] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 259
+V233 local_pStr2[7] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 259
+V234 local_pStr2[8] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 259
+V235 local_pStr2[9] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 259
+V236 local_pStr2[10] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 259
+V237 local_pStr2[11] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 259
+V238 local_pStr2[12] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 259
+V239 local_pStr2[13] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 259
+V240 local_pStr2[14] RA=FORM=CU8, INIT='\0', VA=init,
+E16 0 265
+T241 7
+F242 nominal
+C243 Tested requirement list : cf LLR_REFERENCE
+C244 
+C245 
+C246 Objective: To verify that :
+C247 - StringUtilities Instance is initialized thanks to initialize method
+C248 - The first string is specified string
+C249 - The second specified string is null string
+C250 - False value is returned
+E14 0 282
+B251 1
+E12 0 283
+V252 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=7, VA=init,
+E12 0 284
+V253 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 288
+V254 local_lReturn RA=FORM=CU8, INIT=99, VA=0,
+E12 0 289
+V255 local_pSize RA=FORM=CU32, INIT=3, VA=init,
+E12 0 290
+V256 local_pStr1[0] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 290
+V257 local_pStr1[1] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 290
+V258 local_pStr1[2] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 290
+V259 local_pStr1[3] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 290
+V260 local_pStr1[4] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 290
+V261 local_pStr1[5] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 290
+V262 local_pStr1[6] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 290
+V263 local_pStr1[7] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 290
+V264 local_pStr1[8] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 290
+V265 local_pStr1[9] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 290
+V266 local_pStr1[10] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 290
+V267 local_pStr1[11] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 290
+V268 local_pStr1[12] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 290
+V269 local_pStr1[13] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 290
+V270 local_pStr1[14] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 291
+V271 local_pStr2[0] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 291
+V272 local_pStr2[1] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 291
+V273 local_pStr2[2] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 291
+V274 local_pStr2[3] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 291
+V275 local_pStr2[4] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 291
+V276 local_pStr2[5] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 291
+V277 local_pStr2[6] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 291
+V278 local_pStr2[7] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 291
+V279 local_pStr2[8] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 291
+V280 local_pStr2[9] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 291
+V281 local_pStr2[10] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 291
+V282 local_pStr2[11] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 291
+V283 local_pStr2[12] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 291
+V284 local_pStr2[13] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 291
+V285 local_pStr2[14] RA=FORM=CU8, INIT='\0', VA=init,
+E16 0 298
+T286 8
+F287 nominal
+C288 Tested requirement list : cf LLR_REFERENCE
+C289 
+C290 
+C291 Objective: To verify that  :
+C292 - StringUtilities Instance is initialized thanks to initialize method
+C293 - The first string is specified string
+C294 - The second string is specified string
+C295 - pSize first characters of the two specified string are not equal
+C296 - False value is returned
+E14 0 315
+B297 1
+E12 0 316
+V298 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=8, VA=init,
+E12 0 317
+V299 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 321
+V300 local_lReturn RA=FORM=CU8, INIT=99, VA=0,
+E12 0 322
+V301 local_pSize RA=FORM=CU32, INIT=3, VA=init,
+E12 0 323
+V302 local_pStr1[0] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 323
+V303 local_pStr1[1] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 323
+V304 local_pStr1[2] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 323
+V305 local_pStr1[3] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 323
+V306 local_pStr1[4] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 323
+V307 local_pStr1[5] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 323
+V308 local_pStr1[6] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 323
+V309 local_pStr1[7] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 323
+V310 local_pStr1[8] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 323
+V311 local_pStr1[9] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 323
+V312 local_pStr1[10] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 323
+V313 local_pStr1[11] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 323
+V314 local_pStr1[12] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 323
+V315 local_pStr1[13] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 323
+V316 local_pStr1[14] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 324
+V317 local_pStr2[0] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'7',3=>'5',others=>'0'}, VA=init,
+E12 0 324
+V318 local_pStr2[1] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'7',3=>'5',others=>'0'}, VA=init,
+E12 0 324
+V319 local_pStr2[2] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'7',3=>'5',others=>'0'}, VA=init,
+E12 0 324
+V320 local_pStr2[3] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'7',3=>'5',others=>'0'}, VA=init,
+E12 0 324
+V321 local_pStr2[4] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'7',3=>'5',others=>'0'}, VA=init,
+E12 0 324
+V322 local_pStr2[5] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'7',3=>'5',others=>'0'}, VA=init,
+E12 0 324
+V323 local_pStr2[6] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'7',3=>'5',others=>'0'}, VA=init,
+E12 0 324
+V324 local_pStr2[7] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'7',3=>'5',others=>'0'}, VA=init,
+E12 0 324
+V325 local_pStr2[8] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'7',3=>'5',others=>'0'}, VA=init,
+E12 0 324
+V326 local_pStr2[9] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'7',3=>'5',others=>'0'}, VA=init,
+E12 0 324
+V327 local_pStr2[10] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'7',3=>'5',others=>'0'}, VA=init,
+E12 0 324
+V328 local_pStr2[11] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'7',3=>'5',others=>'0'}, VA=init,
+E12 0 324
+V329 local_pStr2[12] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'7',3=>'5',others=>'0'}, VA=init,
+E12 0 324
+V330 local_pStr2[13] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'7',3=>'5',others=>'0'}, VA=init,
+E12 0 324
+V331 local_pStr2[14] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'7',3=>'5',others=>'0'}, VA=init,
+E16 0 330
+T332 9
+F333 nominal
+C334 Tested requirement list : cf LLR_REFERENCE
+C335 
+C336 
+C337 Objective: To verify that  :
+C338 - StringUtilities Instance is initialized thanks to initialize method
+C339 - The first string is specified string
+C340 - The second string is specified string
+C341 - pSize first characters of the two specified string are equal
+C342 - True value is returned
+E14 0 347
+B343 1
+E12 0 348
+V344 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=9, VA=init,
+E12 0 349
+V345 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 353
+V346 local_lReturn RA=FORM=CU8, INIT=99, VA=1,
+E12 0 354
+V347 local_pSize RA=FORM=CU32, INIT=3, VA=init,
+E12 0 355
+V348 local_pStr1[0] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 355
+V349 local_pStr1[1] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 355
+V350 local_pStr1[2] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 355
+V351 local_pStr1[3] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 355
+V352 local_pStr1[4] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 355
+V353 local_pStr1[5] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 355
+V354 local_pStr1[6] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 355
+V355 local_pStr1[7] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 355
+V356 local_pStr1[8] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 355
+V357 local_pStr1[9] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 355
+V358 local_pStr1[10] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 355
+V359 local_pStr1[11] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 355
+V360 local_pStr1[12] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 355
+V361 local_pStr1[13] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 355
+V362 local_pStr1[14] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',others=>'0'}, VA=init,
+E12 0 356
+V363 local_pStr2[0] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 356
+V364 local_pStr2[1] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 356
+V365 local_pStr2[2] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 356
+V366 local_pStr2[3] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 356
+V367 local_pStr2[4] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 356
+V368 local_pStr2[5] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 356
+V369 local_pStr2[6] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 356
+V370 local_pStr2[7] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 356
+V371 local_pStr2[8] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 356
+V372 local_pStr2[9] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 356
+V373 local_pStr2[10] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 356
+V374 local_pStr2[11] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 356
+V375 local_pStr2[12] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 356
+V376 local_pStr2[13] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E12 0 356
+V377 local_pStr2[14] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'5',others=>'0'}, VA=init,
+E16 0 362
+T378 10
+F379 robustness
+C380 Tested requirement list : cf LLR_REFERENCE
+C381 
+C382 STRING-UTILITIES_REQ_002
+C383 
+C384 
+C385 Objective: To verify that  :
+C386 - StringUtilities Instance is initialized thanks to initialize method
+C387 - The specified string is null string
+C388 - The method returns zero
+E14 0 379
+B389 1
+E12 0 380
+V390 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=10, VA=init,
+E12 0 381
+V391 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001,STRING-UTILITIES_REQ_002", VA=init,
+E12 0 385
+V392 local_pStr[0] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 385
+V393 local_pStr[1] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 385
+V394 local_pStr[2] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 385
+V395 local_pStr[3] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 385
+V396 local_pStr[4] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 385
+V397 local_pStr[5] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 385
+V398 local_pStr[6] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 385
+V399 local_pStr[7] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 385
+V400 local_pStr[8] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 385
+V401 local_pStr[9] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 386
+V402 local_lenght_lReturn RA=FORM=CU16, INIT=99, VA=0,
+E16 0 392
+T403 11
+F404 nominal
+C405 Tested requirement list : cf LLR_REFERENCE
+C406 
+C407 STRING-UTILITIES_REQ_002
+C408 
+C409 
+C410 Objective: To verify that  :
+C411 - StringUtilities Instance is initialized thanks to initialize method
+C412 - The specified string is null pointer
+C413 - The method returns zero
+E14 0 409
+B414 1
+E12 0 410
+V415 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=11, VA=init,
+E12 0 411
+V416 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001,STRING-UTILITIES_REQ_002", VA=init,
+E12 0 415
+V417 local_lenght_null RA=FORM=CH0, INIT=((T_ptr)0), VA=init,
+E12 0 416
+V418 local_lenght_lReturn RA=FORM=CU16, INIT=99, VA=0,
+E16 0 422
+T419 12
+F420 nominal
+C421 Tested requirement list : cf LLR_REFERENCE
+C422 
+C423 STRING-UTILITIES_REQ_002
+C424 
+C425 
+C426 Objective: To verify that  :
+C427 - StringUtilities Instance is initialized thanks to initialize method
+C428 - The string is specified string
+C429 - The method returns the length of the specified string
+E14 0 439
+B430 1
+E12 0 440
+V431 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=12, VA=init,
+E12 0 441
+V432 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001,STRING-UTILITIES_REQ_002", VA=init,
+E12 0 445
+V433 local_pStr[0] RA=FORM=CU8, INIT={others=>'5'}, VA=init,
+E12 0 445
+V434 local_pStr[1] RA=FORM=CU8, INIT={others=>'5'}, VA=init,
+E12 0 445
+V435 local_pStr[2] RA=FORM=CU8, INIT={others=>'5'}, VA=init,
+E12 0 445
+V436 local_pStr[3] RA=FORM=CU8, INIT={others=>'5'}, VA=init,
+E12 0 445
+V437 local_pStr[4] RA=FORM=CU8, INIT={others=>'5'}, VA=init,
+E12 0 445
+V438 local_pStr[5] RA=FORM=CU8, INIT={others=>'5'}, VA=init,
+E12 0 445
+V439 local_pStr[6] RA=FORM=CU8, INIT={others=>'5'}, VA=init,
+E12 0 445
+V440 local_pStr[7] RA=FORM=CU8, INIT={others=>'5'}, VA=init,
+E12 0 445
+V441 local_pStr[8] RA=FORM=CU8, INIT={others=>'5'}, VA=init,
+E12 0 445
+V442 local_pStr[9] RA=FORM=CU8, INIT={others=>'5'}, VA=init,
+E12 0 446
+V443 local_lenght_lReturn RA=FORM=CU16, INIT=99, VA=10,
+E16 0 452
+T444 13
+F445 robustness
+C446 Tested requirement list : cf LLR_REFERENCE
+C447 
+C448 
+C449 Objective: To verify that  :
+C450 - StringUtilities Instance is initialized thanks to initialize method
+C451 - Both specified strings are null strings
+C452 - pDest string not change
+E14 0 467
+B453 1
+E12 0 468
+V454 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=13, VA=init,
+E12 0 469
+V455 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 473
+V456 local_pSrc[0] RA=FORM=CU8, INIT={others=>'\00'}, VA=init,
+E12 0 473
+V457 local_pSrc[1] RA=FORM=CU8, INIT={others=>'\00'}, VA=init,
+E12 0 473
+V458 local_pSrc[2] RA=FORM=CU8, INIT={others=>'\00'}, VA=init,
+E12 0 473
+V459 local_pSrc[3] RA=FORM=CU8, INIT={others=>'\00'}, VA=init,
+E12 0 473
+V460 local_pSrc[4] RA=FORM=CU8, INIT={others=>'\00'}, VA=init,
+E12 0 474
+V461 local_pDest[0] RA=FORM=CU8, INIT={others=>'9'}, VA=init,
+E12 0 474
+V462 local_pDest[1] RA=FORM=CU8, INIT={others=>'9'}, VA=init,
+E12 0 474
+V463 local_pDest[2] RA=FORM=CU8, INIT={others=>'9'}, VA=init,
+E12 0 474
+V464 local_pDest[3] RA=FORM=CU8, INIT={others=>'9'}, VA=init,
+E12 0 474
+V465 local_pDest[4] RA=FORM=CU8, INIT={others=>'9'}, VA=init,
+E16 0 480
+T466 14
+F467 nominal
+C468 Tested requirement list : cf LLR_REFERENCE
+C469 
+C470 
+C471 Objective: To verify that  :
+C472 - StringUtilities Instance is initialized thanks to initialize method
+C473 - The pSrc string is specified string
+C474 - The pDest specified string is null string
+C475 - pDest string is equal to pSrc specified string
+E14 0 496
+B476 1
+E12 0 497
+V477 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=14, VA=init,
+E12 0 498
+V478 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 502
+V479 local_pSrc[0] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',4=>'5'}, VA=init,
+E12 0 502
+V480 local_pSrc[1] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',4=>'5'}, VA=init,
+E12 0 502
+V481 local_pSrc[2] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',4=>'5'}, VA=init,
+E12 0 502
+V482 local_pSrc[3] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',4=>'5'}, VA=init,
+E12 0 502
+V483 local_pSrc[4] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',4=>'5'}, VA=init,
+E12 0 503
+V484 local_pDest[0] RA=FORM=CU8, INIT=0, VA={0=>'1',1=>'2',2=>'3',3=>'4',4=>'5'},
+E12 0 503
+V485 local_pDest[1] RA=FORM=CU8, INIT=0, VA={0=>'1',1=>'2',2=>'3',3=>'4',4=>'5'},
+E12 0 503
+V486 local_pDest[2] RA=FORM=CU8, INIT=0, VA={0=>'1',1=>'2',2=>'3',3=>'4',4=>'5'},
+E12 0 503
+V487 local_pDest[3] RA=FORM=CU8, INIT=0, VA={0=>'1',1=>'2',2=>'3',3=>'4',4=>'5'},
+E12 0 503
+V488 local_pDest[4] RA=FORM=CU8, INIT=0, VA={0=>'1',1=>'2',2=>'3',3=>'4',4=>'5'},
+E16 0 509
+T489 15
+F490 nominal
+C491 Tested requirement list : cf LLR_REFERENCE
+C492 
+C493 
+C494 Objective: To verify that  :
+C495 - StringUtilities Instance is initialized thanks to initialize method
+C496 - The pSrc string is specified string
+C497 - The pDest string is specified string
+C498 - The method concatenates two strings
+E14 0 526
+B499 1
+E12 0 527
+V500 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=15, VA=init,
+E12 0 528
+V501 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 532
+V502 local_pSrc[0] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',4=>'5'}, VA=init,
+E12 0 532
+V503 local_pSrc[1] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',4=>'5'}, VA=init,
+E12 0 532
+V504 local_pSrc[2] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',4=>'5'}, VA=init,
+E12 0 532
+V505 local_pSrc[3] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',4=>'5'}, VA=init,
+E12 0 532
+V506 local_pSrc[4] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',4=>'5'}, VA=init,
+E12 0 533
+V507 local_pDest[0] RA=FORM=CU8, INIT={0=>'6',1=>'7',others=>0}, VA={0=>'6',1=>'7',2=>'1',3=>'2',4=>'3'},
+E12 0 533
+V508 local_pDest[1] RA=FORM=CU8, INIT={0=>'6',1=>'7',others=>0}, VA={0=>'6',1=>'7',2=>'1',3=>'2',4=>'3'},
+E12 0 533
+V509 local_pDest[2] RA=FORM=CU8, INIT={0=>'6',1=>'7',others=>0}, VA={0=>'6',1=>'7',2=>'1',3=>'2',4=>'3'},
+E12 0 533
+V510 local_pDest[3] RA=FORM=CU8, INIT={0=>'6',1=>'7',others=>0}, VA={0=>'6',1=>'7',2=>'1',3=>'2',4=>'3'},
+E12 0 533
+V511 local_pDest[4] RA=FORM=CU8, INIT={0=>'6',1=>'7',others=>0}, VA={0=>'6',1=>'7',2=>'1',3=>'2',4=>'3'},
+E16 0 539
+T512 16
+F513 robustness
+C514 Tested requirement list : cf LLR_REFERENCE
+C515 
+C516 
+C517 Objective: To verify that  :
+C518 - StringUtilities Instance is initialized thanks to initialize method
+C519 - Both specified strings are null strings
+C520 - pSize characters are equal to zero
+C521 - pDest string is equal to zero
+E14 0 555
+B522 1
+E12 0 556
+V523 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=16, VA=init,
+E12 0 557
+V524 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 561
+V525 local_pSrc[0] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 561
+V526 local_pSrc[1] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 561
+V527 local_pSrc[2] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 561
+V528 local_pSrc[3] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 561
+V529 local_pSrc[4] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 562
+V530 local_pSize RA=FORM=CU32, INIT=0, VA=init,
+E12 0 563
+V531 local_pDest[0] RA=FORM=CU8, INIT=0, VA=0,
+E12 0 563
+V532 local_pDest[1] RA=FORM=CU8, INIT=0, VA=0,
+E12 0 563
+V533 local_pDest[2] RA=FORM=CU8, INIT=0, VA=0,
+E12 0 563
+V534 local_pDest[3] RA=FORM=CU8, INIT=0, VA=0,
+E12 0 563
+V535 local_pDest[4] RA=FORM=CU8, INIT=0, VA=0,
+E16 0 569
+T536 17
+F537 nominal
+C538 Tested requirement list : cf LLR_REFERENCE
+C539 
+C540 
+C541 Objective: To verify that  :
+C542 - StringUtilities Instance is initialized thanks to initialize method
+C543 - The pSrc specified string is null string
+C544 - The pDest string is specified string
+C545 - pSize characters are not equal to zero
+C546 - pDest string is equal to itself
+E14 0 586
+B547 1
+E12 0 587
+V548 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=17, VA=init,
+E12 0 588
+V549 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 592
+V550 local_pSrc[0] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 592
+V551 local_pSrc[1] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 592
+V552 local_pSrc[2] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 592
+V553 local_pSrc[3] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 592
+V554 local_pSrc[4] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 593
+V555 local_pSize RA=FORM=CU32, INIT=5, VA=init,
+E12 0 594
+V556 local_pDest[0] RA=FORM=CU8, INIT={0=>'8',1=>'7',2=>'6',3=>'5',4=>'4'}, VA={0=>'8',1=>'7',2=>'6',3=>'5',4=>'4'},
+E12 0 594
+V557 local_pDest[1] RA=FORM=CU8, INIT={0=>'8',1=>'7',2=>'6',3=>'5',4=>'4'}, VA={0=>'8',1=>'7',2=>'6',3=>'5',4=>'4'},
+E12 0 594
+V558 local_pDest[2] RA=FORM=CU8, INIT={0=>'8',1=>'7',2=>'6',3=>'5',4=>'4'}, VA={0=>'8',1=>'7',2=>'6',3=>'5',4=>'4'},
+E12 0 594
+V559 local_pDest[3] RA=FORM=CU8, INIT={0=>'8',1=>'7',2=>'6',3=>'5',4=>'4'}, VA={0=>'8',1=>'7',2=>'6',3=>'5',4=>'4'},
+E12 0 594
+V560 local_pDest[4] RA=FORM=CU8, INIT={0=>'8',1=>'7',2=>'6',3=>'5',4=>'4'}, VA={0=>'8',1=>'7',2=>'6',3=>'5',4=>'4'},
+E16 0 600
+T561 18
+F562 nominal
+C563 Tested requirement list : cf LLR_REFERENCE
+C564 
+C565 
+C566 Objective: To verify that  :
+C567 - StringUtilities Instance is initialized thanks to initialize method
+C568 - The pSrc string is specified string
+C569 - The pDest string is specified string
+C570 - pSize characters are equal to zero
+C571 - pDest string is equal to itself
+E14 0 617
+B572 1
+E12 0 618
+V573 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=18, VA=init,
+E12 0 619
+V574 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 623
+V575 local_pSrc[0] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',4=>'5'}, VA=init,
+E12 0 623
+V576 local_pSrc[1] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',4=>'5'}, VA=init,
+E12 0 623
+V577 local_pSrc[2] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',4=>'5'}, VA=init,
+E12 0 623
+V578 local_pSrc[3] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',4=>'5'}, VA=init,
+E12 0 623
+V579 local_pSrc[4] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',4=>'5'}, VA=init,
+E12 0 624
+V580 local_pSize RA=FORM=CU32, INIT=0, VA=init,
+E12 0 625
+V581 local_pDest[0] RA=FORM=CU8, INIT={0=>'8',1=>'9',others=>0}, VA={0=>'8',1=>'9',others=>0},
+E12 0 625
+V582 local_pDest[1] RA=FORM=CU8, INIT={0=>'8',1=>'9',others=>0}, VA={0=>'8',1=>'9',others=>0},
+E12 0 625
+V583 local_pDest[2] RA=FORM=CU8, INIT={0=>'8',1=>'9',others=>0}, VA={0=>'8',1=>'9',others=>0},
+E12 0 625
+V584 local_pDest[3] RA=FORM=CU8, INIT={0=>'8',1=>'9',others=>0}, VA={0=>'8',1=>'9',others=>0},
+E12 0 625
+V585 local_pDest[4] RA=FORM=CU8, INIT={0=>'8',1=>'9',others=>0}, VA={0=>'8',1=>'9',others=>0},
+E16 0 631
+T586 19
+F587 nominal
+C588 Tested requirement list : cf LLR_REFERENCE
+C589 
+C590 
+C591 Objective: To verify that  :
+C592 - StringUtilities Instance is initialized thanks to initialize method
+C593 - The pSrc string is specified string
+C594 - The pDest string is specified string
+C595 - pSize characters are less then the length of the pSrc specified string
+C596 - The method concatenate the pDest specified string with the N bytes of pSrc
+E14 0 648
+B597 1
+E12 0 649
+V598 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=19, VA=init,
+E12 0 650
+V599 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 654
+V600 local_pSrc[0] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',4=>'5'}, VA=init,
+E12 0 654
+V601 local_pSrc[1] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',4=>'5'}, VA=init,
+E12 0 654
+V602 local_pSrc[2] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',4=>'5'}, VA=init,
+E12 0 654
+V603 local_pSrc[3] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',4=>'5'}, VA=init,
+E12 0 654
+V604 local_pSrc[4] RA=FORM=CU8, INIT={0=>'1',1=>'2',2=>'3',3=>'4',4=>'5'}, VA=init,
+E12 0 655
+V605 local_pSize RA=FORM=CU32, INIT=2, VA=init,
+E12 0 656
+V606 local_pDest[0] RA=FORM=CU8, INIT={0=>'8',1=>'9',others=>0}, VA={0=>'8',1=>'9',2=>'1',3=>'2',4=>0},
+E12 0 656
+V607 local_pDest[1] RA=FORM=CU8, INIT={0=>'8',1=>'9',others=>0}, VA={0=>'8',1=>'9',2=>'1',3=>'2',4=>0},
+E12 0 656
+V608 local_pDest[2] RA=FORM=CU8, INIT={0=>'8',1=>'9',others=>0}, VA={0=>'8',1=>'9',2=>'1',3=>'2',4=>0},
+E12 0 656
+V609 local_pDest[3] RA=FORM=CU8, INIT={0=>'8',1=>'9',others=>0}, VA={0=>'8',1=>'9',2=>'1',3=>'2',4=>0},
+E12 0 656
+V610 local_pDest[4] RA=FORM=CU8, INIT={0=>'8',1=>'9',others=>0}, VA={0=>'8',1=>'9',2=>'1',3=>'2',4=>0},
+E16 0 662
+T611 20
+F612 nominal
+C613 Tested requirement list : cf LLR_REFERENCE
+C614 
+C615 
+C616 Objective: To verify that  :
+C617 - StringUtilities Instance is initialized thanks to initialize method
+C618 - The pSrc string is specified string
+C619 - The pDest string is specified string
+C620 - pSize characters are more then the length of the pSrc specified string
+C621 -The method concatenate the pDest specified string and pSrc specified string
+E14 0 679
+B622 1
+E12 0 680
+V623 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=20, VA=init,
+E12 0 681
+V624 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 685
+V625 local_pSrc[0] RA=FORM=CU8, INIT={0=>'5',1=>'4',2=>'3',3=>'2',4=>'1'}, VA=init,
+E12 0 685
+V626 local_pSrc[1] RA=FORM=CU8, INIT={0=>'5',1=>'4',2=>'3',3=>'2',4=>'1'}, VA=init,
+E12 0 685
+V627 local_pSrc[2] RA=FORM=CU8, INIT={0=>'5',1=>'4',2=>'3',3=>'2',4=>'1'}, VA=init,
+E12 0 685
+V628 local_pSrc[3] RA=FORM=CU8, INIT={0=>'5',1=>'4',2=>'3',3=>'2',4=>'1'}, VA=init,
+E12 0 685
+V629 local_pSrc[4] RA=FORM=CU8, INIT={0=>'5',1=>'4',2=>'3',3=>'2',4=>'1'}, VA=init,
+E12 0 686
+V630 local_pSize RA=FORM=CU32, INIT=10, VA=init,
+E12 0 687
+V631 local_pDest[0] RA=FORM=CU8, INIT={0=>'8',1=>'9',others=>0}, VA={0=>'8',1=>'9',2=>'5',3=>'4',4=>'3'},
+E12 0 687
+V632 local_pDest[1] RA=FORM=CU8, INIT={0=>'8',1=>'9',others=>0}, VA={0=>'8',1=>'9',2=>'5',3=>'4',4=>'3'},
+E12 0 687
+V633 local_pDest[2] RA=FORM=CU8, INIT={0=>'8',1=>'9',others=>0}, VA={0=>'8',1=>'9',2=>'5',3=>'4',4=>'3'},
+E12 0 687
+V634 local_pDest[3] RA=FORM=CU8, INIT={0=>'8',1=>'9',others=>0}, VA={0=>'8',1=>'9',2=>'5',3=>'4',4=>'3'},
+E12 0 687
+V635 local_pDest[4] RA=FORM=CU8, INIT={0=>'8',1=>'9',others=>0}, VA={0=>'8',1=>'9',2=>'5',3=>'4',4=>'3'},
+E16 0 693
+T636 21
+F637 robustness
+C638 Tested requirement list : cf LLR_REFERENCE
+C639 
+C640 
+C641 Objective: To verify that  :
+C642 - StringUtilities Instance is initialized thanks to initialize method
+C643 - Both specified strings are null strings
+C644 - After copy pSource specified string into pDestination specified string, the last one is equal to zero
+E14 0 708
+B645 1
+E12 0 709
+V646 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=21, VA=init,
+E12 0 710
+V647 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 714
+V648 local_pSource[0] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 714
+V649 local_pSource[1] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 714
+V650 local_pSource[2] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 714
+V651 local_pSource[3] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 714
+V652 local_pSource[4] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 715
+V653 local_pDestination[0] RA=FORM=CU8, INIT=0, VA=0,
+E12 0 715
+V654 local_pDestination[1] RA=FORM=CU8, INIT=0, VA=0,
+E12 0 715
+V655 local_pDestination[2] RA=FORM=CU8, INIT=0, VA=0,
+E12 0 715
+V656 local_pDestination[3] RA=FORM=CU8, INIT=0, VA=0,
+E12 0 715
+V657 local_pDestination[4] RA=FORM=CU8, INIT=0, VA=0,
+E16 0 721
+T658 22
+F659 nominal
+C660 Tested requirement list : cf LLR_REFERENCE
+C661 
+C662 
+C663 Objective: To verify that  :
+C664 - StringUtilities Instance is initialized thanks to initialize method
+C665 - The pSource string is specified string
+C666 - The pDestination specified string is null string
+C667 - After copy pSource specified string into pDestination specified string, the last one is equal to pSource specified string
+E14 0 737
+B668 1
+E12 0 738
+V669 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=22, VA=init,
+E12 0 739
+V670 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 743
+V671 local_pSource[0] RA=FORM=CU8, INIT={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'}, VA=init,
+E12 0 743
+V672 local_pSource[1] RA=FORM=CU8, INIT={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'}, VA=init,
+E12 0 743
+V673 local_pSource[2] RA=FORM=CU8, INIT={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'}, VA=init,
+E12 0 743
+V674 local_pSource[3] RA=FORM=CU8, INIT={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'}, VA=init,
+E12 0 743
+V675 local_pSource[4] RA=FORM=CU8, INIT={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'}, VA=init,
+E12 0 744
+V676 local_pDestination[0] RA=FORM=CU8, INIT=0, VA={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'},
+E12 0 744
+V677 local_pDestination[1] RA=FORM=CU8, INIT=0, VA={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'},
+E12 0 744
+V678 local_pDestination[2] RA=FORM=CU8, INIT=0, VA={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'},
+E12 0 744
+V679 local_pDestination[3] RA=FORM=CU8, INIT=0, VA={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'},
+E12 0 744
+V680 local_pDestination[4] RA=FORM=CU8, INIT=0, VA={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'},
+E16 0 750
+T681 23
+F682 nominal
+C683 Tested requirement list : cf LLR_REFERENCE
+C684 
+C685 
+C686 Objective: To verify that  :
+C687 - StringUtilities Instance is initialized thanks to initialize method
+C688 - The pSource string is specified string
+C689 - The pDestination string is specified string
+C690 - After copy pSource specified string into pDestination specified string, the last one is equal to pSource specified string
+E14 0 766
+B691 1
+E12 0 767
+V692 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=23, VA=init,
+E12 0 768
+V693 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 772
+V694 local_pSource[0] RA=FORM=CU8, INIT={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'}, VA=init,
+E12 0 772
+V695 local_pSource[1] RA=FORM=CU8, INIT={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'}, VA=init,
+E12 0 772
+V696 local_pSource[2] RA=FORM=CU8, INIT={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'}, VA=init,
+E12 0 772
+V697 local_pSource[3] RA=FORM=CU8, INIT={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'}, VA=init,
+E12 0 772
+V698 local_pSource[4] RA=FORM=CU8, INIT={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'}, VA=init,
+E12 0 773
+V699 local_pDestination[0] RA=FORM=CU8, INIT={0=>'1',1=>'2',others=>0}, VA={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'},
+E12 0 773
+V700 local_pDestination[1] RA=FORM=CU8, INIT={0=>'1',1=>'2',others=>0}, VA={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'},
+E12 0 773
+V701 local_pDestination[2] RA=FORM=CU8, INIT={0=>'1',1=>'2',others=>0}, VA={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'},
+E12 0 773
+V702 local_pDestination[3] RA=FORM=CU8, INIT={0=>'1',1=>'2',others=>0}, VA={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'},
+E12 0 773
+V703 local_pDestination[4] RA=FORM=CU8, INIT={0=>'1',1=>'2',others=>0}, VA={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'},
+E16 0 779
+T704 24
+F705 robustness
+C706 Tested requirement list : cf LLR_REFERENCE
+C707 
+C708 
+C709 Objective: To verify that  :
+C710 - StringUtilities Instance is initialized thanks to initialize method
+C711 - Both specified strings are null strings
+C712 - pSize characters are equal to zero
+C713 - After copy pSource specified string into pDestination specified string, the last one is equal to zero
+E14 0 795
+B714 1
+E12 0 796
+V715 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=24, VA=init,
+E12 0 797
+V716 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 801
+V717 local_pSource[0] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 801
+V718 local_pSource[1] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 801
+V719 local_pSource[2] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 801
+V720 local_pSource[3] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 801
+V721 local_pSource[4] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 802
+V722 local_pSize RA=FORM=CU32, INIT=0, VA=init,
+E12 0 803
+V723 local_pDestination[0] RA=FORM=CU8, INIT=0, VA=0,
+E12 0 803
+V724 local_pDestination[1] RA=FORM=CU8, INIT=0, VA=0,
+E12 0 803
+V725 local_pDestination[2] RA=FORM=CU8, INIT=0, VA=0,
+E12 0 803
+V726 local_pDestination[3] RA=FORM=CU8, INIT=0, VA=0,
+E12 0 803
+V727 local_pDestination[4] RA=FORM=CU8, INIT=0, VA=0,
+E16 0 809
+T728 25
+F729 nominal
+C730 Tested requirement list : cf LLR_REFERENCE
+C731 
+C732 
+C733 Objective: To verify that  :
+C734 - StringUtilities Instance is initialized thanks to initialize method
+C735 - The pSource string is specified string
+C736 - The pDestination specified string is null string
+C737 - pSize characters are equal to zero
+C738 - After copy pSource specified string into pDestination specified string, the last one is equal to zero
+E14 0 826
+B739 1
+E12 0 827
+V740 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=25, VA=init,
+E12 0 828
+V741 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 832
+V742 local_pSource[0] RA=FORM=CU8, INIT={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'}, VA=init,
+E12 0 832
+V743 local_pSource[1] RA=FORM=CU8, INIT={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'}, VA=init,
+E12 0 832
+V744 local_pSource[2] RA=FORM=CU8, INIT={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'}, VA=init,
+E12 0 832
+V745 local_pSource[3] RA=FORM=CU8, INIT={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'}, VA=init,
+E12 0 832
+V746 local_pSource[4] RA=FORM=CU8, INIT={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'}, VA=init,
+E12 0 833
+V747 local_pSize RA=FORM=CU32, INIT=0, VA=init,
+E12 0 834
+V748 local_pDestination[0] RA=FORM=CU8, INIT=0, VA=0,
+E12 0 834
+V749 local_pDestination[1] RA=FORM=CU8, INIT=0, VA=0,
+E12 0 834
+V750 local_pDestination[2] RA=FORM=CU8, INIT=0, VA=0,
+E12 0 834
+V751 local_pDestination[3] RA=FORM=CU8, INIT=0, VA=0,
+E12 0 834
+V752 local_pDestination[4] RA=FORM=CU8, INIT=0, VA=0,
+E16 0 840
+T753 26
+F754 robustness
+C755 Tested requirement list : cf LLR_REFERENCE
+C756 
+C757 
+C758 Objective: To verify that  :
+C759 - StringUtilities Instance is initialized thanks to initialize method
+C760 - Both specified strings are null strings
+C761 - pSize characters are not equal to zero
+C762 - After copy pSource specified string into pDestination specified string, the last one is equal to zero
+E14 0 856
+B763 1
+E12 0 857
+V764 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=26, VA=init,
+E12 0 858
+V765 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 862
+V766 local_pSource[0] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 862
+V767 local_pSource[1] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 862
+V768 local_pSource[2] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 862
+V769 local_pSource[3] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 862
+V770 local_pSource[4] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 863
+V771 local_pSize RA=FORM=CU32, INIT=5, VA=init,
+E12 0 864
+V772 local_pDestination[0] RA=FORM=CU8, INIT=0, VA=0,
+E12 0 864
+V773 local_pDestination[1] RA=FORM=CU8, INIT=0, VA=0,
+E12 0 864
+V774 local_pDestination[2] RA=FORM=CU8, INIT=0, VA=0,
+E12 0 864
+V775 local_pDestination[3] RA=FORM=CU8, INIT=0, VA=0,
+E12 0 864
+V776 local_pDestination[4] RA=FORM=CU8, INIT=0, VA=0,
+E16 0 870
+T777 27
+F778 nominal
+C779 Tested requirement list : cf LLR_REFERENCE
+C780 
+C781 
+C782 Objective: To verify that :
+C783 - StringUtilities Instance is initialized thanks to initialize method
+C784 - The pSource specified string is null string
+C785 - The pDestination string is specified string
+C786 - pSize characters are equal to zero
+C787 - After copy pSource specified string into pDestination specified string, the last one is equal to itself
+E14 0 887
+B788 1
+E12 0 888
+V789 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=27, VA=init,
+E12 0 889
+V790 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 893
+V791 local_pSource[0] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 893
+V792 local_pSource[1] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 893
+V793 local_pSource[2] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 893
+V794 local_pSource[3] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 893
+V795 local_pSource[4] RA=FORM=CU8, INIT=0, VA=init,
+E12 0 894
+V796 local_pSize RA=FORM=CU32, INIT=0, VA=init,
+E12 0 895
+V797 local_pDestination[0] RA=FORM=CU8, INIT={0=>'1',1=>'2',others=>0}, VA={0=>'1',1=>'2',others=>0},
+E12 0 895
+V798 local_pDestination[1] RA=FORM=CU8, INIT={0=>'1',1=>'2',others=>0}, VA={0=>'1',1=>'2',others=>0},
+E12 0 895
+V799 local_pDestination[2] RA=FORM=CU8, INIT={0=>'1',1=>'2',others=>0}, VA={0=>'1',1=>'2',others=>0},
+E12 0 895
+V800 local_pDestination[3] RA=FORM=CU8, INIT={0=>'1',1=>'2',others=>0}, VA={0=>'1',1=>'2',others=>0},
+E12 0 895
+V801 local_pDestination[4] RA=FORM=CU8, INIT={0=>'1',1=>'2',others=>0}, VA={0=>'1',1=>'2',others=>0},
+E16 0 901
+T802 28
+F803 nominal
+C804 Tested requirement list : cf LLR_REFERENCE
+C805 
+C806 
+C807 Objective: To verify that :
+C808 - StringUtilities Instance is initialized thanks to initialize method
+C809 - The pSource specified string is null string
+C810 - The pDestination specified string is null string
+C811 - pSize characters are less then the length of the pSource specified string
+C812 - After copy N bytes of the pSource specified string into pDestination specified string, the last one is equal to N bytes of the pSource specified string
+E14 0 918
+B813 1
+E12 0 919
+V814 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=28, VA=init,
+E12 0 920
+V815 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 924
+V816 local_pSource[0] RA=FORM=CU8, INIT={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'}, VA=init,
+E12 0 924
+V817 local_pSource[1] RA=FORM=CU8, INIT={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'}, VA=init,
+E12 0 924
+V818 local_pSource[2] RA=FORM=CU8, INIT={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'}, VA=init,
+E12 0 924
+V819 local_pSource[3] RA=FORM=CU8, INIT={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'}, VA=init,
+E12 0 924
+V820 local_pSource[4] RA=FORM=CU8, INIT={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'}, VA=init,
+E12 0 925
+V821 local_pSize RA=FORM=CU32, INIT=4, VA=init,
+E12 0 926
+V822 local_pDestination[0] RA=FORM=CU8, INIT={0=>'1',1=>'2',others=>0}, VA={0=>'9',1=>'8',2=>'7',3=>'a',4=>0},
+E12 0 926
+V823 local_pDestination[1] RA=FORM=CU8, INIT={0=>'1',1=>'2',others=>0}, VA={0=>'9',1=>'8',2=>'7',3=>'a',4=>0},
+E12 0 926
+V824 local_pDestination[2] RA=FORM=CU8, INIT={0=>'1',1=>'2',others=>0}, VA={0=>'9',1=>'8',2=>'7',3=>'a',4=>0},
+E12 0 926
+V825 local_pDestination[3] RA=FORM=CU8, INIT={0=>'1',1=>'2',others=>0}, VA={0=>'9',1=>'8',2=>'7',3=>'a',4=>0},
+E12 0 926
+V826 local_pDestination[4] RA=FORM=CU8, INIT={0=>'1',1=>'2',others=>0}, VA={0=>'9',1=>'8',2=>'7',3=>'a',4=>0},
+E16 0 932
+T827 29
+F828 nominal
+C829 Tested requirement list : cf LLR_REFERENCE
+C830 
+C831 
+C832 Objective: To verify that :
+C833 - StringUtilities Instance is initialized thanks to initialize method
+C834 - The pSource specified string is null string
+C835 - The pDestination specified string is null string
+C836 - pSize characters are more then the length of the pSource specified string
+C837 - After copy N bytes of the pSource specified string into pDestination specified string, the last one is equal to the pSource specified string
+E14 0 949
+B838 1
+E12 0 950
+V839 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=29, VA=init,
+E12 0 951
+V840 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 955
+V841 local_pSource[0] RA=FORM=CU8, INIT={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'}, VA=init,
+E12 0 955
+V842 local_pSource[1] RA=FORM=CU8, INIT={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'}, VA=init,
+E12 0 955
+V843 local_pSource[2] RA=FORM=CU8, INIT={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'}, VA=init,
+E12 0 955
+V844 local_pSource[3] RA=FORM=CU8, INIT={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'}, VA=init,
+E12 0 955
+V845 local_pSource[4] RA=FORM=CU8, INIT={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'}, VA=init,
+E12 0 956
+V846 local_pSize RA=FORM=CU32, INIT=6, VA=init,
+E12 0 957
+V847 local_pDestination[0] RA=FORM=CU8, INIT={0=>'1',1=>'2',others=>0}, VA={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'},
+E12 0 957
+V848 local_pDestination[1] RA=FORM=CU8, INIT={0=>'1',1=>'2',others=>0}, VA={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'},
+E12 0 957
+V849 local_pDestination[2] RA=FORM=CU8, INIT={0=>'1',1=>'2',others=>0}, VA={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'},
+E12 0 957
+V850 local_pDestination[3] RA=FORM=CU8, INIT={0=>'1',1=>'2',others=>0}, VA={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'},
+E12 0 957
+V851 local_pDestination[4] RA=FORM=CU8, INIT={0=>'1',1=>'2',others=>0}, VA={0=>'9',1=>'8',2=>'7',3=>'a',4=>'b'},
+E16 0 965
+T852 30
+F853 robustness
+C854 Tested requirement list : cf LLR_REFERENCE
+C855 
+C856 Objective: Robustness over equality of string of 146 elements
+C857 
+C858 The StringUtilities class returns the size of the first string
+C859 The StringUtilities class compare the strings and return a valid status to inform
+C860 that the two strings are equal.
+E14 0 980
+B861 1
+E12 0 981
+V862 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=30, VA=init,
+E12 0 982
+V863 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 986
+V864 local_RobStr1 RA=FORM=CH0, INIT="AZERTYUIOPQSDFGHJKLMWXCVBN?./§1234567890°&é'(-è_çà)azertyuiopqsdfghjklmwxcvbn,;:!*ù$^ÿüö<>aror
+&botsqgmezp^q$$hoergrgeiezrfnzdfêzifzeizefez^fzefiezf", VA=init,
+E12 0 987
+V865 local_RobStr2 RA=FORM=CH0, INIT="AZERTYUIOPQSDFGHJKLMWXCVBN?./§1234567890°&é'(-è_çà)azertyuiopqsdfghjklmwxcvbn,;:!*ù$^ÿüö<>aror
+&botsqgmezp^q$$hoergrgeiezrfnzdfêzifzeizefez^fzefiezf", VA=init,
+E12 0 989
+V866 local_lenght_lReturn RA=FORM=CU16, INIT=99, VA=146,
+E12 0 992
+V867 local_lReturn RA=FORM=CU8, INIT=99, VA=1,

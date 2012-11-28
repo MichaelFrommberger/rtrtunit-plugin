@@ -1,0 +1,10 @@
+<testsuites>
+	<testsuite name="test" tests="2" failures="1" errors ="1" time="10" skipped="false" timestamp="12:00:31" hostname="toto" id="1" package="paquet" >
+		<properties>
+			<property name="property" value="null"></property></properties>
+		<testcase name="1" assertions="true" time="9" classname="toto">
+			<error type="erreur" message="grosse erreur">Error</error></testcase>
+		<testcase name="2" assertions="true" time="1" classname="toto">
+			<failure type="echec" message="petit echec">Failure</failure></testcase>
+		<system-out>il y a un echec</system-out>
+		<system-err>il y a une erreur</system-err></testsuite></testsuites>

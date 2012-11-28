@@ -1,0 +1,73 @@
+************************************************************************
+* TOOL : Unit Test Compiler VERSION 2002.05.21.468.004                 *
+*                                                                      *
+* COMMAND : attolprepro Partition_SA                                   *
+*   /SAIDSASB_COMPUTE_MAINTENANCE_CONDITION                            *
+*   /saidsasb_compute_maintenance_condition.ptu out/test/ptu_SA195.c   *
+*   /LANGUAGE=C /TARGET=PC/NT /FAST /FAMILY=NOMINAL /INCL=includes,    *
+*   C:/Program Files/Microsoft Visual Studio/VC98/Include,../..        *
+*   /CDS_A400M_DEV/SA/Said/Saidsasb/Src,../../CDS_A400M_DEV/COMMON     *
+*   /LBIOPR/Interface,../../CDS_A400M_DEV/COMMON/INTERFACE/Cl,../..    *
+*   /CDS_A400M_DEV/COMMON/Lbfl/Interface,../../CDS_A400M_PDU_LIBRARY   *
+*   /TARGET/PDUSW/TARGET/LIVRAISON/include,../..                       *
+*   /CDS_A400M_PDU_LIBRARY/TARGET/MACS2/A653/LIVRAISON/INC,../..       *
+*   /CDS_A400M_DEV/COMMON/Lbport_ipm/Interface,../../CDS_A400M_DEV     *
+*   /COMMON/Lbtm/Interface,../../CDS_A400M_DEV/SA/SAID/Saidsasb        *
+*   /Interface,../../CDS_A400M_DEV/SA/Samc/Interface,../..             *
+*   /CDS_A400M_DEV/SA/Sadi/Interface,../../CDS_A400M_PDU_LIBRARY       *
+*   /TARGET/MACS2/CDRV/LIVRAISON/INC,../../CDS_A400M_DEV/SA/Saco       *
+*   /Interface,../../CDS_A400M_DEV/SA/Said/Interface,../..             *
+*   /CDS_A400M_DEV/AUTOCODE/SA/DataGen/DataDecl/Interface,cvisual6     *
+*   /NOSIMULATION /STD_DEFINE=cvisual6/ana/atus_c.def                  *
+*                                                                      *
+* FILE :                                                               *
+*   d:\Viewsnap\IC_CDS_A400M\CDS_A400M_UNIT_TESTS\CDS_A400M_RTRT_BIO\out *
+*   /test\ptu_SA195.tdc                                                *
+*                                                                      *
+* DATE : Fri Sep 23 14:27:17 2011                                      *
+************************************************************************
+E11 0 d:\Viewsnap\IC_CDS_A400M\CDS_A400M_UNIT_TESTS\CDS_A400M_RTRT_BIO\Partition_SA\SAIDSASB_COMPUTE_MAINTENANCE_CONDITION\saidsasb_compute_maintenance_condition.ptu
+C0 attolprepro Partition_SA/SAIDSASB_COMPUTE_MAINTENANCE_CONDITION/saidsasb_compute_maintenance_condition.ptu out/test/ptu_SA195.c /LANGUAGE=C /TARGET=PC/NT /FAST /FAMILY=NOMINAL /INCL=includes,C:/Program Files/Microsoft Visual Studio/VC98/Include,../../CDS_A400M_DEV/SA/Said/Saidsasb/Src,../../CDS_A400M_DEV/COMMON/LBIOPR/Interface,../../CDS_A400M_DEV/COMMON/INTERFACE/Cl,../../CDS_A400M_DEV/COMMON/Lbfl/Interface,../../CDS_A400M_PDU_LIBRARY/TARGET/PDUSW/TARGET/LIVRAISON/include,../../CDS_A400M_PDU_LIBRARY/TARGET/MACS2/A653/LIVRAISON/INC,../../CDS_A400M_DEV/COMMON/Lbport_ipm/Interface,../../CDS_A400M_DEV/COMMON/Lbtm/Interface,../../CDS_A400M_DEV/SA/SAID/Saidsasb/Interface,../../CDS_A400M_DEV/SA/Samc/Interface,../../CDS_A400M_DEV/SA/Sadi/Interface,../../CDS_A400M_PDU_LIBRARY/TARGET/MACS2/CDRV/LIVRAISON/INC,../../CDS_A400M_DEV/SA/Saco/Interface,../../CDS_A400M_DEV/SA/Said/Interface,../../CDS_A400M_DEV/AUTOCODE/SA/DataGen/DataDecl/Interface,cvisual6 /NOSIMULATION /STD_DEFINE=cvisual6/ana/atus_c.def
+H0 Fri Sep 23 14:27:17 2011
+E7 PC/NT
+E8 2002.05.21.468.004
+E9 C C
+E6  saidsasb_compute_maintenance_condition
+E4  
+E5  
+E1 saidsasb_compute_maintenance_condition
+E2 
+E10 
+E0 saidsasb_compute_maintenance_condition ,  , 
+C1 CSU Name ....... : saidsasb_compute_maintenance_condition
+C2 CSU Version . .. : L3.1
+C3 Ref. SDD ....... : J45927AD
+C4 Issue .......... : 00
+C5 Level .......... : A
+C6 Language ....... : C
+C7 Date ........ .. : 23/02/2011
+C8 Tester Name .... : Sebastien Deroche
+M9 saidsasb_compute_maintenance_condition_c GET_MODULE_TIME
+L1 MODULE_TIME.MSB_TIME RA=FORM=CD64, INIT=, VA=
+L2 MODULE_TIME.LSB_TIME RA=FORM=CD64, INIT=, VA=
+M0
+E17 0 112
+E16 0 116
+O10 SAIDSASB_COMPU_1
+S11 EXTERN
+T12 1
+C13 TEST 1 : There is no error
+C14 Call get_time_data_is_set setting the following variables :
+C15 par_ul_current_status = ONEENGRUNNING = TRUE
+C16 par_ul_expected_status = FALSE
+C17 Data are not in the same expected status anymore
+C18 REQ : M-AF-PTSCDS-A1.1-0128   -   M-AF-PTSCDS-A1.4-0022   -   APSW-REQ-00009
+F19 nominal
+E14 0 128
+B20 1
+E12 0 129
+V21 ONEENGRUNNING RA=FORM=CU0, INIT=1UL, VA=init,
+E12 0 131
+V22 Module_Time_GMT.LSB_TIME RA=FORM=CU32, INIT=1080781, VA=1080781,
+E12 0 132
+V23 Module_Time_GMT.MSB_TIME RA=FORM=CU32, INIT=8388528, VA=8388528,

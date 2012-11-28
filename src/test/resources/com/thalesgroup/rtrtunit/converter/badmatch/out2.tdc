@@ -1,0 +1,125 @@
+************************************************************************
+* TOOL : Unit Test Compiler VERSION 2002.05.21.468.004                 *
+*                                                                      *
+* COMMAND : attolprepro toto.ptu                                       *
+*                                                                      *
+*                                                                      *
+* FILE : out.tdc           											   *
+*                                                                      *
+* DATE : Mon Jan 10 10:43:05 2011                                      *
+************************************************************************
+E11 0 out.ptu
+C0 attolprepro toto.ptu H0 Mon Jan 10 10:43:05 2011
+E7 PC/NT
+E8 2002.05.21.468.004
+E9 C C
+E6  StringUtilities_initializeStaticClass
+E4  
+E5  
+E1 StringUtilities
+E2 
+E10 
+E0 StringUtilities ,  , 
+C1 CSU Name .................... : StringUtilities
+C2 CSU Version ................. : PDS_FORMAL_V5.5
+C3 Ref .SDD COMMON ............. : PDS_FORMAL_V5.5
+C4 Issue ....................... : N/A
+C5 Level ....................... : A
+C6 Language .................... : C
+C7 Date ........................ : 11/09/08
+C8 Tester Name ................. : Toto
+E17 0 87
+E16 0 90
+O9 STRINGUTILITIE_1
+S10 EXTERN
+T11 1
+F12 nominal
+C13 Tested requirement list : cf LLR_REFERENCE
+C14 
+C15 Objective: To verify that :
+C16 - StringUtilities Instance is initialized thanks to initialize method
+E14 0 102
+B17 1
+E12 0 103
+V18 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=1, VA=init,
+E12 0 104
+V19 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E16 0 111
+T20 2
+F21 nominal
+C22 Tested requirement list : cf LLR_REFERENCE
+C23 
+C24 
+C25 Objective: To verify that :
+C26 - StringUtilities Instance is initialized thanks to initialize method
+C27 - Both specified strings are null strings
+C28 - True value is returned
+E14 0 127
+B29 1
+E12 0 128
+V30 CURRENT_TEST_NUMBER RA=FORM=CD32, INIT=2, VA=init,
+E12 0 129
+V31 LLR_REFERENCE RA=FORM=C, INIT="STRING-UTILITIES_REQ_001", VA=init,
+E12 0 133
+V32 local_lReturn RA=FORM=CU8, INIT=99, VA=1,
+E12 0 134
+V33 local_pStr1[0] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V34 local_pStr1[1] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V35 local_pStr1[2] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V36 local_pStr1[3] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V37 local_pStr1[4] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V38 local_pStr1[5] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V39 local_pStr1[6] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V40 local_pStr1[7] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V41 local_pStr1[8] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V42 local_pStr1[9] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V43 local_pStr1[10] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V44 local_pStr1[11] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V45 local_pStr1[12] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V46 local_pStr1[13] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 134
+V47 local_pStr1[14] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V48 local_pStr2[0] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V49 local_pStr2[1] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V50 local_pStr2[2] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V51 local_pStr2[3] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V52 local_pStr2[4] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V53 local_pStr2[5] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V54 local_pStr2[6] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V55 local_pStr2[7] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V56 local_pStr2[8] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V57 local_pStr2[9] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V58 local_pStr2[10] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V59 local_pStr2[11] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V60 local_pStr2[12] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V61 local_pStr2[13] RA=FORM=CU8, INIT='\0', VA=init,
+E12 0 135
+V62 local_pStr2[14] RA=FORM=CU8, INIT='\0', VA=init,
+E16 0 142

@@ -1,0 +1,16 @@
+The jaxb files were generated using:
+	- The Java EE SDK 5.0.1
+	- The java web services development kit 1.0 and its jaxb executable included
+	- According to the line :
+		xjc.bat "xsd/junit-1.0.xsd"
+		
+Generation of the files contained into the directory  /main/java/com/thalesgroup/rtrt/jaxb
+	- [Error|Failure|ObjectFactory|Properties|Property|Testcase|Testsuite|Testsuites].java
+	
+	- Used into /main/java/com/thalesgroup/rtrt/RTRTtoXMLParser.java
+	
+Configuration of jaxb:
+	- set JWSDP_HOME=C:\Sun\jwsdp-2.0
+	- set jaxb_lib=%JWSDP_HOME%\jaxb-1.0\lib
+	- set CLASSPATH=%jaxb_lib%\jaxb-api.jar;%jaxb_lib%\jaxb-libs.jar;%jaxb_lib%\jaxb-ri.jar;%jaxb_lib%\jaxb-xjc.jar
+	- set PATH=%JWSDP_HOME%\jaxb-1.0\bin;%PATH%

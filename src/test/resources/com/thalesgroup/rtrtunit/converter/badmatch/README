@@ -1,0 +1,5 @@
+Bad Matches tests:
+
+	- First test : out1.[rio|tdc] bad V token V5600 does not exist
+	- Second test : out2.[rio|tdc] bad T token T0 does not exist
+

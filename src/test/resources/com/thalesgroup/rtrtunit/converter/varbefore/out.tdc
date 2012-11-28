@@ -1,0 +1,290 @@
+************************************************************************
+* TOOL : Unit Test Compiler VERSION 2002.05.21.468.004                 *
+*                                                                      *
+* COMMAND : attolprepro Partition_SA/saccdint_set_can_bus_gen_failure  *
+*   /saccdint_set_can_bus_gen_failure.ptu out/test/ptu_SA37.c          *
+*   /LANGUAGE=C /TARGET=PC/NT /FAST /FAMILY=NOMINAL /INCL=includes,    *
+*   C:/Program Files/Microsoft Visual Studio/VC98/Include,../..        *
+*   /CDS_A400M_DEV/SA/Sadi/Interface,../../CDS_A400M_DEV/COMMON        *
+*   /INTERFACE/Cl,../../CDS_A400M_PDU_LIBRARY/TARGET/PDUSW/TARGET      *
+*   /LIVRAISON/include,../../CDS_A400M_DEV/COMMON/LBIOPR/Interface,    *
+*   ../../CDS_A400M_PDU_LIBRARY/TARGET/MACS2/A653/LIVRAISON/INC,..     *
+*   /../CDS_A400M_PDU_LIBRARY/TARGET/MACS2/CDRV/LIVRAISON/INC,../..    *
+*   /CDS_A400M_DEV/COMMON/Lbfl/Interface,../../CDS_A400M_DEV/COMMON    *
+*   /Lbport_ipm/Interface,../../CDS_A400M_DEV/COMMON/Lbtm/Interface,   *
+*   ../../CDS_A400M_DEV/SA/Sacc/Interface,../../CDS_A400M_DEV/SA       *
+*   /Sacc/saccdint/Interface,../../CDS_A400M_DEV/THEMIS/Interface,..   *
+*   /../CDS_A400M_DEV/AUTOCODE/SA/DataGen/DataDecl/Interface,../..     *
+*   /CDS_A400M_DEV/AUTOCODE/SA/DataGen/DataDecl/Interface,cvisual6     *
+*   /NOSIMULATION /STD_DEFINE=cvisual6/ana/atus_c.def                  *
+*                                                                      *
+* FILE :                                                               *
+*   d:\Viewsnap\IC_CDS_A400M\CDS_A400M_UNIT_TESTS\CDS_A400M_RTRT_BIO\out *
+*   /test\ptu_SA37.tdc                                                 *
+*                                                                      *
+* DATE : Fri Sep 23 13:57:48 2011                                      *
+************************************************************************
+E11 0 d:\Viewsnap\IC_CDS_A400M\CDS_A400M_UNIT_TESTS\CDS_A400M_RTRT_BIO\Partition_SA\saccdint_set_can_bus_gen_failure\saccdint_set_can_bus_gen_failure.ptu
+C0 attolprepro Partition_SA/saccdint_set_can_bus_gen_failure/saccdint_set_can_bus_gen_failure.ptu out/test/ptu_SA37.c /LANGUAGE=C /TARGET=PC/NT /FAST /FAMILY=NOMINAL /INCL=includes,C:/Program Files/Microsoft Visual Studio/VC98/Include,../../CDS_A400M_DEV/SA/Sadi/Interface,../../CDS_A400M_DEV/COMMON/INTERFACE/Cl,../../CDS_A400M_PDU_LIBRARY/TARGET/PDUSW/TARGET/LIVRAISON/include,../../CDS_A400M_DEV/COMMON/LBIOPR/Interface,../../CDS_A400M_PDU_LIBRARY/TARGET/MACS2/A653/LIVRAISON/INC,../../CDS_A400M_PDU_LIBRARY/TARGET/MACS2/CDRV/LIVRAISON/INC,../../CDS_A400M_DEV/COMMON/Lbfl/Interface,../../CDS_A400M_DEV/COMMON/Lbport_ipm/Interface,../../CDS_A400M_DEV/COMMON/Lbtm/Interface,../../CDS_A400M_DEV/SA/Sacc/Interface,../../CDS_A400M_DEV/SA/Sacc/saccdint/Interface,../../CDS_A400M_DEV/THEMIS/Interface,../../CDS_A400M_DEV/AUTOCODE/SA/DataGen/DataDecl/Interface,../../CDS_A400M_DEV/AUTOCODE/SA/DataGen/DataDecl/Interface,cvisual6 /NOSIMULATION /STD_DEFINE=cvisual6/ana/atus_c.def
+H0 Fri Sep 23 13:57:48 2011
+E7 PC/NT
+E8 2002.05.21.468.004
+E9 C C
+E6  saccdint_set_can_bus_gen_failure
+E4  
+E5  
+E1 saccdint_set_can_bus_gen_failure
+E2 
+E10 
+E0 saccdint_set_can_bus_gen_failure ,  , 
+C1 CSU Name ....... : saccdint_set_can_bus_gen_failure
+C2 CSU Version . .. : L3.1
+C3 Ref. SDD ....... : J45927AD
+C4 Issue .......... : 00
+C5 Level .......... : A
+C6 Language ....... : C
+C7 Date ........ .. : 02/02/2011
+C8 Tester Name .... : Sebastien Deroche
+E17 0 186
+E16 0 191
+O9 SACCDINT_INTERNAL_CAN_FAILURES
+S10 EXTERN
+T11 1
+C12 TEST 1 : There is an error
+C13 . unknown configuration
+C14 ERROR RAISED :  K_SACC_FSC_ERR_UNKNOWN_LRU_ID  => (FATAL)
+C15 REQ : CDSSW-SDD-REQ-135 : SA Robustness case management
+F16 nominal
+E14 0 201
+B17 1
+C18 WE ENTER IN THE FUNCTION compute_gen_failure
+C19 local du ID is K_SADI_DU_L1
+C20 WE ENTER IN THE WHILE #1
+C21 while (loc_b_found == K_BOOL_FALSE && loc_ul_i < K_SACCDINT_MAX_NB_DU)
+C22 FOR EACH LOOP
+C23 WE ENTER IN THE ELSE #1.2
+C24 if (loc_pr_gen_failure->e_du_id == loc_e_local_du_id)
+C25 data is not found
+C26 WE ENTER IN THE IF #2
+C27 if (loc_b_found == K_BOOL_FALSE)
+C28 ERROR : data is not found in table
+C29 EXECTUTION STOPS ON A FATAL ERROR
+C30 END OF THE EXECUTION OF compute_gen_failure
+E12 0 249
+V31 nb_lbfl_mng RA=FORM=CD32, INIT=-1, VA=0,
+E12 0 252
+V32 tab_r_fsc_errors_config[0].tuc_fsc_name RA=FORM=C, INIT=local_r_fsc_errors_config.tuc_fsc_name, VA=R_SACC_FSC_ERR_CONFIG.tuc_fsc
+&_name,
+E12 0 252
+V33 tab_r_fsc_errors_config[0].ul_nb_errors RA=FORM=CU32, INIT=local_r_fsc_errors_config.ul_nb_errors, VA=R_SACC_FSC_ERR_CONFIG.ul_n
+&b_errors,
+E12 0 252
+V34 tab_r_fsc_errors_config[0].pr_error_config RA=FORM=CH0, INIT=local_r_fsc_errors_config.pr_error_config, VA=R_SACC_FSC_ERR_CONFIG
+&.pr_error_config,
+E12 0 253
+V35 tab_ul_fsc_error_id[0] RA=FORM=CU32, INIT=0, VA=K_SACC_FSC_ERR_UNKNOWN_LRU_ID,
+E12 0 255
+V36 tab_ul_fsc_component_id[0] RA=FORM=CU32, INIT=0, VA=K_SACC_SACCDINT_SET_CAN_BUS_GEN_FAILURE_ID,
+E12 0 256
+V37 tab_ul_fsc_component_line_number[0] RA=FORM=CU32, INIT=0x1, VA=0,
+E12 0 257
+V38 tab_ul_ctxt_data_1[0] RA=FORM=CU32, INIT=0x1, VA=0,
+E12 0 258
+V39 tab_ul_ctxt_data_2[0] RA=FORM=CU32, INIT=1, VA=0,
+E12 0 259
+V40 tab_ul_ctxt_data_3[0] RA=FORM=CU32, INIT=1, VA=0,
+E12 0 260
+V41 tab_puc_ctxt_data_area[0] RA=FORM=CH0, INIT=1, VA=((T_ptr)0),
+E12 0 261
+V42 tab_ul_ctxt_data_area_size[0] RA=FORM=CU32, INIT=1, VA=0,
+E16 0 270
+T43 2
+C44 TEST 2 : There is an error
+C45 . unknown configuration
+C46 ERROR RAISED :  K_SACC_FSC_ERR_UNKNOWN_LRU_ID  => (FATAL)
+C47 REQ : CDSSW-SDD-REQ-135 : SA Robustness case management
+F48 nominal
+E14 0 280
+B49 1
+C50 WE ENTER IN THE FUNCTION compute_gen_failure
+C51 local du ID is K_SADI_DU_L1
+C52 WE ENTER IN THE WHILE #1
+C53 while (loc_b_found == K_BOOL_FALSE && loc_ul_i < K_SACCDINT_MAX_NB_DU)
+C54 WE ENTER IN THE IF #1.1
+C55 if (loc_pr_gen_failure->e_du_id == loc_e_local_du_id)
+C56 data is found
+C57 WE ENTER IN THE ELSE #3
+C58 if (loc_b_found == K_BOOL_FALSE)
+C59 data is found in table
+C60 WE ENTER IN THE IF #4
+C61 if (par_b_busx1 == K_BOOL_TRUE)
+C62 failure to compute is #CAN_BUSx_GEN_FAILURE
+C63 WE ENTER IN THE WHILE #5
+C64 while ( (loc_ul_i < K_SACCDINT_MAX_DU_ON_CAN) &&
+C65 ((loc_pr_remote_du[loc_ul_i].e_du_id) != K_SADI_DU_NONE) )
+C66 WE ENTER IN THE WHILE #5.1
+C67 while (loc_b_found == K_BOOL_FALSE && loc_ul_j < K_SACCDINT_MAX_NB_LRU)
+C68 FOR EACH LOOP
+C69 WE ENTER IN THE ELSE #5.1.2
+C70 if (loc_pr_gen_failure->e_du_id == loc_e_local_du_id)
+C71 data is not found
+C72 WE ENTER IN THE IF #6
+C73 if (loc_b_found == K_BOOL_FALSE)
+C74 ERROR : data is not found in table
+C75 EXECTUTION STOPS ON A FATAL ERROR
+C76 END OF THE EXECUTION OF compute_gen_failure
+E12 0 349
+V77 nb_lbfl_mng RA=FORM=CD32, INIT=-1, VA=0,
+E12 0 352
+V78 tab_r_fsc_errors_config[0].tuc_fsc_name RA=FORM=C, INIT=local_r_fsc_errors_config.tuc_fsc_name, VA=R_SACC_FSC_ERR_CONFIG.tuc_fsc
+&_name,
+E12 0 352
+V79 tab_r_fsc_errors_config[0].ul_nb_errors RA=FORM=CU32, INIT=local_r_fsc_errors_config.ul_nb_errors, VA=R_SACC_FSC_ERR_CONFIG.ul_n
+&b_errors,
+E12 0 352
+V80 tab_r_fsc_errors_config[0].pr_error_config RA=FORM=CH0, INIT=local_r_fsc_errors_config.pr_error_config, VA=R_SACC_FSC_ERR_CONFIG
+&.pr_error_config,
+E12 0 353
+V81 tab_ul_fsc_error_id[0] RA=FORM=CU32, INIT=0, VA=K_SACC_FSC_ERR_UNKNOWN_LRU_ID,
+E12 0 355
+V82 tab_ul_fsc_component_id[0] RA=FORM=CU32, INIT=0, VA=K_SACC_SACCDINT_SET_CAN_BUS_GEN_FAILURE_ID,
+E12 0 356
+V83 tab_ul_fsc_component_line_number[0] RA=FORM=CU32, INIT=0x1, VA=0x1,
+E12 0 357
+V84 tab_ul_ctxt_data_1[0] RA=FORM=CU32, INIT=0x1, VA=0x1,
+E12 0 358
+V85 tab_ul_ctxt_data_2[0] RA=FORM=CU32, INIT=1, VA=0,
+E12 0 359
+V86 tab_ul_ctxt_data_3[0] RA=FORM=CU32, INIT=1, VA=0,
+E12 0 360
+V87 tab_puc_ctxt_data_area[0] RA=FORM=CH0, INIT=1, VA=((T_ptr)0),
+E12 0 361
+V88 tab_ul_ctxt_data_area_size[0] RA=FORM=CU32, INIT=1, VA=0,
+E16 0 371
+T89 3
+C90 TEST 3 : There is an error
+C91 . unknown configuration
+C92 ERROR RAISED :  K_SACC_FSC_ERR_UNKNOWN_LRU_ID  => (FATAL)
+C93 REQ : CDSSW-SDD-REQ-135 : SA Robustness case management
+F94 nominal
+E14 0 381
+B95 1
+C96 WE ENTER IN THE FUNCTION compute_gen_failure
+C97 local du ID is K_SADI_DU_L2
+C98 WE ENTER IN THE WHILE #1
+C99 while (loc_b_found == K_BOOL_FALSE && loc_ul_i < K_SACCDINT_MAX_NB_DU)
+C100 WE ENTER IN THE IF #1.1
+C101 if (loc_pr_gen_failure->e_du_id == loc_e_local_du_id)
+C102 data is found
+C103 WE ENTER IN THE ELSE #3
+C104 if (loc_b_found == K_BOOL_FALSE)
+C105 data is found in table
+C106 WE ENTER IN THE IF #4
+C107 if (par_b_busx1 == K_BOOL_TRUE)
+C108 failure to compute is #CAN_BUSx_GEN_FAILURE
+C109 WE ENTER IN THE WHILE #6
+C110 while ( (loc_ul_i < K_SACCDINT_MAX_DU_ON_CAN) &&
+C111 ((loc_pr_remote_du[loc_ul_i].e_du_id) != K_SADI_DU_NONE) )
+C112 FOR EACH LOOP
+C113 WE ENTER IN THE WHILE #6.1
+C114 while (loc_b_found == K_BOOL_FALSE && loc_ul_j < K_SACCDINT_MAX_NB_LRU)
+C115 WE ENTER IN THE IF #6.1.1
+C116 if (loc_pr_remote_failures->e_du_id == (loc_pr_remote_du[loc_ul_i].e_du_id))
+C117 data is found
+C118 WE ENTER IN THE ELSE #6.3
+C119 if (loc_b_found == K_BOOL_FALSE)
+C120 data is found in table
+C121 WE ENTER IN THE IF #6.4
+C122 if ( (loc_pr_remote_du[loc_ul_i].e_bus_id_to_monitore) == K_SACCDINT_BUS_1_ID)
+C123 failure to compute is #CAN_BUSx_GEN_FAILURE
+C124 WE ENTER IN THE IF #6.6
+C125 if (loc_b_set_and_refreshed == K_BOOL_TRUE)
+C126 the data is both refreshed and set to one
+C127 WE ENTER IN THE WHILE #6.8
+C128 while (loc_b_found == K_BOOL_FALSE && loc_ul_i < K_SACCDINT_MAX_NB_LRU)
+C129 FOR EACH LOOP
+C130 WE ENTER IN THE ELSE #6.8.2
+C131 if (loc_pr_local_failures->e_du_id == loc_e_local_du_id)
+C132 data is not found
+C133 WE ENTER IN THE IF #6.9
+C134 if (loc_b_found == K_BOOL_FALSE)
+C135 data is not found in the table
+C136 KO
+C137 EXECTUTION STOPS ON A FATAL ERROR
+C138 END OF THE EXECUTION OF compute_gen_failure
+E12 0 481
+V139 nb_lbfl_mng RA=FORM=CD32, INIT=-1, VA=0,
+E12 0 484
+V140 tab_r_fsc_errors_config[0].tuc_fsc_name RA=FORM=C, INIT=local_r_fsc_errors_config.tuc_fsc_name, VA=R_SACC_FSC_ERR_CONFIG.tuc_fs
+&c_name,
+E12 0 484
+V141 tab_r_fsc_errors_config[0].ul_nb_errors RA=FORM=CU32, INIT=local_r_fsc_errors_config.ul_nb_errors, VA=R_SACC_FSC_ERR_CONFIG.ul_
+&nb_errors,
+E12 0 484
+V142 tab_r_fsc_errors_config[0].pr_error_config RA=FORM=CH0, INIT=local_r_fsc_errors_config.pr_error_config, VA=R_SACC_FSC_ERR_CONFI
+&G.pr_error_config,
+E12 0 485
+V143 tab_ul_fsc_error_id[0] RA=FORM=CU32, INIT=0, VA=K_SACC_FSC_ERR_UNKNOWN_LRU_ID,
+E12 0 486
+V144 tab_ul_fsc_component_id[0] RA=FORM=CU32, INIT=0, VA=K_SACC_SACCDINT_SET_CAN_BUS_GEN_FAILURE_ID,
+E12 0 487
+V145 tab_ul_fsc_component_line_number[0] RA=FORM=CU32, INIT=0x1, VA=init,
+E12 0 488
+V146 tab_ul_ctxt_data_1[0] RA=FORM=CU32, INIT=0x1, VA=0x1,
+E12 0 489
+V147 tab_ul_ctxt_data_2[0] RA=FORM=CU32, INIT=1, VA=0,
+E12 0 490
+V148 tab_ul_ctxt_data_3[0] RA=FORM=CU32, INIT=1, VA=0,
+E12 0 491
+V149 tab_puc_ctxt_data_area[0] RA=FORM=CH0, INIT=1, VA=((T_ptr)0),
+E12 0 492
+V150 tab_ul_ctxt_data_area_size[0] RA=FORM=CU32, INIT=1, VA=0,
+E16 0 499
+T151 4
+C152 TEST 4 : There is no error.
+C153 MC/DC compliance : Compute number of CAN involved in the failure (one in this test)
+C154 REQ : A400M-CDS-SYS-REQ-0181
+F155 nominal
+E14 0 507
+B156 1
+C157 WE ENTER IN THE FUNCTION compute_gen_failure
+C158 local du ID is K_SADI_DU_L1
+C159 if ( (loc_b_all_value == K_BOOL_TRUE && loc_b_all_refresh == K_BOOL_TRUE)
+C160 || (loc_b_result == K_BOOL_TRUE )  )
+E16 0 530
+T161 5
+C162 TEST 5 : There is no error.
+C163 MC/DC compliance : Compute number of CAN involved in the failure (one in this test)
+C164 REQ : A400M-CDS-SYS-REQ-0181
+F165 nominal
+E14 0 538
+B166 1
+C167 WE ENTER IN THE FUNCTION compute_gen_failure
+C168 local du ID is K_SADI_DU_L1
+C169 if ( (loc_b_all_value == K_BOOL_TRUE && loc_b_all_refresh == K_BOOL_FALSE)
+C170 || (loc_b_result == K_BOOL_FALSE )  )
+E16 0 562
+T171 6
+C172 TEST 6 : There is no error.
+C173 MC/DC compliance : Compute number of CAN involved in the failure (one in this test)
+C174 REQ : A400M-CDS-SYS-REQ-0181
+C175 CODE : NOTHING TO DO
+F176 nominal
+E14 0 571
+B177 1
+C178 WE ENTER IN THE FUNCTION compute_gen_failure
+C179 local du ID is K_SADI_DU_OR
+C180 if ( (loc_b_all_value == K_BOOL_TRUE && loc_b_all_refresh == K_BOOL_FALSE)
+C181 || (loc_b_result == K_BOOL_FALSE )  )
+E16 0 595
+T182 7
+C183 TEST 7 : There is no error.
+C184 MC/DC compliance : Compute number of CAN involved in the failure (one in this test)
+C185 REQ : A400M-CDS-SYS-REQ-0181
+F186 nominal
+E14 0 603
+B187 1
+C188 WE ENTER IN THE FUNCTION compute_gen_failure
+C189 local du ID is K_SADI_DU_OR
+C190 if ( (loc_b_all_value == K_BOOL_FALSE && loc_b_all_refresh == K_BOOL_TRUE)
+C191 || (loc_b_result == K_BOOL_FALSE )  )

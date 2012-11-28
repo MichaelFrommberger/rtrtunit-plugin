@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites>
+    <testsuite errors="0" failures="2" name="out" tests="2">
+        <testcase classname="out" name="1" time="0.0010">
+            <failure message="1 variables failed" type="Error"/>
+            <system-err>CURRENT_TEST_NUMBER failed. The obtained value 0 is different from the expected value 1.&#xD;
+</system-err>
+        </testcase>
+        <testcase classname="out" name="2" time="0.0010">
+            <failure message="33 variables failed" type="Error"/>
+
+            <system-err>CURRENT_TEST_NUMBER failed. The obtained value 0 is different from the expected value 2.&#xD;
+LLR_REFERENCE failed. The obtained value "STRING-UTILITIES_REQ_000" is different from the expected value "STRING-UTILITIES_REQ_001".&#xD;
+local_lReturn failed. The obtained value 0 is different from the expected value 1.&#xD;
+local_pStr1[0] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr1[1] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr1[2] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr1[3] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr1[4] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr1[5] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr1[6] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr1[7] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr1[8] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr1[9] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr1[10] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr1[11] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr1[12] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr1[13] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr1[14] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr2[0] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr2[1] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr2[2] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr2[3] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr2[4] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr2[5] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr2[6] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr2[7] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr2[8] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr2[9] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr2[10] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr2[11] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr2[12] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr2[13] failed. The obtained value 1 is different from the expected value 0.&#xD;
+local_pStr2[14] failed. The obtained value 1 is different from the expected value 0.&#xD;
+</system-err>
+        </testcase>
+    </testsuite>
+</testsuites>

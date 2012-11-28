@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites>
+    <testsuite errors="0" failures="1" name="out" tests="1">
+        <testcase classname="out" name="11" time="0.321">
+        <failure message="1 variables failed" type="Error"/>
+
+            <system-err>local_lenght_null failed. The value of the pointer is wrong.&#xD;
+</system-err>
+        </testcase>
+    </testsuite>
+</testsuites>

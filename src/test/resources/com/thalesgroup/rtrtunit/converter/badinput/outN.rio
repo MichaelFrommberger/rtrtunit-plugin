@@ -1,0 +1,9 @@
+H0 Sat Sep 10 10:43:07 2011
+O9
+T20
+N30 
+D1 1
+M0 0
+V30 2 RA=F MI=2 MA=2
+
+//bad N token, missing second arg in line 4

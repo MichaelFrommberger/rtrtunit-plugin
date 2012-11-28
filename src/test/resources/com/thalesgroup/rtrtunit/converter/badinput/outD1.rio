@@ -1,0 +1,9 @@
+H0 Tue Apr 10 10:43:07 2011
+O9
+T20
+D1
+M0 0
+V30 2 RA=F MI=2 MA=0
+
+
+// Second arg of D1 missing in line 4

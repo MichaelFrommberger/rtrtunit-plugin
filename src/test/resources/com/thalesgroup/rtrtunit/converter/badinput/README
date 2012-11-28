@@ -1,0 +1,25 @@
+Many test of fails for the riochecker and
+consequently for the validate method into the RTRTUnitInputMetric
+
+See RTRTUnitConversionTest.java into com/thalesgroup/rtrtunit/converter for unitary tests
+using these files:
+
+	- outH: no H token
+	- outH1: bad H token, missing day
+	- outH2: bad H token, missing month
+	- outH3: bad H token, missing day number
+	- outH4: bad H token, missing hour
+	- outH5: bad H token, missing year
+	- outO: no O token
+	- outT: no T token
+	- outD: bad D token, no second arg
+	- outD1: no D token
+	- outM: no M token
+	- outM1: bad M token, no second arg
+	- outV0: bad V token, second argument missing
+	- outV1: bad V token, third argument does not belong to {RA=T,RA=F}
+	- outV2: bad V token, no arguments
+	- outV3: bad V token, RA=<T|F> missing
+	- outV4: bad V token, MI but not MA token
+	- outV5: bad V token, bad MI token
+	- outN:  bad N token, missing second arg 

@@ -1,0 +1,176 @@
+options 
+{STATIC = false ;} 
+
+PARSER_BEGIN(SyntaxRioChecker)
+
+package com.thalesgroup.rtrtunit.riochecker;
+
+public class SyntaxRioChecker {
+
+    public boolean validate(){
+		boolean isOK = true;
+
+        try
+        {
+           S();
+        } catch (Throwable e) {
+            isOK = false;
+            System.out.println(e);
+            throw new Exception(e);
+        } finally
+        {          return isOK;
+        }
+    }
+}
+
+PARSER_END(SyntaxRioChecker)
+
+SKIP:  { " " | "\t" | "\n" | "\r" }
+TOKEN: {
+  <NUM: ["0"-"9","-"](["0"-"9","E","e","+","-","."])*> |
+  <NAN: ("-")? (["0"-"9"])*".#IND"(["0"-"9","E","e","+","-"])+> |
+  <VAR: "\""(["a"-"z","A"-"Z","-","_",",","0"-"9","%","\\","|","@","<",">"])*"\""> |
+  <CHAR: "\'"("\\")?(["a"-"z","A"-"Z","0"-"9"])"\'"> |
+  <UNKNOWN: "!! ? !!" > |
+  <DATE: (["0"-"9"])?["0"-"9"]":"["0"-"9"]["0"-"9"]":"["0"-"9"]["0"-"9"] > 
+}
+
+TOKEN:
+{  <MON: "Mon" > |
+  <TUE: "Tue" > |
+  <WED: "Wed" > |
+  <THU: "Thu" > |
+  <FRI: "Fri" > |
+  <SAT: "Sat" > |
+  <SUN: "Sun" > |
+  <JAN: "Jan" > |
+  <FEB: "Feb" > |
+  <MAR: "Mar" > |
+  <APR: "Apr" > |
+  <MAY: "May" > |
+  <JUN: "Jun" > |
+  <JUL: "Jul" > |
+  <AUG: "Aug" > |
+  <SEP: "Sep" > |
+  <OCT: "Oct" > |
+  <NOV: "Nov" > |
+  <DEC: "Dec" > 
+}
+
+TOKEN:{
+  <HNUM: "H"(["0"-"9"])+ > |
+  <ONUM: "O"(["0"-"9"])+ > |
+  <TNUM: "T"(["0"-"9"])+ > |
+  <NNUM: "N"(["0"-"9"])+ > |
+  <DNUM: "D"(["0"-"9"])+ > |
+  <MNUM: "M"(["0"-"9"])+ > |
+  <VNUM: "V"(["0"-"9"])+ > |
+  <BNUM: "B"(["0"-"9"])+ > |
+  <ANUM: "A"(["0"-"9"])+ > |
+  <XNUM: "X"(["0"-"9"])+ > |
+  <ZNUM: "Z"(["0"-"9"])+ > |
+  <LNUM: "L"(["0"-"9"])+" "["O","N"] >
+}
+TOKEN:
+{  <RAT: "RA=T"> |
+  <RAF: "RA=F"> |
+  <OK: "OK" > |
+  <BAD: "BAD" > |
+  <MINUM: "MI="["0"-"9","-"](["0"-"9","E","e","+","-","."])* > |
+  <MIVAR: "MI=""\""(["a"-"z","A"-"Z","-","_",",","0"-"9","%","\\","|","@","<",">"])*"\"" > |
+  <MICHAR: "MI=""\'"("\\")?(["a"-"z","A"-"Z","0"-"9"])"\'"> |
+  <MANUM: "MA="["0"-"9","-"](["0"-"9","E","e","+","-","."])* > |
+  <MAVAR: "MA=""\""(["a"-"z","A"-"Z","-","_",",","0"-"9","%","\\","|","@","<",">"])*"\"" > |
+  <MACHAR: "MA=""\'"("\\")?(["a"-"z","A"-"Z","0"-"9"])"\'">
+}
+    
+
+void S(): {}
+{
+  I() <EOF>
+}
+void I(): {}{  (H())? O() ([O()] T())*
+}
+
+void H(): {}
+{  < HNUM > DAY() MONTH() < NUM > < DATE > < NUM >
+}
+
+void DAY(): {}
+{	< MON > | < TUE > | < WED > | < THU > | <  FRI > | < SAT > | < SUN >
+}
+
+void MONTH(): {}
+{	< JAN >| <  FEB > | < MAR > | < APR > | < MAY > | < JUN > | < JUL > | < AUG > | < SEP >  | < OCT > | < NOV > | < DEC >
+}
+
+void O(): {}
+{	< ONUM >
+}
+
+void T(): {}{	< TNUM >
+	 (N())*
+	 (L())*
+	 (D() (M() (V())*)+ (N())* (L())*)*
+	 (B() (X())* (Z())* A() ([M()] V())*)* 
+}
+
+void N(): {}
+{	< NNUM > ARG()
+}
+
+void L(): {}
+{  < LNUM > < NUM > < NUM >
+}
+
+void D(): {}
+{	< DNUM > < NUM >
+}
+
+void M(): {}
+{	< MNUM > < NUM >
+}
+
+void V(): {}
+{	< VNUM > ARG() RA() [MIMA()]
+}
+
+void B(): {}{
+	< BNUM >	}
+
+void X(): {}
+{	< XNUM > ARG() RA() [MIMA()]
+}
+
+void Z(): {}
+{	< ZNUM > < NUM >
+}
+
+void A(): {}
+{
+	< ANUM >  STATUS()  RA()
+}
+
+void STATUS(): {}
+{	< OK > | < BAD >
+}
+
+void ARG(): {}
+{	< NUM > | < NAN > | < VAR > | < CHAR > | < UNKNOWN >
+}
+
+void RA(): {}
+{	< RAT > | < RAF >
+}
+
+void MIMA(): {}
+{
+  MI() MA()}
+
+void MI(): {}
+{ 	< MINUM > | < MIVAR > | < MICHAR >
+}
+
+void MA(): {}
+{ 	< MANUM > | < MAVAR > | < MACHAR >
+}

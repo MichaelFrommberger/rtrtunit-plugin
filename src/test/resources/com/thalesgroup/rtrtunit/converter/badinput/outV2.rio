@@ -1,0 +1,9 @@
+H0 Fri May 10 10:43:07 2011
+O9
+T20
+D1 1
+M0 0
+V30 
+V31 0 RA=F MI=0 MA=0
+
+//bad V token, no arguments
