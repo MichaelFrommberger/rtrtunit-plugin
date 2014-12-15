@@ -73,12 +73,14 @@ public class RioFailedVariable {
     }
 
     /**
-     * Extract the expectedValue from the tokens VAR or NUM.
+     * Extract the givenValue from the tokens MANUM or MAVAR.
      * @param sExpectedValue the expected value
      * see RioReader.jj
      */
     public final void setExpectedValue(final String sExpectedValue) {
-        this.expectedValue = sExpectedValue;
+        String[] sValue = new String[2];
+        sValue = sExpectedValue.split("=");
+        this.expectedValue = sValue[1];
     }
 
     /**
@@ -90,14 +92,12 @@ public class RioFailedVariable {
     }
 
     /**
-     * Extract the givenValue from the tokens MANUM or MAVAR.
+     * Extract the expectedValue from the tokens VAR or NUM.
      * @param sGivenValue the given value
      * see RioReader.jj
      */
     public final void setGivenValue(final String sGivenValue) {
-        String[] sValue = new String[2];
-        sValue = sGivenValue.split("=");
-        this.givenValue = sValue[1];
+        this.givenValue = sGivenValue;
     }
 
     /**

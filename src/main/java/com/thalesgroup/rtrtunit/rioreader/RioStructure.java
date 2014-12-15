@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 /**
  * Java class containing info of .rio files.
+ *
  * @author Sebastien Barbier
  * @version 1.0
  */
@@ -15,7 +16,7 @@ public class RioStructure {
     /**
      * List of tests.
      */
-    private ArrayList<RioTest> tests;
+    private final ArrayList<RioTest> tests;
 
     /**
      * Default Constructor.
@@ -27,9 +28,23 @@ public class RioStructure {
 
     /**
      * Adding a test.
-     * @param info data on the test
+     *
+     * @param info
+     *            data on the test
      */
     public final void add(final RioTest info) {
+        // if a previously recorded test has the same name,
+        // (i.e. if this test is multi-occurrent, with
+        // several result files), then update it.
+        for (RioTest test : tests) {
+            if (test.getName().equals(info.getName())) {
+                test.getFailedVariables().addAll(info.getFailedVariables());
+                if (info.getNbFailedVariables() > 0) {
+                    nbErrors++;
+                }
+                return;
+            }
+        }
         tests.add(info);
         // Update nbErrors;
         if (info.getNbFailedVariables() > 0) {
@@ -39,6 +54,7 @@ public class RioStructure {
 
     /**
      * Getter for the tests.
+     *
      * @return list of tests
      */
     public final ArrayList<RioTest> getTests() {
@@ -47,6 +63,7 @@ public class RioStructure {
 
     /**
      * Number of tests.
+     *
      * @return the number of tests
      */
     public final int getNbTests() {
@@ -55,6 +72,7 @@ public class RioStructure {
 
     /**
      * Number of errors.
+     *
      * @return the number of errors
      */
     public final int getNbErrors() {

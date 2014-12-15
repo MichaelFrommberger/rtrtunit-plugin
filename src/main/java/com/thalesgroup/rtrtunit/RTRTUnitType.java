@@ -1,14 +1,15 @@
 package com.thalesgroup.rtrtunit;
 
-import com.thalesgroup.dtkit.metrics.hudson.api.descriptor.TestTypeDescriptor;
-import com.thalesgroup.hudson.plugins.xunit.types.XUnitType;
+import org.jenkinsci.lib.dtkit.descriptor.TestTypeDescriptor;
+import org.jenkinsci.lib.dtkit.type.TestType;
+import org.kohsuke.stapler.DataBoundConstructor;
 
 /**
  * RTRTUnitType.
  * @author Sebastien Barbier
  * @version 1.0
  */
-public class RTRTUnitType extends XUnitType {
+public class RTRTUnitType extends TestType {
 
     /**
      * Constructor.
@@ -20,6 +21,11 @@ public class RTRTUnitType extends XUnitType {
         // but not done by our code.
         // Result: always failure of the build it deleteJUnitFiles=true
         super(pattern, faildedIfNotNew, false);
+    }
+    
+    @DataBoundConstructor
+    public RTRTUnitType(String pattern, boolean skipNoTestFiles, boolean failIfNotNew, boolean deleteOutputFiles, boolean stopProcessingIfError) {
+        super(pattern, skipNoTestFiles, failIfNotNew, deleteOutputFiles, stopProcessingIfError);
     }
 
     /**
@@ -35,9 +41,9 @@ public class RTRTUnitType extends XUnitType {
      * Call at Hudson startup for backward compatibility.
      * @return an new hudson object
      */
-    public final Object readResolve() {
-        return new RTRTUnitPluginType(this.getPattern(), this
-                .isFaildedIfNotNew());
+    @Override
+    public Object readResolve() {
+    	return super.readResolve();
     }
 
 }

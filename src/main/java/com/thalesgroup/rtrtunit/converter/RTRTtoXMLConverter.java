@@ -10,7 +10,7 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
-import com.thalesgroup.dtkit.util.converter.ConversionException;
+import org.jenkinsci.lib.dtkit.util.converter.ConversionException;
 import com.thalesgroup.rtrtunit.errreader.ErrorReader;
 import com.thalesgroup.rtrtunit.junit.Failure;
 import com.thalesgroup.rtrtunit.junit.ObjectFactory;
@@ -259,10 +259,8 @@ public class RTRTtoXMLConverter {
                 // a. The number of the test is in the currentTest variable
                 // b. The name of the test is stored into the tdcReader
                 testcase = objFactory.createTestcase();
-                testcase.setClassname(nameTest);
-                String nameCurrentTest = "";
-                nameCurrentTest = tdcReader.getTestName(currentTest.getName());
-                testcase.setName(nameCurrentTest);
+                testcase.setClassname(tdcReader.getTestedServiceName(currentTest.getName()));
+                testcase.setName(tdcReader.getTestName(currentTest.getName()));
 
                 // }
                 // {

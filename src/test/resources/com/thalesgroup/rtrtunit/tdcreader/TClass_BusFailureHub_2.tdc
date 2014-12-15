@@ -1,0 +1,2682 @@
+************************************************************************
+* TOOL : Unit Test Compiler VERSION 7.0.0.1.031.001                    *
+*                                                                      *
+* COMMAND : attolprepro                                                *
+*   D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_2.ptu  *
+*   cwindiabsgstep_THAV_1.6\TClass_BusFailureHub_2.c /LANGUAGE=C       *
+*   /TARGET=PC/NT /FAST /SERVICE=BUSFAILUREHUB_2 /FAMILY=NOMINAL       *
+*   /INCL=..\Includes,C:\outils\diab\4.4b\include,..\Includes,         *
+*   cwindiabsgstep_THAV_1.6 /NOSIMULATION                              *
+*   /STD_DEFINE=C:\Outils\Rational\TESTRE~1\targets\CWINDI~1.6\ana\atus_c.def *
+*                                                                      *
+* FILE :                                                               *
+*   D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\cwindiabsgstep_THAV_1.6\TClass_BusFailureHub_2.tdc *
+*                                                                      *
+* DATE : Thu Apr 18 09:36:51 2013                                      *
+************************************************************************
+E11 0 D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_2.ptu
+C0 attolprepro D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_2.ptu cwindiabsgstep_THAV_1.6\TClass_BusFailureHub_2.c /LANGUAGE=C /TARGET=PC/NT /FAST /SERVICE=BUSFAILUREHUB_2 /FAMILY=NOMINAL /INCL=..\Includes,C:\outils\diab\4.4b\include,..\Includes,cwindiabsgstep_THAV_1.6 /NOSIMULATION /STD_DEFINE=C:\Outils\Rational\TESTRE~1\targets\CWINDI~1.6\ana\atus_c.def
+H0 Thu Apr 18 09:36:51 2013
+E7 PC/NT
+E8 7.0.0.1.031.001
+E9 C C
+E6  BusFailureHub_2
+E4  
+E5  
+E1 BusFailureHub_2
+E2 
+E10 
+E0 BusFailureHub_2 ,  , 
+C1 CSCI Name......: OPSW
+C2 CSU Partition..: MA
+C3 CSU Name.......: Class_BusFailureHub
+C4 Level..........: A
+C5 Language.......: C
+C6 Date...........: 30-oct-2012
+C7 Tester Name....: Ramesh H(TSI)
+M8 BusFailureHub_2_declarations_c Failure_appear
+L1 pThis RA=FORM=C, INIT=, VA=
+L2 pInfo1 RA=FORM=CD64, INIT=, VA=
+L3 pInfo2 RA=FORM=CD64, INIT=, VA=
+L4 pInfo3 RA=FORM=CD64, INIT=, VA=
+L5 pDataSize RA=FORM=CD64, INIT=, VA=
+M0
+M9 BusFailureHub_2_declarations_c Failure_disappear
+L1 pThis RA=FORM=C, INIT=, VA=
+M0
+M10 BusFailureHub_2_declarations_c CANMonitor_getBusGeneralFailure
+L1 pThis RA=FORM=C, INIT=, VA=
+L2 pCANBusLogicId RA=FORM=CD64, INIT=, VA=
+M0
+M11 BusFailureHub_2_declarations_c AFDXMonitor_getMaintenanceMasterInformation
+L1 pThis RA=FORM=C, INIT=, VA=
+M0
+M12 BusFailureHub_2_declarations_c SharedDataDomainComponentConnections_getConnectedFacet
+L1 pThis RA=FORM=C, INIT=, VA=
+L2 pReceptacleIndex RA=FORM=CD64, INIT=, VA=
+M0
+M13 BusFailureHub_2_declarations_c CANMonitor_getOneDuOn
+L1 pThis RA=FORM=C, INIT=, VA=
+L2 pCANBusLogicId RA=FORM=CD64, INIT=, VA=
+M0
+M14 BusFailureHub_2_declarations_c AFDXMonitor_getRemoteAFDXFailure
+L1 pThis RA=FORM=C, INIT=, VA=
+L2 pDuId RA=FORM=CD64, INIT=, VA=
+M0
+M15 BusFailureHub_2_declarations_c TimerServices_activate
+L1 pThis RA=FORM=C, INIT=, VA=
+L2 pTimerId RA=FORM=CD64, INIT=, VA=
+M0
+M16 BusFailureHub_2_declarations_c TimerServices_hasTimedout
+L1 pThis RA=FORM=C, INIT=, VA=
+L2 pTimerId RA=FORM=CD64, INIT=, VA=
+M0
+M17 BusFailureHub_2_declarations_c AFDXMonitor_getLocalAFDXFailure
+L1 pThis RA=FORM=C, INIT=, VA=
+L2 pDuId RA=FORM=CD64, INIT=, VA=
+M0
+M18 BusFailureHub_2_declarations_c TimerServices_reschedule
+L1 pThis RA=FORM=C, INIT=, VA=
+L2 pTimerId RA=FORM=CD64, INIT=, VA=
+L3 pDuration RA=FORM=CD64, INIT=, VA=
+M0
+M19 BusFailureHub_2_declarations_c TimerServices_deactivate
+L1 pThis RA=FORM=C, INIT=, VA=
+L2 pTimerId RA=FORM=CD64, INIT=, VA=
+M0
+M20 BusFailureHub_2_declarations_c CANMonitor_getLruOffInProgress
+L1 pThis RA=FORM=C, INIT=, VA=
+L2 pLRUId RA=FORM=CD64, INIT=, VA=
+M0
+M21 BusFailureHub_2_declarations_c CANMonitor_getBusOfLru
+L1 pThis RA=FORM=C, INIT=, VA=
+L2 pLRUId RA=FORM=CD64, INIT=, VA=
+L3 pCANBusLogicId RA=FORM=CD64, INIT=, VA=
+M0
+M22 BusFailureHub_2_declarations_c TimerServices_createTimer
+L1 pThis RA=FORM=C, INIT=, VA=
+L2 pDuration RA=FORM=CD64, INIT=, VA=
+M0
+M23 BusFailureHub_2_declarations_c ConfirmationHelper_createConfirmation
+L1 pThis RA=FORM=C, INIT=, VA=
+L2 pDuration RA=FORM=CD64, INIT=, VA=
+L3 pAwaitedValue RA=FORM=CD64, INIT=, VA=
+M0
+M24 BusFailureHub_2_declarations_c CANMonitor_getLruIsDisplayUnit
+L1 pThis RA=FORM=C, INIT=, VA=
+L2 pLRUId RA=FORM=CD64, INIT=, VA=
+M0
+M25 BusFailureHub_2_declarations_c CANMonitor_getKccuAcquisitionReport
+L1 pThis RA=FORM=C, INIT=, VA=
+L2 pKccuId RA=FORM=CD64, INIT=, VA=
+L3 pCANBusLogicId RA=FORM=CD64, INIT=, VA=
+M0
+M26 BusFailureHub_2_declarations_c CANMonitor_getBusSynthesizedFailure
+L1 pThis RA=FORM=C, INIT=, VA=
+L2 pLRUId RA=FORM=CD64, INIT=, VA=
+L3 pCANBusLogicId RA=FORM=CD64, INIT=, VA=
+M0
+M27 BusFailureHub_2_declarations_c ConfirmationHelper_confirmValue
+L1 pThis RA=FORM=C, INIT=, VA=
+L2 pValueId RA=FORM=CD64, INIT=, VA=
+L3 pDetectedValue RA=FORM=CD64, INIT=, VA=
+M0
+M28 BusFailureHub_2_declarations_c AFDXMonitor_getTotalAFDXFailure
+L1 pThis RA=FORM=C, INIT=, VA=
+L2 pDuId RA=FORM=CD64, INIT=, VA=
+M0
+M29 BusFailureHub_2_declarations_c CANMonitor_getKccuFailureWithCockpitEffect
+L1 pThis RA=FORM=C, INIT=, VA=
+L2 pKccuId RA=FORM=CD64, INIT=, VA=
+M0
+M30 BusFailureHub_2_declarations_c CANMonitor_getBusFailure
+L1 pThis RA=FORM=C, INIT=, VA=
+L2 pLRUId RA=FORM=CD64, INIT=, VA=
+L3 pCANBusLogicId RA=FORM=CD64, INIT=, VA=
+M0
+M31 BusFailureHub_2_implementations_c CANMonitor_buildSubscribersListsLinkedToDU
+L1 pThis RA=FORM=C, INIT=, VA=
+M0
+M32 BusFailureHub_2_implementations_c ConfirmationHelper_initialize
+L1 pInstance RA=FORM=C, INIT=, VA=
+L2 pTimerServices RA=FORM=C, INIT=, VA=
+M0
+M33 BusFailureHub_2_implementations_c MemoryUtilities_set
+L1 pValue RA=FORM=CD64, INIT=, VA=
+L2 pSize RA=FORM=CD64, INIT=, VA=
+M0
+E17 0 190
+E16 0 218
+O34 BusFailureHub_2
+S35 extern
+T36 BUS_FAILURE_HUB-UTP-0024
+F37 Nominal
+C38 PUID_TC [BUS_FAILURE_HUB-LLT-0024] INTERNAL CAN BUS FAILURE ON FIRST CAN BUS WITH FAILURE ON SECOND CAN BUS FOR ALL DISPLAY UNITS
+C39 OBJECTIVE :TO VERIFY:
+C40 STIMULI:
+C41 - SET ISLOCALAFDXFAULTY STATUS TO K_BOOL_FALSE
+C42 - SET ISDUALONEONFIRSTCAN STATUS TO K_BOOL_FALSE
+C43 - SET ISDUALONEONSECONDCAN STATUS TO K_BOOL_FALSE
+C44 - SET ISBUSMONITORINGINHIBITED STATUS TO K_BOOL_FALSE
+C45 - SET FIRSTBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_TRUE
+C46 - SET SECONDBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_TRUE
+C47 - SET FIRSTBUSGENERALFAILURE STATUS TO K_BOOL_TRUE
+C48 - SET PLLOCALDISPLAYUNITLRUID TO {LRU_ID_DU_OL OR LRU_ID_DU_IL OR LRU_ID_DU_OR OR LRU_ID_DU_IR OR LRU_ID_DU_UC OR LRU_ID_DU_LC}
+C49 - SET TIMER ID TO 1
+C50 OBSERVABLE:
+C51 A BUSFAILUREHUB INSTANCE :
+C52 - TRIGGERS THE TIMER WITH ID 1
+C53 - RESCHEDULES TIMER ON FIRST CAN BUS WITH TIMER ID 1
+C54 - ACTIVATES TIMER ON FIRST CAN BUS WITH TIMER ID 1
+C55 TRACEABILITY_LLR [BUS_FAILURE_HUB-REQ-0004]
+E14 0 247
+B56 1
+I57 BusFailureHub_initialize.ptu / D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu / BusFailureHub_2.ptu
+E11 1 D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu
+E12 1 1
+V58 local_CMemoryUtilities.set RA=FORM=CH0, INIT=MemoryUtilities_set, VA=INIT,
+E12 1 2
+V59 pCANMonitor.buildSubscribersListsLinkedToDU RA=FORM=CH0, INIT=CANMonitor_buildSubscribersListsLinkedToDU, VA=INIT,
+E12 1 3
+V60 pCANMonitor.getKccuFailureWithCockpitEffect RA=FORM=CH0, INIT=CANMonitor_getKccuFailureWithCockpitEffect, VA=INIT,
+E12 1 4
+V61 pCANMonitor.getLruOffInProgress RA=FORM=CH0, INIT=CANMonitor_getLruOffInProgress, VA=INIT,
+E12 1 5
+V62 pCANMonitor.getLruIsDisplayUnit RA=FORM=CH0, INIT=CANMonitor_getLruIsDisplayUnit, VA=INIT,
+E12 1 6
+V63 pCANMonitor.getBusSynthesizedFailure RA=FORM=CH0, INIT=CANMonitor_getBusSynthesizedFailure, VA=INIT,
+E12 1 7
+V64 pComponentConnections.getConnectedFacet RA=FORM=CH0, INIT=SharedDataDomainComponentConnections_getConnectedFacet, VA=INIT,
+E12 1 8
+V65 local_timerServices.createTimer RA=FORM=CH0, INIT=TimerServices_createTimer, VA=INIT,
+E12 1 9
+V66 local_CConfirmationHelper.initialize RA=FORM=CH0, INIT=ConfirmationHelper_initialize, VA=INIT,
+E12 1 10
+V67 pAFDXMonitor.getLocalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getLocalAFDXFailure, VA=INIT,
+E12 1 11
+V68 pAFDXMonitor.getRemoteAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getRemoteAFDXFailure, VA=INIT,
+E12 1 12
+V69 pCANMonitor.getBusFailure RA=FORM=CH0, INIT=CANMonitor_getBusFailure, VA=INIT,
+E12 1 13
+V70 pCANMonitor.getBusOfLru RA=FORM=CH0, INIT=CANMonitor_getBusOfLru, VA=INIT,
+E12 1 14
+V71 local_timerServices.reschedule RA=FORM=CH0, INIT=TimerServices_reschedule, VA=INIT,
+E12 1 15
+V72 local_timerServices.activate RA=FORM=CH0, INIT=TimerServices_activate, VA=INIT,
+E12 1 16
+V73 pAFDXMonitor.getMaintenanceMasterInformation RA=FORM=CH0, INIT=AFDXMonitor_getMaintenanceMasterInformation, VA=INIT,
+E12 1 17
+V74 pCANMonitor.getOneDuOn RA=FORM=CH0, INIT=CANMonitor_getOneDuOn, VA=INIT,
+E12 1 18
+V75 pCANMonitor.getBusGeneralFailure RA=FORM=CH0, INIT=CANMonitor_getBusGeneralFailure, VA=INIT,
+E12 1 19
+V76 pCANMonitor.getKccuAcquisitionReport RA=FORM=CH0, INIT=CANMonitor_getKccuAcquisitionReport, VA=INIT,
+E12 1 20
+V77 pAFDXMonitor.getTotalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getTotalAFDXFailure, VA=INIT,
+E12 1 21
+V78 local_timerServices.hasTimedout RA=FORM=CH0, INIT=TimerServices_hasTimedout, VA=INIT,
+E12 1 22
+V79 local_timerServices.deactivate RA=FORM=CH0, INIT=TimerServices_deactivate, VA=INIT,
+E12 1 23
+V80 local_failure.disappear RA=FORM=CH0, INIT=Failure_disappear, VA=INIT,
+E12 1 24
+V81 local_failure.appear RA=FORM=CH0, INIT=Failure_appear, VA=INIT,
+R82 6
+E12 0 253
+V83 plLocalDisplayUnitLRUId RA=FORM=CU0, INIT IN [LRU_ID_DU_OL,LRU_ID_DU_IL,LRU_ID_DU_OR,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC], VA
+&=INIT,
+E12 0 254
+V84 local_CANSubscriberItem_LRULinkedToDUByCanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 255
+V85 local_LRULinkedToDUByCanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_LRULinkedToDUByCanBus[0], VA=INIT,
+E12 0 256
+V86 local_LRULinkedToDUByCanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 257
+V87 local_CANSubscriberItem_DULinkedToDUBy2CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 258
+V88 local_DULinkedToDUBy2CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0], VA=INIT,
+E12 0 259
+V89 local_DULinkedToDUBy2CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 260
+V90 local_CANSubscriberItem_DULinkedToDUBy1CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 261
+V91 local_DULinkedToDUBy1CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_DULinkedToDUBy1CanBus[0], VA=INIT,
+E12 0 262
+V92 local_DULinkedToDUBy1CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 263
+V93 local_CANSubscriberItem_KCCULinkedToDUBy1CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 264
+V94 local_KCCULinkedToDUBy1CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_KCCULinkedToDUBy1CanBus[0], VA=INIT,
+E12 0 265
+V95 local_KCCULinkedToDUBy1CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 266
+V96 local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 267
+V97 local_KCCULinkedToDUBy2CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[0], VA=INIT,
+E12 0 268
+V98 local_KCCULinkedToDUBy2CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 269
+V99 local_CANBusItem.busId RA=FORM=CU0, INIT=CAN_BUS_ID_11, VA=INIT,
+E12 0 269
+V100 local_CANBusItem.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 269
+V101 local_CANBusItem.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 269
+V102 local_CANBusItem.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 269
+V103 local_CANBusItem.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 269
+V104 local_CANBusItem.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 269
+V105 local_CANBusItem.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 270
+V106 local_CANBusItem1.busId RA=FORM=CU0, INIT=CAN_BUS_ID_21, VA=INIT,
+E12 0 270
+V107 local_CANBusItem1.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 270
+V108 local_CANBusItem1.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 270
+V109 local_CANBusItem1.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 270
+V110 local_CANBusItem1.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 270
+V111 local_CANBusItem1.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 270
+V112 local_CANBusItem1.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E16 0 301
+T113 BUS_FAILURE_HUB-UTP-0025
+F114 Nominal
+C115 PUID_TC [BUS_FAILURE_HUB-LLT-0025] INTERNAL CAN FAILURE ON SECOND CAN BUS WITH FAILURE ON FIRST CAN BUS FOR ALL DISPLAY UNITS
+C116 OBJECTIVE :TO VERIFY:
+C117 STIMULI:
+C118 - SET ISLOCALAFDXFAULTY STATUS TO K_BOOL_FALSE
+C119 - SET ISDUALONEONFIRSTCAN STATUS TO K_BOOL_FALSE
+C120 - SET ISDUALONEONSECONDCAN STATUS TO K_BOOL_FALSE
+C121 - SET ISBUSMONITORINGINHIBITED STATUS TO K_BOOL_FALSE
+C122 - SET FIRSTBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_TRUE
+C123 - SET SECONDBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_TRUE
+C124 - SET SECONDBUSGENERALFAILURE STATUS TO K_BOOL_TRUE
+C125 - SET PLLOCALDISPLAYUNITLRUID TO {LRU_ID_DU_OL OR LRU_ID_DU_IL OR LRU_ID_DU_OR OR LRU_ID_DU_IR OR LRU_ID_DU_UC OR LRU_ID_DU_LC}
+C126 - SET TIMER ID TO 1
+C127 OBSERVABLE:
+C128 A BUSFAILUREHUB INSTANCE :
+C129 - TRIGGERS THE TIMER WITH ID 1
+C130 - RESETS CAN FAILURE ON FIRST CAN BUS
+C131 - RESCHEDULES TIMER ON SECOND CAN BUS WITH TIMER ID 1
+C132 - ACTIVATES TIMER ON SECOND CAN BUS WITH TIMER ID 1
+C133 TRACEABILITY_LLR [BUS_FAILURE_HUB-REQ-0005]
+E14 0 331
+B134 1
+I135 BusFailureHub_initialize.ptu / D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu / BusFailureHub_2.ptu
+E11 2 D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu
+E12 2 1
+V136 local_CMemoryUtilities.set RA=FORM=CH0, INIT=MemoryUtilities_set, VA=INIT,
+E12 2 2
+V137 pCANMonitor.buildSubscribersListsLinkedToDU RA=FORM=CH0, INIT=CANMonitor_buildSubscribersListsLinkedToDU, VA=INIT,
+E12 2 3
+V138 pCANMonitor.getKccuFailureWithCockpitEffect RA=FORM=CH0, INIT=CANMonitor_getKccuFailureWithCockpitEffect, VA=INIT,
+E12 2 4
+V139 pCANMonitor.getLruOffInProgress RA=FORM=CH0, INIT=CANMonitor_getLruOffInProgress, VA=INIT,
+E12 2 5
+V140 pCANMonitor.getLruIsDisplayUnit RA=FORM=CH0, INIT=CANMonitor_getLruIsDisplayUnit, VA=INIT,
+E12 2 6
+V141 pCANMonitor.getBusSynthesizedFailure RA=FORM=CH0, INIT=CANMonitor_getBusSynthesizedFailure, VA=INIT,
+E12 2 7
+V142 pComponentConnections.getConnectedFacet RA=FORM=CH0, INIT=SharedDataDomainComponentConnections_getConnectedFacet, VA=INIT,
+E12 2 8
+V143 local_timerServices.createTimer RA=FORM=CH0, INIT=TimerServices_createTimer, VA=INIT,
+E12 2 9
+V144 local_CConfirmationHelper.initialize RA=FORM=CH0, INIT=ConfirmationHelper_initialize, VA=INIT,
+E12 2 10
+V145 pAFDXMonitor.getLocalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getLocalAFDXFailure, VA=INIT,
+E12 2 11
+V146 pAFDXMonitor.getRemoteAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getRemoteAFDXFailure, VA=INIT,
+E12 2 12
+V147 pCANMonitor.getBusFailure RA=FORM=CH0, INIT=CANMonitor_getBusFailure, VA=INIT,
+E12 2 13
+V148 pCANMonitor.getBusOfLru RA=FORM=CH0, INIT=CANMonitor_getBusOfLru, VA=INIT,
+E12 2 14
+V149 local_timerServices.reschedule RA=FORM=CH0, INIT=TimerServices_reschedule, VA=INIT,
+E12 2 15
+V150 local_timerServices.activate RA=FORM=CH0, INIT=TimerServices_activate, VA=INIT,
+E12 2 16
+V151 pAFDXMonitor.getMaintenanceMasterInformation RA=FORM=CH0, INIT=AFDXMonitor_getMaintenanceMasterInformation, VA=INIT,
+E12 2 17
+V152 pCANMonitor.getOneDuOn RA=FORM=CH0, INIT=CANMonitor_getOneDuOn, VA=INIT,
+E12 2 18
+V153 pCANMonitor.getBusGeneralFailure RA=FORM=CH0, INIT=CANMonitor_getBusGeneralFailure, VA=INIT,
+E12 2 19
+V154 pCANMonitor.getKccuAcquisitionReport RA=FORM=CH0, INIT=CANMonitor_getKccuAcquisitionReport, VA=INIT,
+E12 2 20
+V155 pAFDXMonitor.getTotalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getTotalAFDXFailure, VA=INIT,
+E12 2 21
+V156 local_timerServices.hasTimedout RA=FORM=CH0, INIT=TimerServices_hasTimedout, VA=INIT,
+E12 2 22
+V157 local_timerServices.deactivate RA=FORM=CH0, INIT=TimerServices_deactivate, VA=INIT,
+E12 2 23
+V158 local_failure.disappear RA=FORM=CH0, INIT=Failure_disappear, VA=INIT,
+E12 2 24
+V159 local_failure.appear RA=FORM=CH0, INIT=Failure_appear, VA=INIT,
+R160 6
+E12 0 337
+V161 plLocalDisplayUnitLRUId RA=FORM=CU0, INIT IN [LRU_ID_DU_OL,LRU_ID_DU_IL,LRU_ID_DU_OR,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC], V
+&A=INIT,
+E12 0 338
+V162 local_CANSubscriberItem_LRULinkedToDUByCanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 339
+V163 local_LRULinkedToDUByCanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_LRULinkedToDUByCanBus[0], VA=INIT,
+E12 0 340
+V164 local_LRULinkedToDUByCanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 341
+V165 local_CANSubscriberItem_DULinkedToDUBy2CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 342
+V166 local_DULinkedToDUBy2CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0], VA=INIT,
+E12 0 343
+V167 local_DULinkedToDUBy2CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 344
+V168 local_CANSubscriberItem_DULinkedToDUBy1CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 345
+V169 local_DULinkedToDUBy1CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_DULinkedToDUBy1CanBus[0], VA=INIT,
+E12 0 346
+V170 local_DULinkedToDUBy1CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 347
+V171 local_CANSubscriberItem_KCCULinkedToDUBy1CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 348
+V172 local_KCCULinkedToDUBy1CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_KCCULinkedToDUBy1CanBus[0], VA=INIT,
+E12 0 349
+V173 local_KCCULinkedToDUBy1CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 350
+V174 local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 351
+V175 local_KCCULinkedToDUBy2CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[0], VA=INIT,
+E12 0 352
+V176 local_KCCULinkedToDUBy2CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 353
+V177 local_CANBusItem.busId RA=FORM=CU0, INIT=CAN_BUS_ID_12, VA=INIT,
+E12 0 353
+V178 local_CANBusItem.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 353
+V179 local_CANBusItem.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 353
+V180 local_CANBusItem.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 353
+V181 local_CANBusItem.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 353
+V182 local_CANBusItem.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 353
+V183 local_CANBusItem.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 355
+V184 local_CANBusItem1.busId RA=FORM=CU0, INIT=CAN_BUS_ID_22, VA=INIT,
+E12 0 355
+V185 local_CANBusItem1.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 355
+V186 local_CANBusItem1.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 355
+V187 local_CANBusItem1.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 355
+V188 local_CANBusItem1.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 355
+V189 local_CANBusItem1.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 355
+V190 local_CANBusItem1.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E16 0 386
+T191 BUS_FAILURE_HUB-UTP-0026
+F192 Nominal
+C193 PUID_TC [BUS_FAILURE_HUB-LLT-0026] INTERNAL CAN FAILURES FOR ALL DISPLAY UNITS
+C194 OBJECTIVE :TO VERIFY:
+C195 STIMULI:
+C196 - SET ISLOCALAFDXFAULTY STATUS TO K_BOOL_FALSE
+C197 - SET ISDUALONEONFIRSTCAN STATUS TO K_BOOL_FALSE
+C198 - SET ISDUALONEONSECONDCAN STATUS TO K_BOOL_FALSE
+C199 - SET ISBUSMONITORINGINHIBITED STATUS TO K_BOOL_FALSE
+C200 - SET FIRSTBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_TRUE
+C201 - SET SECONDBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_TRUE
+C202 - SET FIRSTBUSGENERALFAILURE STATUS TO K_BOOL_TRUE
+C203 - SET SECONDBUSGENERALFAILURE STATUS TO K_BOOL_TRUE
+C204 - SET PLLOCALDISPLAYUNITLRUID TO {LRU_ID_DU_OL OR LRU_ID_DU_IL OR LRU_ID_DU_OR OR LRU_ID_DU_IR OR LRU_ID_DU_UC OR LRU_ID_DU_LC}
+C205 - SET TIMER ID TO 1
+C206 OBSERVABLE:
+C207 A BUSFAILUREHUB INSTANCE :
+C208 - TRIGGERS THE TIMER WITH ID 1
+C209 - RESCHEDULES TIMER ON SECOND CAN BUS WITH TIMER ID 1
+C210 - ACTIVATES TIMER ON SECOND CAN BUS WITH TIMER ID 1
+C211 TRACEABILITY_LLR [BUS_FAILURE_HUB-REQ-0006]
+E14 0 419
+B212 1
+I213 BusFailureHub_initialize.ptu / D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu / BusFailureHub_2.ptu
+E11 3 D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu
+E12 3 1
+V214 local_CMemoryUtilities.set RA=FORM=CH0, INIT=MemoryUtilities_set, VA=INIT,
+E12 3 2
+V215 pCANMonitor.buildSubscribersListsLinkedToDU RA=FORM=CH0, INIT=CANMonitor_buildSubscribersListsLinkedToDU, VA=INIT,
+E12 3 3
+V216 pCANMonitor.getKccuFailureWithCockpitEffect RA=FORM=CH0, INIT=CANMonitor_getKccuFailureWithCockpitEffect, VA=INIT,
+E12 3 4
+V217 pCANMonitor.getLruOffInProgress RA=FORM=CH0, INIT=CANMonitor_getLruOffInProgress, VA=INIT,
+E12 3 5
+V218 pCANMonitor.getLruIsDisplayUnit RA=FORM=CH0, INIT=CANMonitor_getLruIsDisplayUnit, VA=INIT,
+E12 3 6
+V219 pCANMonitor.getBusSynthesizedFailure RA=FORM=CH0, INIT=CANMonitor_getBusSynthesizedFailure, VA=INIT,
+E12 3 7
+V220 pComponentConnections.getConnectedFacet RA=FORM=CH0, INIT=SharedDataDomainComponentConnections_getConnectedFacet, VA=INIT,
+E12 3 8
+V221 local_timerServices.createTimer RA=FORM=CH0, INIT=TimerServices_createTimer, VA=INIT,
+E12 3 9
+V222 local_CConfirmationHelper.initialize RA=FORM=CH0, INIT=ConfirmationHelper_initialize, VA=INIT,
+E12 3 10
+V223 pAFDXMonitor.getLocalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getLocalAFDXFailure, VA=INIT,
+E12 3 11
+V224 pAFDXMonitor.getRemoteAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getRemoteAFDXFailure, VA=INIT,
+E12 3 12
+V225 pCANMonitor.getBusFailure RA=FORM=CH0, INIT=CANMonitor_getBusFailure, VA=INIT,
+E12 3 13
+V226 pCANMonitor.getBusOfLru RA=FORM=CH0, INIT=CANMonitor_getBusOfLru, VA=INIT,
+E12 3 14
+V227 local_timerServices.reschedule RA=FORM=CH0, INIT=TimerServices_reschedule, VA=INIT,
+E12 3 15
+V228 local_timerServices.activate RA=FORM=CH0, INIT=TimerServices_activate, VA=INIT,
+E12 3 16
+V229 pAFDXMonitor.getMaintenanceMasterInformation RA=FORM=CH0, INIT=AFDXMonitor_getMaintenanceMasterInformation, VA=INIT,
+E12 3 17
+V230 pCANMonitor.getOneDuOn RA=FORM=CH0, INIT=CANMonitor_getOneDuOn, VA=INIT,
+E12 3 18
+V231 pCANMonitor.getBusGeneralFailure RA=FORM=CH0, INIT=CANMonitor_getBusGeneralFailure, VA=INIT,
+E12 3 19
+V232 pCANMonitor.getKccuAcquisitionReport RA=FORM=CH0, INIT=CANMonitor_getKccuAcquisitionReport, VA=INIT,
+E12 3 20
+V233 pAFDXMonitor.getTotalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getTotalAFDXFailure, VA=INIT,
+E12 3 21
+V234 local_timerServices.hasTimedout RA=FORM=CH0, INIT=TimerServices_hasTimedout, VA=INIT,
+E12 3 22
+V235 local_timerServices.deactivate RA=FORM=CH0, INIT=TimerServices_deactivate, VA=INIT,
+E12 3 23
+V236 local_failure.disappear RA=FORM=CH0, INIT=Failure_disappear, VA=INIT,
+E12 3 24
+V237 local_failure.appear RA=FORM=CH0, INIT=Failure_appear, VA=INIT,
+R238 6
+E12 0 421
+V239 plLocalDisplayUnitLRUId RA=FORM=CU0, INIT IN [LRU_ID_DU_OL,LRU_ID_DU_IL,LRU_ID_DU_OR,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC], V
+&A=INIT,
+E12 0 422
+V240 local_CANSubscriberItem_LRULinkedToDUByCanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 423
+V241 local_LRULinkedToDUByCanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_LRULinkedToDUByCanBus[0], VA=INIT,
+E12 0 424
+V242 local_LRULinkedToDUByCanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 425
+V243 local_CANSubscriberItem_DULinkedToDUBy2CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 426
+V244 local_DULinkedToDUBy2CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0], VA=INIT,
+E12 0 427
+V245 local_DULinkedToDUBy2CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 428
+V246 local_CANSubscriberItem_DULinkedToDUBy1CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 429
+V247 local_DULinkedToDUBy1CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_DULinkedToDUBy1CanBus[0], VA=INIT,
+E12 0 430
+V248 local_DULinkedToDUBy1CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 431
+V249 local_CANSubscriberItem_KCCULinkedToDUBy1CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 432
+V250 local_KCCULinkedToDUBy1CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_KCCULinkedToDUBy1CanBus[0], VA=INIT,
+E12 0 433
+V251 local_KCCULinkedToDUBy1CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 434
+V252 local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 435
+V253 local_KCCULinkedToDUBy2CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[0], VA=INIT,
+E12 0 436
+V254 local_KCCULinkedToDUBy2CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 437
+V255 local_CANBusItem.busId RA=FORM=CU0, INIT=CAN_BUS_ID_22, VA=INIT,
+E12 0 437
+V256 local_CANBusItem.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 437
+V257 local_CANBusItem.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 437
+V258 local_CANBusItem.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 437
+V259 local_CANBusItem.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 437
+V260 local_CANBusItem.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 437
+V261 local_CANBusItem.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 439
+V262 local_CANBusItem1.busId RA=FORM=CU0, INIT=CAN_BUS_ID_22, VA=INIT,
+E12 0 439
+V263 local_CANBusItem1.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 439
+V264 local_CANBusItem1.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 439
+V265 local_CANBusItem1.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 439
+V266 local_CANBusItem1.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 439
+V267 local_CANBusItem1.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 439
+V268 local_CANBusItem1.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E16 0 471
+T269 BUS_FAILURE_HUB-UTP-0027
+F270 Nominal
+C271 PUID_TC [BUS_FAILURE_HUB-LLT-0027] INTERNAL CAN FAILURE ON FIRST CAN BUS WITHOUT FAILURE ON SECOND CAN BUS WHEN FIRST BUS GENERAL CAN STATUS IS FAILURE ON FIRST CAN BUS
+C272 OBJECTIVE :TO VERIFY:
+C273 STIMULI:
+C274 - SET ISLOCALAFDXFAULTY STATUS TO K_BOOL_FALSE
+C275 - SET ISDUALONEONFIRSTCAN STATUS TO K_BOOL_FALSE
+C276 - SET ISDUALONEONSECONDCAN STATUS TO K_BOOL_TRUE
+C277 - SET ISBUSMONITORINGINHIBITED STATUS TO K_BOOL_FALSE
+C278 - SET FIRSTBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_TRUE
+C279 - SET SECONDBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_FALSE
+C280 - SET FIRSTBUSGENERALFAILURE STATUS TO K_BOOL_TRUE
+C281 - SET PLLOCALDISPLAYUNITLRUID TO {LRU_ID_DU_OL OR LRU_ID_DU_IL OR LRU_ID_DU_OR OR LRU_ID_DU_IR OR LRU_ID_DU_UC OR LRU_ID_DU_LC}
+C282 - SET TIMER ID TO 1
+C283 OBSERVABLE:
+C284 A BUSFAILUREHUB INSTANCE :
+C285 - TRIGGERS THE TIMER WITH ID 1 ON FIRST CAN BUS
+C286 - RESCHEDULES TIMER ON SECOND CAN BUS WITH TIMER ID 1
+C287 - ACTIVATES TIMER ON SECOND CAN BUS WITH TIMER ID 1
+C288 TRACEABILITY_LLR [BUS_FAILURE_HUB-REQ-0007]
+E14 0 503
+B289 1
+I290 BusFailureHub_initialize.ptu / D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu / BusFailureHub_2.ptu
+E11 4 D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu
+E12 4 1
+V291 local_CMemoryUtilities.set RA=FORM=CH0, INIT=MemoryUtilities_set, VA=INIT,
+E12 4 2
+V292 pCANMonitor.buildSubscribersListsLinkedToDU RA=FORM=CH0, INIT=CANMonitor_buildSubscribersListsLinkedToDU, VA=INIT,
+E12 4 3
+V293 pCANMonitor.getKccuFailureWithCockpitEffect RA=FORM=CH0, INIT=CANMonitor_getKccuFailureWithCockpitEffect, VA=INIT,
+E12 4 4
+V294 pCANMonitor.getLruOffInProgress RA=FORM=CH0, INIT=CANMonitor_getLruOffInProgress, VA=INIT,
+E12 4 5
+V295 pCANMonitor.getLruIsDisplayUnit RA=FORM=CH0, INIT=CANMonitor_getLruIsDisplayUnit, VA=INIT,
+E12 4 6
+V296 pCANMonitor.getBusSynthesizedFailure RA=FORM=CH0, INIT=CANMonitor_getBusSynthesizedFailure, VA=INIT,
+E12 4 7
+V297 pComponentConnections.getConnectedFacet RA=FORM=CH0, INIT=SharedDataDomainComponentConnections_getConnectedFacet, VA=INIT,
+E12 4 8
+V298 local_timerServices.createTimer RA=FORM=CH0, INIT=TimerServices_createTimer, VA=INIT,
+E12 4 9
+V299 local_CConfirmationHelper.initialize RA=FORM=CH0, INIT=ConfirmationHelper_initialize, VA=INIT,
+E12 4 10
+V300 pAFDXMonitor.getLocalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getLocalAFDXFailure, VA=INIT,
+E12 4 11
+V301 pAFDXMonitor.getRemoteAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getRemoteAFDXFailure, VA=INIT,
+E12 4 12
+V302 pCANMonitor.getBusFailure RA=FORM=CH0, INIT=CANMonitor_getBusFailure, VA=INIT,
+E12 4 13
+V303 pCANMonitor.getBusOfLru RA=FORM=CH0, INIT=CANMonitor_getBusOfLru, VA=INIT,
+E12 4 14
+V304 local_timerServices.reschedule RA=FORM=CH0, INIT=TimerServices_reschedule, VA=INIT,
+E12 4 15
+V305 local_timerServices.activate RA=FORM=CH0, INIT=TimerServices_activate, VA=INIT,
+E12 4 16
+V306 pAFDXMonitor.getMaintenanceMasterInformation RA=FORM=CH0, INIT=AFDXMonitor_getMaintenanceMasterInformation, VA=INIT,
+E12 4 17
+V307 pCANMonitor.getOneDuOn RA=FORM=CH0, INIT=CANMonitor_getOneDuOn, VA=INIT,
+E12 4 18
+V308 pCANMonitor.getBusGeneralFailure RA=FORM=CH0, INIT=CANMonitor_getBusGeneralFailure, VA=INIT,
+E12 4 19
+V309 pCANMonitor.getKccuAcquisitionReport RA=FORM=CH0, INIT=CANMonitor_getKccuAcquisitionReport, VA=INIT,
+E12 4 20
+V310 pAFDXMonitor.getTotalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getTotalAFDXFailure, VA=INIT,
+E12 4 21
+V311 local_timerServices.hasTimedout RA=FORM=CH0, INIT=TimerServices_hasTimedout, VA=INIT,
+E12 4 22
+V312 local_timerServices.deactivate RA=FORM=CH0, INIT=TimerServices_deactivate, VA=INIT,
+E12 4 23
+V313 local_failure.disappear RA=FORM=CH0, INIT=Failure_disappear, VA=INIT,
+E12 4 24
+V314 local_failure.appear RA=FORM=CH0, INIT=Failure_appear, VA=INIT,
+R315 6
+E12 0 505
+V316 plLocalDisplayUnitLRUId RA=FORM=CU0, INIT IN [LRU_ID_DU_OL,LRU_ID_DU_IL,LRU_ID_DU_OR,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC], V
+&A=INIT,
+E12 0 506
+V317 local_CANSubscriberItem_LRULinkedToDUByCanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 507
+V318 local_LRULinkedToDUByCanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_LRULinkedToDUByCanBus[0], VA=INIT,
+E12 0 508
+V319 local_LRULinkedToDUByCanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 509
+V320 local_CANSubscriberItem_DULinkedToDUBy2CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 510
+V321 local_DULinkedToDUBy2CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0], VA=INIT,
+E12 0 511
+V322 local_DULinkedToDUBy2CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 512
+V323 local_CANSubscriberItem_DULinkedToDUBy1CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 513
+V324 local_DULinkedToDUBy1CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_DULinkedToDUBy1CanBus[0], VA=INIT,
+E12 0 514
+V325 local_DULinkedToDUBy1CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 515
+V326 local_CANSubscriberItem_KCCULinkedToDUBy1CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 516
+V327 local_KCCULinkedToDUBy1CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_KCCULinkedToDUBy1CanBus[0], VA=INIT,
+E12 0 517
+V328 local_KCCULinkedToDUBy1CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 518
+V329 local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 519
+V330 local_KCCULinkedToDUBy2CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[0], VA=INIT,
+E12 0 520
+V331 local_KCCULinkedToDUBy2CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 521
+V332 local_CANBusItem.busId RA=FORM=CU0, INIT=CAN_BUS_ID_11, VA=INIT,
+E12 0 521
+V333 local_CANBusItem.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 521
+V334 local_CANBusItem.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 521
+V335 local_CANBusItem.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 521
+V336 local_CANBusItem.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 521
+V337 local_CANBusItem.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 521
+V338 local_CANBusItem.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 523
+V339 local_CANBusItem1.busId RA=FORM=CU0, INIT=CAN_BUS_ID_21, VA=INIT,
+E12 0 523
+V340 local_CANBusItem1.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 523
+V341 local_CANBusItem1.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 523
+V342 local_CANBusItem1.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 523
+V343 local_CANBusItem1.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 523
+V344 local_CANBusItem1.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 523
+V345 local_CANBusItem1.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E16 0 554
+T346 BUS_FAILURE_HUB-UTP-0028
+F347 Nominal
+C348 PUID_TC [BUS_FAILURE_HUB-LLT-0028] INTERNAL CAN FAILURES FOR INNER , OUTER LEFT AND UPPER AND LOWER CENTER DISPLAY UNITS ON FIRST CAN BUS OF FIRST CAN BUS
+C349 OBJECTIVE :TO VERIFY:
+C350 STIMULI:
+C351 - SET ISLOCALAFDXFAULTY STATUS TO K_BOOL_FALSE
+C352 - SET ISDUALONEONFIRSTCAN STATUS TO K_BOOL_FALSE
+C353 - SET ISDUALONEONSECONDCAN STATUS TO K_BOOL_TRUE
+C354 - SET ISBUSMONITORINGINHIBITED STATUS TO K_BOOL_FALSE
+C355 - SET FIRSTBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_TRUE
+C356 - SET SECONDBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_FALSE
+C357 - SET FIRSTBUSGENERALFAILURE STATUS TO K_BOOL_FALSE
+C358 - SET PLLOCALDISPLAYUNITLRUID TO {LRU_ID_DU_OL OR LRU_ID_DU_IL OR LRU_ID_DU_UC OR LRU_ID_DU_LC}
+C359 - SET TIMER ID TO 1
+C360 OBSERVABLE:
+C361 A BUSFAILUREHUB INSTANCE :
+C362 - TRIGGERS THE TIMER WITH ID 1 ON FIRST CAN BUS
+C363 - DEACTIVATES TIMER ON SECOND CAN BUS WITH TIMER ID 1
+C364 - RESCHEDULES TIMER ON FIRST CAN BUS WITH TIMER ID 1
+C365 - ACTIVATES TIMER ON FIRST CAN BUS WITH TIMER ID 1
+C366 TRACEABILITY_LLR [BUS_FAILURE_HUB-REQ-0008]
+E14 0 584
+B367 1
+I368 BusFailureHub_initialize.ptu / D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu / BusFailureHub_2.ptu
+E11 5 D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu
+E12 5 1
+V369 local_CMemoryUtilities.set RA=FORM=CH0, INIT=MemoryUtilities_set, VA=INIT,
+E12 5 2
+V370 pCANMonitor.buildSubscribersListsLinkedToDU RA=FORM=CH0, INIT=CANMonitor_buildSubscribersListsLinkedToDU, VA=INIT,
+E12 5 3
+V371 pCANMonitor.getKccuFailureWithCockpitEffect RA=FORM=CH0, INIT=CANMonitor_getKccuFailureWithCockpitEffect, VA=INIT,
+E12 5 4
+V372 pCANMonitor.getLruOffInProgress RA=FORM=CH0, INIT=CANMonitor_getLruOffInProgress, VA=INIT,
+E12 5 5
+V373 pCANMonitor.getLruIsDisplayUnit RA=FORM=CH0, INIT=CANMonitor_getLruIsDisplayUnit, VA=INIT,
+E12 5 6
+V374 pCANMonitor.getBusSynthesizedFailure RA=FORM=CH0, INIT=CANMonitor_getBusSynthesizedFailure, VA=INIT,
+E12 5 7
+V375 pComponentConnections.getConnectedFacet RA=FORM=CH0, INIT=SharedDataDomainComponentConnections_getConnectedFacet, VA=INIT,
+E12 5 8
+V376 local_timerServices.createTimer RA=FORM=CH0, INIT=TimerServices_createTimer, VA=INIT,
+E12 5 9
+V377 local_CConfirmationHelper.initialize RA=FORM=CH0, INIT=ConfirmationHelper_initialize, VA=INIT,
+E12 5 10
+V378 pAFDXMonitor.getLocalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getLocalAFDXFailure, VA=INIT,
+E12 5 11
+V379 pAFDXMonitor.getRemoteAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getRemoteAFDXFailure, VA=INIT,
+E12 5 12
+V380 pCANMonitor.getBusFailure RA=FORM=CH0, INIT=CANMonitor_getBusFailure, VA=INIT,
+E12 5 13
+V381 pCANMonitor.getBusOfLru RA=FORM=CH0, INIT=CANMonitor_getBusOfLru, VA=INIT,
+E12 5 14
+V382 local_timerServices.reschedule RA=FORM=CH0, INIT=TimerServices_reschedule, VA=INIT,
+E12 5 15
+V383 local_timerServices.activate RA=FORM=CH0, INIT=TimerServices_activate, VA=INIT,
+E12 5 16
+V384 pAFDXMonitor.getMaintenanceMasterInformation RA=FORM=CH0, INIT=AFDXMonitor_getMaintenanceMasterInformation, VA=INIT,
+E12 5 17
+V385 pCANMonitor.getOneDuOn RA=FORM=CH0, INIT=CANMonitor_getOneDuOn, VA=INIT,
+E12 5 18
+V386 pCANMonitor.getBusGeneralFailure RA=FORM=CH0, INIT=CANMonitor_getBusGeneralFailure, VA=INIT,
+E12 5 19
+V387 pCANMonitor.getKccuAcquisitionReport RA=FORM=CH0, INIT=CANMonitor_getKccuAcquisitionReport, VA=INIT,
+E12 5 20
+V388 pAFDXMonitor.getTotalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getTotalAFDXFailure, VA=INIT,
+E12 5 21
+V389 local_timerServices.hasTimedout RA=FORM=CH0, INIT=TimerServices_hasTimedout, VA=INIT,
+E12 5 22
+V390 local_timerServices.deactivate RA=FORM=CH0, INIT=TimerServices_deactivate, VA=INIT,
+E12 5 23
+V391 local_failure.disappear RA=FORM=CH0, INIT=Failure_disappear, VA=INIT,
+E12 5 24
+V392 local_failure.appear RA=FORM=CH0, INIT=Failure_appear, VA=INIT,
+R393 4
+E12 0 590
+V394 plLocalDisplayUnitLRUId RA=FORM=CU0, INIT IN [LRU_ID_DU_OL,LRU_ID_DU_IL,LRU_ID_DU_UC,LRU_ID_DU_LC], VA=INIT,
+E12 0 591
+V395 local_CANSubscriberItem_LRULinkedToDUByCanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 592
+V396 local_LRULinkedToDUByCanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_LRULinkedToDUByCanBus[0], VA=INIT,
+E12 0 593
+V397 local_LRULinkedToDUByCanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 594
+V398 local_CANSubscriberItem_DULinkedToDUBy2CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 595
+V399 local_DULinkedToDUBy2CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0], VA=INIT,
+E12 0 596
+V400 local_DULinkedToDUBy2CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 597
+V401 local_CANSubscriberItem_DULinkedToDUBy1CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 598
+V402 local_DULinkedToDUBy1CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_DULinkedToDUBy1CanBus[0], VA=INIT,
+E12 0 599
+V403 local_DULinkedToDUBy1CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 600
+V404 local_CANSubscriberItem_KCCULinkedToDUBy1CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 601
+V405 local_KCCULinkedToDUBy1CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_KCCULinkedToDUBy1CanBus[0], VA=INIT,
+E12 0 602
+V406 local_KCCULinkedToDUBy1CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 603
+V407 local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 604
+V408 local_KCCULinkedToDUBy2CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[0], VA=INIT,
+E12 0 605
+V409 local_KCCULinkedToDUBy2CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 606
+V410 local_CANBusItem.busId RA=FORM=CU0, INIT=CAN_BUS_ID_11, VA=INIT,
+E12 0 606
+V411 local_CANBusItem.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 606
+V412 local_CANBusItem.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 606
+V413 local_CANBusItem.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 606
+V414 local_CANBusItem.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 606
+V415 local_CANBusItem.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 606
+V416 local_CANBusItem.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 608
+V417 local_CANBusItem1.busId RA=FORM=CU0, INIT=CAN_BUS_ID_11, VA=INIT,
+E12 0 608
+V418 local_CANBusItem1.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OR, VA=INIT,
+E12 0 608
+V419 local_CANBusItem1.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 608
+V420 local_CANBusItem1.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 608
+V421 local_CANBusItem1.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 608
+V422 local_CANBusItem1.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 608
+V423 local_CANBusItem1.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E16 0 639
+T424 BUS_FAILURE_HUB-UTP-0029
+F425 Nominal
+C426 PUID_TC [BUS_FAILURE_HUB-LLT-0029] INTERNAL CAN FAILURE ON SECOND CAN BUS WITHOUT FAILURE ON FIRST CAN BUS OF FIRST CAN BUS
+C427 OBJECTIVE :TO VERIFY:
+C428 STIMULI:
+C429 - SET ISLOCALAFDXFAULTY STATUS TO K_BOOL_FALSE
+C430 - SET ISDUALONEONFIRSTCAN STATUS TO K_BOOL_TRUE
+C431 - SET ISDUALONEONSECONDCAN STATUS TO K_BOOL_FALSE
+C432 - SET ISBUSMONITORINGINHIBITED STATUS TO K_BOOL_FALSE
+C433 - SET FIRSTBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_FALSE
+C434 - SET SECONDBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_TRUE
+C435 - SET SECONDBUSGENERALFAILURE STATUS TO K_BOOL_TRUE
+C436 - SET PLLOCALDISPLAYUNITLRUID TO {LRU_ID_DU_OL OR LRU_ID_DU_IL OR LRU_ID_DU_OR OR LRU_ID_DU_IR OR LRU_ID_DU_UC OR LRU_ID_DU_LC}
+C437 - SET TIMER ID TO 1
+C438 OBSERVABLE:
+C439 A BUSFAILUREHUB INSTANCE :
+C440 - TRIGGERS THE TIMER WITH ID 1 ON FIRST CAN BUS
+C441 - RESCHEDULES TIMER ON FIRST CAN BUS WITH TIMER ID 1
+C442 - ACTIVATES TIMER ON FIRST CAN BUS WITH TIMER ID 1
+C443 TRACEABILITY_LLR [BUS_FAILURE_HUB-REQ-0009]
+E14 0 668
+B444 1
+I445 BusFailureHub_initialize.ptu / D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu / BusFailureHub_2.ptu
+E11 6 D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu
+E12 6 1
+V446 local_CMemoryUtilities.set RA=FORM=CH0, INIT=MemoryUtilities_set, VA=INIT,
+E12 6 2
+V447 pCANMonitor.buildSubscribersListsLinkedToDU RA=FORM=CH0, INIT=CANMonitor_buildSubscribersListsLinkedToDU, VA=INIT,
+E12 6 3
+V448 pCANMonitor.getKccuFailureWithCockpitEffect RA=FORM=CH0, INIT=CANMonitor_getKccuFailureWithCockpitEffect, VA=INIT,
+E12 6 4
+V449 pCANMonitor.getLruOffInProgress RA=FORM=CH0, INIT=CANMonitor_getLruOffInProgress, VA=INIT,
+E12 6 5
+V450 pCANMonitor.getLruIsDisplayUnit RA=FORM=CH0, INIT=CANMonitor_getLruIsDisplayUnit, VA=INIT,
+E12 6 6
+V451 pCANMonitor.getBusSynthesizedFailure RA=FORM=CH0, INIT=CANMonitor_getBusSynthesizedFailure, VA=INIT,
+E12 6 7
+V452 pComponentConnections.getConnectedFacet RA=FORM=CH0, INIT=SharedDataDomainComponentConnections_getConnectedFacet, VA=INIT,
+E12 6 8
+V453 local_timerServices.createTimer RA=FORM=CH0, INIT=TimerServices_createTimer, VA=INIT,
+E12 6 9
+V454 local_CConfirmationHelper.initialize RA=FORM=CH0, INIT=ConfirmationHelper_initialize, VA=INIT,
+E12 6 10
+V455 pAFDXMonitor.getLocalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getLocalAFDXFailure, VA=INIT,
+E12 6 11
+V456 pAFDXMonitor.getRemoteAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getRemoteAFDXFailure, VA=INIT,
+E12 6 12
+V457 pCANMonitor.getBusFailure RA=FORM=CH0, INIT=CANMonitor_getBusFailure, VA=INIT,
+E12 6 13
+V458 pCANMonitor.getBusOfLru RA=FORM=CH0, INIT=CANMonitor_getBusOfLru, VA=INIT,
+E12 6 14
+V459 local_timerServices.reschedule RA=FORM=CH0, INIT=TimerServices_reschedule, VA=INIT,
+E12 6 15
+V460 local_timerServices.activate RA=FORM=CH0, INIT=TimerServices_activate, VA=INIT,
+E12 6 16
+V461 pAFDXMonitor.getMaintenanceMasterInformation RA=FORM=CH0, INIT=AFDXMonitor_getMaintenanceMasterInformation, VA=INIT,
+E12 6 17
+V462 pCANMonitor.getOneDuOn RA=FORM=CH0, INIT=CANMonitor_getOneDuOn, VA=INIT,
+E12 6 18
+V463 pCANMonitor.getBusGeneralFailure RA=FORM=CH0, INIT=CANMonitor_getBusGeneralFailure, VA=INIT,
+E12 6 19
+V464 pCANMonitor.getKccuAcquisitionReport RA=FORM=CH0, INIT=CANMonitor_getKccuAcquisitionReport, VA=INIT,
+E12 6 20
+V465 pAFDXMonitor.getTotalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getTotalAFDXFailure, VA=INIT,
+E12 6 21
+V466 local_timerServices.hasTimedout RA=FORM=CH0, INIT=TimerServices_hasTimedout, VA=INIT,
+E12 6 22
+V467 local_timerServices.deactivate RA=FORM=CH0, INIT=TimerServices_deactivate, VA=INIT,
+E12 6 23
+V468 local_failure.disappear RA=FORM=CH0, INIT=Failure_disappear, VA=INIT,
+E12 6 24
+V469 local_failure.appear RA=FORM=CH0, INIT=Failure_appear, VA=INIT,
+R470 6
+E12 0 674
+V471 plLocalDisplayUnitLRUId RA=FORM=CU0, INIT IN [LRU_ID_DU_OL,LRU_ID_DU_IL,LRU_ID_DU_OR,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC], V
+&A=INIT,
+E12 0 675
+V472 local_CANSubscriberItem_LRULinkedToDUByCanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 676
+V473 local_LRULinkedToDUByCanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_LRULinkedToDUByCanBus[0], VA=INIT,
+E12 0 677
+V474 local_LRULinkedToDUByCanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 678
+V475 local_CANSubscriberItem_DULinkedToDUBy2CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 679
+V476 local_DULinkedToDUBy2CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0], VA=INIT,
+E12 0 680
+V477 local_DULinkedToDUBy2CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 681
+V478 local_CANSubscriberItem_DULinkedToDUBy1CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 682
+V479 local_DULinkedToDUBy1CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_DULinkedToDUBy1CanBus[0], VA=INIT,
+E12 0 683
+V480 local_DULinkedToDUBy1CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 684
+V481 local_CANSubscriberItem_KCCULinkedToDUBy1CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 685
+V482 local_KCCULinkedToDUBy1CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_KCCULinkedToDUBy1CanBus[0], VA=INIT,
+E12 0 686
+V483 local_KCCULinkedToDUBy1CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 687
+V484 local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 688
+V485 local_KCCULinkedToDUBy2CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[0], VA=INIT,
+E12 0 689
+V486 local_KCCULinkedToDUBy2CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 690
+V487 local_CANBusItem.busId RA=FORM=CU0, INIT=CAN_BUS_ID_12, VA=INIT,
+E12 0 690
+V488 local_CANBusItem.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 690
+V489 local_CANBusItem.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 690
+V490 local_CANBusItem.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 690
+V491 local_CANBusItem.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 690
+V492 local_CANBusItem.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 690
+V493 local_CANBusItem.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 692
+V494 local_CANBusItem1.busId RA=FORM=CU0, INIT=CAN_BUS_ID_22, VA=INIT,
+E12 0 692
+V495 local_CANBusItem1.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 692
+V496 local_CANBusItem1.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 692
+V497 local_CANBusItem1.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 692
+V498 local_CANBusItem1.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 692
+V499 local_CANBusItem1.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 692
+V500 local_CANBusItem1.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E16 0 724
+T501 BUS_FAILURE_HUB-UTP-0030
+F502 Nominal
+C503 PUID_TC [BUS_FAILURE_HUB-LLT-0030] INTERNAL CAN FAILURE ON OUTER,INNER LEFT DU SECOND CAN BUS WHEN SECOND BUS GENERAL CAN STATUS IS NOT FAULTY
+C504 OBJECTIVE :TO VERIFY:
+C505 STIMULI:
+C506 - SET ISLOCALAFDXFAULTY STATUS TO K_BOOL_FALSE
+C507 - SET ISDUALONEONFIRSTCAN STATUS TO K_BOOL_TRUE
+C508 - SET ISDUALONEONSECONDCAN STATUS TO K_BOOL_FALSE
+C509 - SET ISBUSMONITORINGINHIBITED STATUS TO K_BOOL_FALSE
+C510 - SET FIRSTBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_FALSE
+C511 - SET SECONDBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_TRUE
+C512 - SET SECONDBUSGENERALFAILURE STATUS TO K_BOOL_FALSE
+C513 - SET PLLOCALDISPLAYUNITLRUID TO {LRU_ID_DU_OL OR LRU_ID_DU_IL }
+C514 - SET TIMER ID TO 1
+C515 OBSERVABLE:
+C516 A BUSFAILUREHUB INSTANCE :
+C517 - TRIGGERS THE TIMER WITH ID 1 ON FIRST CAN BUS
+C518 - RESCHEDULES TIMER ON FIRST CAN BUS WITH TIMER ID 1
+C519 - ACTIVATES TIMER ON FIRST CAN BUS WITH TIMER ID 1
+C520 TRACEABILITY_LLR [BUS_FAILURE_HUB-REQ-0010]
+E14 0 753
+B521 1
+I522 BusFailureHub_initialize.ptu / D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu / BusFailureHub_2.ptu
+E11 7 D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu
+E12 7 1
+V523 local_CMemoryUtilities.set RA=FORM=CH0, INIT=MemoryUtilities_set, VA=INIT,
+E12 7 2
+V524 pCANMonitor.buildSubscribersListsLinkedToDU RA=FORM=CH0, INIT=CANMonitor_buildSubscribersListsLinkedToDU, VA=INIT,
+E12 7 3
+V525 pCANMonitor.getKccuFailureWithCockpitEffect RA=FORM=CH0, INIT=CANMonitor_getKccuFailureWithCockpitEffect, VA=INIT,
+E12 7 4
+V526 pCANMonitor.getLruOffInProgress RA=FORM=CH0, INIT=CANMonitor_getLruOffInProgress, VA=INIT,
+E12 7 5
+V527 pCANMonitor.getLruIsDisplayUnit RA=FORM=CH0, INIT=CANMonitor_getLruIsDisplayUnit, VA=INIT,
+E12 7 6
+V528 pCANMonitor.getBusSynthesizedFailure RA=FORM=CH0, INIT=CANMonitor_getBusSynthesizedFailure, VA=INIT,
+E12 7 7
+V529 pComponentConnections.getConnectedFacet RA=FORM=CH0, INIT=SharedDataDomainComponentConnections_getConnectedFacet, VA=INIT,
+E12 7 8
+V530 local_timerServices.createTimer RA=FORM=CH0, INIT=TimerServices_createTimer, VA=INIT,
+E12 7 9
+V531 local_CConfirmationHelper.initialize RA=FORM=CH0, INIT=ConfirmationHelper_initialize, VA=INIT,
+E12 7 10
+V532 pAFDXMonitor.getLocalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getLocalAFDXFailure, VA=INIT,
+E12 7 11
+V533 pAFDXMonitor.getRemoteAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getRemoteAFDXFailure, VA=INIT,
+E12 7 12
+V534 pCANMonitor.getBusFailure RA=FORM=CH0, INIT=CANMonitor_getBusFailure, VA=INIT,
+E12 7 13
+V535 pCANMonitor.getBusOfLru RA=FORM=CH0, INIT=CANMonitor_getBusOfLru, VA=INIT,
+E12 7 14
+V536 local_timerServices.reschedule RA=FORM=CH0, INIT=TimerServices_reschedule, VA=INIT,
+E12 7 15
+V537 local_timerServices.activate RA=FORM=CH0, INIT=TimerServices_activate, VA=INIT,
+E12 7 16
+V538 pAFDXMonitor.getMaintenanceMasterInformation RA=FORM=CH0, INIT=AFDXMonitor_getMaintenanceMasterInformation, VA=INIT,
+E12 7 17
+V539 pCANMonitor.getOneDuOn RA=FORM=CH0, INIT=CANMonitor_getOneDuOn, VA=INIT,
+E12 7 18
+V540 pCANMonitor.getBusGeneralFailure RA=FORM=CH0, INIT=CANMonitor_getBusGeneralFailure, VA=INIT,
+E12 7 19
+V541 pCANMonitor.getKccuAcquisitionReport RA=FORM=CH0, INIT=CANMonitor_getKccuAcquisitionReport, VA=INIT,
+E12 7 20
+V542 pAFDXMonitor.getTotalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getTotalAFDXFailure, VA=INIT,
+E12 7 21
+V543 local_timerServices.hasTimedout RA=FORM=CH0, INIT=TimerServices_hasTimedout, VA=INIT,
+E12 7 22
+V544 local_timerServices.deactivate RA=FORM=CH0, INIT=TimerServices_deactivate, VA=INIT,
+E12 7 23
+V545 local_failure.disappear RA=FORM=CH0, INIT=Failure_disappear, VA=INIT,
+E12 7 24
+V546 local_failure.appear RA=FORM=CH0, INIT=Failure_appear, VA=INIT,
+R547 2
+E12 0 759
+V548 plLocalDisplayUnitLRUId RA=FORM=CU0, INIT IN [LRU_ID_DU_OL,LRU_ID_DU_IL], VA=INIT,
+E12 0 760
+V549 local_CANSubscriberItem_LRULinkedToDUByCanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 761
+V550 local_LRULinkedToDUByCanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_LRULinkedToDUByCanBus[0], VA=INIT,
+E12 0 762
+V551 local_LRULinkedToDUByCanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 763
+V552 local_CANSubscriberItem_DULinkedToDUBy2CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 764
+V553 local_DULinkedToDUBy2CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0], VA=INIT,
+E12 0 765
+V554 local_DULinkedToDUBy2CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 766
+V555 local_CANSubscriberItem_DULinkedToDUBy1CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 767
+V556 local_DULinkedToDUBy1CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_DULinkedToDUBy1CanBus[0], VA=INIT,
+E12 0 768
+V557 local_DULinkedToDUBy1CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 769
+V558 local_CANSubscriberItem_KCCULinkedToDUBy1CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 770
+V559 local_KCCULinkedToDUBy1CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_KCCULinkedToDUBy1CanBus[0], VA=INIT,
+E12 0 771
+V560 local_KCCULinkedToDUBy1CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 772
+V561 local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 773
+V562 local_KCCULinkedToDUBy2CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[0], VA=INIT,
+E12 0 774
+V563 local_KCCULinkedToDUBy2CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 775
+V564 local_CANBusItem.busId RA=FORM=CU0, INIT=CAN_BUS_ID_12, VA=INIT,
+E12 0 775
+V565 local_CANBusItem.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 775
+V566 local_CANBusItem.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 775
+V567 local_CANBusItem.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 775
+V568 local_CANBusItem.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 775
+V569 local_CANBusItem.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 775
+V570 local_CANBusItem.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 777
+V571 local_CANBusItem1.busId RA=FORM=CU0, INIT=CAN_BUS_ID_12, VA=INIT,
+E12 0 777
+V572 local_CANBusItem1.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OR, VA=INIT,
+E12 0 777
+V573 local_CANBusItem1.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 777
+V574 local_CANBusItem1.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 777
+V575 local_CANBusItem1.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 777
+V576 local_CANBusItem1.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 777
+V577 local_CANBusItem1.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E16 0 808
+T578 BUS_FAILURE_HUB-UTP-0031
+F579 Nominal
+C580 PUID_TC [BUS_FAILURE_HUB-LLT-0031] INTERNAL CAN FAILURE ON UPPER AND LOWER CENTER DU/SECOND CAN BUS WHEN SECOND BUS GENERAL CAN STATUS IS NOT FAULTY
+C581 OBJECTIVE :TO VERIFY:
+C582 STIMULI:
+C583 - SET ISLOCALAFDXFAULTY STATUS TO K_BOOL_FALSE
+C584 - SET ISDUALONEONFIRSTCAN STATUS TO K_BOOL_TRUE
+C585 - SET ISDUALONEONSECONDCAN STATUS TO K_BOOL_FALSE
+C586 - SET ISBUSMONITORINGINHIBITED STATUS TO K_BOOL_FALSE
+C587 - SET FIRSTBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_FALSE
+C588 - SET SECONDBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_TRUE
+C589 - SET SECONDBUSGENERALFAILURE STATUS TO K_BOOL_FALSE
+C590 - SET PLLOCALDISPLAYUNITLRUID TO {LRU_ID_DU_UC OR LRU_ID_DU_LC}
+C591 - SET TIMER ID TO 1
+C592 OBSERVABLE:
+C593 A BUSFAILUREHUB INSTANCE :
+C594 - TRIGGERS THE TIMER WITH ID 1 ON FIRST CAN BUS
+C595 - RESCHEDULES TIMER ON FIRST CAN BUS WITH TIMER ID 1
+C596 - ACTIVATES TIMER ON FIRST CAN BUS WITH TIMER ID 1
+C597 TRACEABILITY_LLR [BUS_FAILURE_HUB-REQ-0010]
+E14 0 837
+B598 1
+I599 BusFailureHub_initialize.ptu / D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu / BusFailureHub_2.ptu
+E11 8 D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu
+E12 8 1
+V600 local_CMemoryUtilities.set RA=FORM=CH0, INIT=MemoryUtilities_set, VA=INIT,
+E12 8 2
+V601 pCANMonitor.buildSubscribersListsLinkedToDU RA=FORM=CH0, INIT=CANMonitor_buildSubscribersListsLinkedToDU, VA=INIT,
+E12 8 3
+V602 pCANMonitor.getKccuFailureWithCockpitEffect RA=FORM=CH0, INIT=CANMonitor_getKccuFailureWithCockpitEffect, VA=INIT,
+E12 8 4
+V603 pCANMonitor.getLruOffInProgress RA=FORM=CH0, INIT=CANMonitor_getLruOffInProgress, VA=INIT,
+E12 8 5
+V604 pCANMonitor.getLruIsDisplayUnit RA=FORM=CH0, INIT=CANMonitor_getLruIsDisplayUnit, VA=INIT,
+E12 8 6
+V605 pCANMonitor.getBusSynthesizedFailure RA=FORM=CH0, INIT=CANMonitor_getBusSynthesizedFailure, VA=INIT,
+E12 8 7
+V606 pComponentConnections.getConnectedFacet RA=FORM=CH0, INIT=SharedDataDomainComponentConnections_getConnectedFacet, VA=INIT,
+E12 8 8
+V607 local_timerServices.createTimer RA=FORM=CH0, INIT=TimerServices_createTimer, VA=INIT,
+E12 8 9
+V608 local_CConfirmationHelper.initialize RA=FORM=CH0, INIT=ConfirmationHelper_initialize, VA=INIT,
+E12 8 10
+V609 pAFDXMonitor.getLocalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getLocalAFDXFailure, VA=INIT,
+E12 8 11
+V610 pAFDXMonitor.getRemoteAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getRemoteAFDXFailure, VA=INIT,
+E12 8 12
+V611 pCANMonitor.getBusFailure RA=FORM=CH0, INIT=CANMonitor_getBusFailure, VA=INIT,
+E12 8 13
+V612 pCANMonitor.getBusOfLru RA=FORM=CH0, INIT=CANMonitor_getBusOfLru, VA=INIT,
+E12 8 14
+V613 local_timerServices.reschedule RA=FORM=CH0, INIT=TimerServices_reschedule, VA=INIT,
+E12 8 15
+V614 local_timerServices.activate RA=FORM=CH0, INIT=TimerServices_activate, VA=INIT,
+E12 8 16
+V615 pAFDXMonitor.getMaintenanceMasterInformation RA=FORM=CH0, INIT=AFDXMonitor_getMaintenanceMasterInformation, VA=INIT,
+E12 8 17
+V616 pCANMonitor.getOneDuOn RA=FORM=CH0, INIT=CANMonitor_getOneDuOn, VA=INIT,
+E12 8 18
+V617 pCANMonitor.getBusGeneralFailure RA=FORM=CH0, INIT=CANMonitor_getBusGeneralFailure, VA=INIT,
+E12 8 19
+V618 pCANMonitor.getKccuAcquisitionReport RA=FORM=CH0, INIT=CANMonitor_getKccuAcquisitionReport, VA=INIT,
+E12 8 20
+V619 pAFDXMonitor.getTotalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getTotalAFDXFailure, VA=INIT,
+E12 8 21
+V620 local_timerServices.hasTimedout RA=FORM=CH0, INIT=TimerServices_hasTimedout, VA=INIT,
+E12 8 22
+V621 local_timerServices.deactivate RA=FORM=CH0, INIT=TimerServices_deactivate, VA=INIT,
+E12 8 23
+V622 local_failure.disappear RA=FORM=CH0, INIT=Failure_disappear, VA=INIT,
+E12 8 24
+V623 local_failure.appear RA=FORM=CH0, INIT=Failure_appear, VA=INIT,
+R624 2
+E12 0 843
+V625 plLocalDisplayUnitLRUId RA=FORM=CU0, INIT IN [LRU_ID_DU_UC,LRU_ID_DU_LC], VA=INIT,
+E12 0 844
+V626 local_CANSubscriberItem_LRULinkedToDUByCanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 845
+V627 local_LRULinkedToDUByCanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_LRULinkedToDUByCanBus[0], VA=INIT,
+E12 0 846
+V628 local_LRULinkedToDUByCanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 847
+V629 local_CANSubscriberItem_DULinkedToDUBy2CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 848
+V630 local_DULinkedToDUBy2CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0], VA=INIT,
+E12 0 849
+V631 local_DULinkedToDUBy2CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 850
+V632 local_CANSubscriberItem_DULinkedToDUBy1CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 851
+V633 local_DULinkedToDUBy1CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_DULinkedToDUBy1CanBus[0], VA=INIT,
+E12 0 852
+V634 local_DULinkedToDUBy1CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 853
+V635 local_CANSubscriberItem_KCCULinkedToDUBy1CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 854
+V636 local_KCCULinkedToDUBy1CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_KCCULinkedToDUBy1CanBus[0], VA=INIT,
+E12 0 855
+V637 local_KCCULinkedToDUBy1CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 856
+V638 local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[0].lruId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 857
+V639 local_KCCULinkedToDUBy2CanBus.items[0] RA=FORM=CH0, INIT=&local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[0], VA=INIT,
+E12 0 858
+V640 local_KCCULinkedToDUBy2CanBus.count RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 859
+V641 local_CANBusItem.busId RA=FORM=CU0, INIT=CAN_BUS_ID_21, VA=INIT,
+E12 0 859
+V642 local_CANBusItem.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 859
+V643 local_CANBusItem.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 859
+V644 local_CANBusItem.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 859
+V645 local_CANBusItem.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 859
+V646 local_CANBusItem.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 859
+V647 local_CANBusItem.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 861
+V648 local_CANBusItem1.busId RA=FORM=CU0, INIT=CAN_BUS_ID_21, VA=INIT,
+E12 0 861
+V649 local_CANBusItem1.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_IL, VA=INIT,
+E12 0 861
+V650 local_CANBusItem1.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 861
+V651 local_CANBusItem1.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 861
+V652 local_CANBusItem1.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 861
+V653 local_CANBusItem1.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 861
+V654 local_CANBusItem1.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E16 0 892
+T655 BUS_FAILURE_HUB-UTP-0032
+F656 Nominal
+C657 PUID_TC [BUS_FAILURE_HUB-LLT-0032] FAILURES FOR 2 DU CONNECTED BY 2 CAN BUSES FOR ALL DISPLAY UNITS
+C658 OBJECTIVE :TO VERIFY:
+C659 STIMULI:
+C660 - SET ISLOCALDUAFDXFAULTY STATUS TO K_BOOL_FALSE
+C661 - SET FIRSTBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_FALSE
+C662 - SET SECONDBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_FALSE
+C663 - SET ISCONCERNEDDUAFDXFAULTY STATUS TO K_BOOL_TRUE
+C664 - SET FAILUREFROMREMOTELRUONFIRSTBUSFAULTY STATUS TO  K_BOOL_TRUE
+C665 - SET FAILUREFROMREMOTELRUONSECONDBUSFAULTY STATUS TO K_BOOL_TRUE
+C666 OBSERVABLE:
+C667 A BUSFAILUREHUB INSTANCE :
+C668 - CHECKS CONFIRMATION VALUE ON PVALUEID AND SETS PCONFIRMEDVALUE TO K_BOOL_FALSE
+C669 TRACEABILITY_LLR [BUS_FAILURE_HUB-REQ-0011]
+E14 0 916
+B670 1
+I671 BusFailureHub_initialize.ptu / D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu / BusFailureHub_2.ptu
+E11 9 D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu
+E12 9 1
+V672 local_CMemoryUtilities.set RA=FORM=CH0, INIT=MemoryUtilities_set, VA=INIT,
+E12 9 2
+V673 pCANMonitor.buildSubscribersListsLinkedToDU RA=FORM=CH0, INIT=CANMonitor_buildSubscribersListsLinkedToDU, VA=INIT,
+E12 9 3
+V674 pCANMonitor.getKccuFailureWithCockpitEffect RA=FORM=CH0, INIT=CANMonitor_getKccuFailureWithCockpitEffect, VA=INIT,
+E12 9 4
+V675 pCANMonitor.getLruOffInProgress RA=FORM=CH0, INIT=CANMonitor_getLruOffInProgress, VA=INIT,
+E12 9 5
+V676 pCANMonitor.getLruIsDisplayUnit RA=FORM=CH0, INIT=CANMonitor_getLruIsDisplayUnit, VA=INIT,
+E12 9 6
+V677 pCANMonitor.getBusSynthesizedFailure RA=FORM=CH0, INIT=CANMonitor_getBusSynthesizedFailure, VA=INIT,
+E12 9 7
+V678 pComponentConnections.getConnectedFacet RA=FORM=CH0, INIT=SharedDataDomainComponentConnections_getConnectedFacet, VA=INIT,
+E12 9 8
+V679 local_timerServices.createTimer RA=FORM=CH0, INIT=TimerServices_createTimer, VA=INIT,
+E12 9 9
+V680 local_CConfirmationHelper.initialize RA=FORM=CH0, INIT=ConfirmationHelper_initialize, VA=INIT,
+E12 9 10
+V681 pAFDXMonitor.getLocalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getLocalAFDXFailure, VA=INIT,
+E12 9 11
+V682 pAFDXMonitor.getRemoteAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getRemoteAFDXFailure, VA=INIT,
+E12 9 12
+V683 pCANMonitor.getBusFailure RA=FORM=CH0, INIT=CANMonitor_getBusFailure, VA=INIT,
+E12 9 13
+V684 pCANMonitor.getBusOfLru RA=FORM=CH0, INIT=CANMonitor_getBusOfLru, VA=INIT,
+E12 9 14
+V685 local_timerServices.reschedule RA=FORM=CH0, INIT=TimerServices_reschedule, VA=INIT,
+E12 9 15
+V686 local_timerServices.activate RA=FORM=CH0, INIT=TimerServices_activate, VA=INIT,
+E12 9 16
+V687 pAFDXMonitor.getMaintenanceMasterInformation RA=FORM=CH0, INIT=AFDXMonitor_getMaintenanceMasterInformation, VA=INIT,
+E12 9 17
+V688 pCANMonitor.getOneDuOn RA=FORM=CH0, INIT=CANMonitor_getOneDuOn, VA=INIT,
+E12 9 18
+V689 pCANMonitor.getBusGeneralFailure RA=FORM=CH0, INIT=CANMonitor_getBusGeneralFailure, VA=INIT,
+E12 9 19
+V690 pCANMonitor.getKccuAcquisitionReport RA=FORM=CH0, INIT=CANMonitor_getKccuAcquisitionReport, VA=INIT,
+E12 9 20
+V691 pAFDXMonitor.getTotalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getTotalAFDXFailure, VA=INIT,
+E12 9 21
+V692 local_timerServices.hasTimedout RA=FORM=CH0, INIT=TimerServices_hasTimedout, VA=INIT,
+E12 9 22
+V693 local_timerServices.deactivate RA=FORM=CH0, INIT=TimerServices_deactivate, VA=INIT,
+E12 9 23
+V694 local_failure.disappear RA=FORM=CH0, INIT=Failure_disappear, VA=INIT,
+E12 9 24
+V695 local_failure.appear RA=FORM=CH0, INIT=Failure_appear, VA=INIT,
+E12 0 922
+V696 plLocalDisplayUnitLRUId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 923
+V697 local_DULinkedToDUBy2CanBus.count RA=FORM=CU8, INIT=10, VA=INIT,
+E12 0 924
+V698 local_CANSubscriberItem_DULinkedToDUBy2CanBus[0].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 924
+V699 local_CANSubscriberItem_DULinkedToDUBy2CanBus[1].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 924
+V700 local_CANSubscriberItem_DULinkedToDUBy2CanBus[2].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 924
+V701 local_CANSubscriberItem_DULinkedToDUBy2CanBus[3].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 924
+V702 local_CANSubscriberItem_DULinkedToDUBy2CanBus[4].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 924
+V703 local_CANSubscriberItem_DULinkedToDUBy2CanBus[5].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 924
+V704 local_CANSubscriberItem_DULinkedToDUBy2CanBus[6].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 924
+V705 local_CANSubscriberItem_DULinkedToDUBy2CanBus[7].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 924
+V706 local_CANSubscriberItem_DULinkedToDUBy2CanBus[8].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 924
+V707 local_CANSubscriberItem_DULinkedToDUBy2CanBus[9].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 935
+V708 local_DULinkedToDUBy2CanBus.items[0] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 935
+V709 local_DULinkedToDUBy2CanBus.items[1] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 935
+V710 local_DULinkedToDUBy2CanBus.items[2] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 935
+V711 local_DULinkedToDUBy2CanBus.items[3] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 935
+V712 local_DULinkedToDUBy2CanBus.items[4] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 935
+V713 local_DULinkedToDUBy2CanBus.items[5] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 935
+V714 local_DULinkedToDUBy2CanBus.items[6] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 935
+V715 local_DULinkedToDUBy2CanBus.items[7] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 935
+V716 local_DULinkedToDUBy2CanBus.items[8] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 935
+V717 local_DULinkedToDUBy2CanBus.items[9] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E16 0 1019
+T718 BUS_FAILURE_HUB-UTP-0033
+F719 Nominal
+C720 PUID_TC [BUS_FAILURE_HUB-LLT-0033] FAILURE ON REMOTE DU/AFDX BUS FOR 2 DU CONNECTED BY 2 CAN BUSES WHEN REMOTE DU AFDX IS FAULTY
+C721 OBJECTIVE :TO VERIFY:
+C722 STIMULI:
+C723 - SET ISLOCALDUAFDXFAULTY STATUS TO K_BOOL_TRUE
+C724 - SET FIRSTBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_FALSE
+C725 - SET SECONDBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_FALSE
+C726 - SET ISCONCERNEDDUAFDXFAULTY STATUS TO K_BOOL_TRUE
+C727 - SET FAILUREFROMREMOTELRUONFIRSTBUSFAULTY STATUS TO {K_BOOL_TRUE OR K_BOOL_FALSE OR K_BOOL_FALSE}
+C728 - SET FAILUREFROMREMOTELRUONSECONDBUSFAULTY STATUS TO {K_BOOL_FALSE OR K_BOOL_TRUE OR K_BOOL_FALSE}
+C729 OBSERVABLE:
+C730 A BUSFAILUREHUB INSTANCE :
+C731 - TRIGGERS THE TIMER WITH ID 1
+C732 - RESCHEDULES TIMER ON AFDX BUS WITH TIMER ID 1
+C733 - ACTIVATES TIMER ON AFDX BUS WITH TIMER ID 1
+C734 TRACEABILITY_LLR [BUS_FAILURE_HUB-REQ-0001]
+C735 TRACEABILITY_LLR [BUS_FAILURE_HUB-REQ-0012]
+C736 TRACEABILITY_LLR [BUS_FAILURE_HUB-REQ-0011]
+E14 0 1050
+B737 1
+I738 BusFailureHub_initialize.ptu / D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu / BusFailureHub_2.ptu
+E11 10 D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu
+E12 10 1
+V739 local_CMemoryUtilities.set RA=FORM=CH0, INIT=MemoryUtilities_set, VA=INIT,
+E12 10 2
+V740 pCANMonitor.buildSubscribersListsLinkedToDU RA=FORM=CH0, INIT=CANMonitor_buildSubscribersListsLinkedToDU, VA=INIT,
+E12 10 3
+V741 pCANMonitor.getKccuFailureWithCockpitEffect RA=FORM=CH0, INIT=CANMonitor_getKccuFailureWithCockpitEffect, VA=INIT,
+E12 10 4
+V742 pCANMonitor.getLruOffInProgress RA=FORM=CH0, INIT=CANMonitor_getLruOffInProgress, VA=INIT,
+E12 10 5
+V743 pCANMonitor.getLruIsDisplayUnit RA=FORM=CH0, INIT=CANMonitor_getLruIsDisplayUnit, VA=INIT,
+E12 10 6
+V744 pCANMonitor.getBusSynthesizedFailure RA=FORM=CH0, INIT=CANMonitor_getBusSynthesizedFailure, VA=INIT,
+E12 10 7
+V745 pComponentConnections.getConnectedFacet RA=FORM=CH0, INIT=SharedDataDomainComponentConnections_getConnectedFacet, VA=INIT,
+E12 10 8
+V746 local_timerServices.createTimer RA=FORM=CH0, INIT=TimerServices_createTimer, VA=INIT,
+E12 10 9
+V747 local_CConfirmationHelper.initialize RA=FORM=CH0, INIT=ConfirmationHelper_initialize, VA=INIT,
+E12 10 10
+V748 pAFDXMonitor.getLocalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getLocalAFDXFailure, VA=INIT,
+E12 10 11
+V749 pAFDXMonitor.getRemoteAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getRemoteAFDXFailure, VA=INIT,
+E12 10 12
+V750 pCANMonitor.getBusFailure RA=FORM=CH0, INIT=CANMonitor_getBusFailure, VA=INIT,
+E12 10 13
+V751 pCANMonitor.getBusOfLru RA=FORM=CH0, INIT=CANMonitor_getBusOfLru, VA=INIT,
+E12 10 14
+V752 local_timerServices.reschedule RA=FORM=CH0, INIT=TimerServices_reschedule, VA=INIT,
+E12 10 15
+V753 local_timerServices.activate RA=FORM=CH0, INIT=TimerServices_activate, VA=INIT,
+E12 10 16
+V754 pAFDXMonitor.getMaintenanceMasterInformation RA=FORM=CH0, INIT=AFDXMonitor_getMaintenanceMasterInformation, VA=INIT,
+E12 10 17
+V755 pCANMonitor.getOneDuOn RA=FORM=CH0, INIT=CANMonitor_getOneDuOn, VA=INIT,
+E12 10 18
+V756 pCANMonitor.getBusGeneralFailure RA=FORM=CH0, INIT=CANMonitor_getBusGeneralFailure, VA=INIT,
+E12 10 19
+V757 pCANMonitor.getKccuAcquisitionReport RA=FORM=CH0, INIT=CANMonitor_getKccuAcquisitionReport, VA=INIT,
+E12 10 20
+V758 pAFDXMonitor.getTotalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getTotalAFDXFailure, VA=INIT,
+E12 10 21
+V759 local_timerServices.hasTimedout RA=FORM=CH0, INIT=TimerServices_hasTimedout, VA=INIT,
+E12 10 22
+V760 local_timerServices.deactivate RA=FORM=CH0, INIT=TimerServices_deactivate, VA=INIT,
+E12 10 23
+V761 local_failure.disappear RA=FORM=CH0, INIT=Failure_disappear, VA=INIT,
+E12 10 24
+V762 local_failure.appear RA=FORM=CH0, INIT=Failure_appear, VA=INIT,
+E12 0 1052
+V763 plLocalDisplayUnitLRUId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 1053
+V764 local_DULinkedToDUBy2CanBus.count RA=FORM=CU8, INIT=10, VA=INIT,
+E12 0 1054
+V765 local_CANSubscriberItem_DULinkedToDUBy2CanBus[0].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1054
+V766 local_CANSubscriberItem_DULinkedToDUBy2CanBus[1].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1054
+V767 local_CANSubscriberItem_DULinkedToDUBy2CanBus[2].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1054
+V768 local_CANSubscriberItem_DULinkedToDUBy2CanBus[3].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1054
+V769 local_CANSubscriberItem_DULinkedToDUBy2CanBus[4].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1054
+V770 local_CANSubscriberItem_DULinkedToDUBy2CanBus[5].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1054
+V771 local_CANSubscriberItem_DULinkedToDUBy2CanBus[6].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1054
+V772 local_CANSubscriberItem_DULinkedToDUBy2CanBus[7].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1054
+V773 local_CANSubscriberItem_DULinkedToDUBy2CanBus[8].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1054
+V774 local_CANSubscriberItem_DULinkedToDUBy2CanBus[9].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1065
+V775 local_DULinkedToDUBy2CanBus.items[0] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1065
+V776 local_DULinkedToDUBy2CanBus.items[1] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1065
+V777 local_DULinkedToDUBy2CanBus.items[2] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1065
+V778 local_DULinkedToDUBy2CanBus.items[3] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1065
+V779 local_DULinkedToDUBy2CanBus.items[4] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1065
+V780 local_DULinkedToDUBy2CanBus.items[5] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1065
+V781 local_DULinkedToDUBy2CanBus.items[6] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1065
+V782 local_DULinkedToDUBy2CanBus.items[7] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1065
+V783 local_DULinkedToDUBy2CanBus.items[8] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1065
+V784 local_DULinkedToDUBy2CanBus.items[9] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1067
+V785 local_CANBusItem.busId RA=FORM=CU0, INIT=CAN_BUS_ID_11, VA=INIT,
+E12 0 1067
+V786 local_CANBusItem.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 1067
+V787 local_CANBusItem.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1067
+V788 local_CANBusItem.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1067
+V789 local_CANBusItem.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 1067
+V790 local_CANBusItem.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 1067
+V791 local_CANBusItem.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1068
+V792 local_CANBusItem1.busId RA=FORM=CU0, INIT=CAN_BUS_ID_11, VA=INIT,
+E12 0 1068
+V793 local_CANBusItem1.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 1068
+V794 local_CANBusItem1.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1068
+V795 local_CANBusItem1.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1068
+V796 local_CANBusItem1.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 1068
+V797 local_CANBusItem1.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 1068
+V798 local_CANBusItem1.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E16 0 1154
+T799 BUS_FAILURE_HUB-UTP-0034
+F800 Nominal
+C801 PUID_TC [BUS_FAILURE_HUB-LLT-0034] FAILURE ON REMOTE DU/AFDX BUS FOR 2 DU CONNECTED BY 2 CAN BUSES WHEN REMOTE DU AFDX IS NOT FAULTY
+C802 OBJECTIVE :TO VERIFY:
+C803 STIMULI:
+C804 - SET ISLOCALDUAFDXFAULTY STATUS TO K_BOOL_FALSE
+C805 - SET FIRSTBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_FALSE
+C806 - SET SECONDBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_TRUE
+C807 - SET ISCONCERNEDDUAFDXFAULTY STATUS TO K_BOOL_FALSE
+C808 - SET FAILUREFROMREMOTELRUONFIRSTBUSFAULTY STATUS TO K_BOOL_TRUE
+C809 - SET FAILUREFROMREMOTELRUONSECONDBUSFAULTY STATUS TO K_BOOL_TRUE
+C810 OBSERVABLE:
+C811 A BUSFAILUREHUB INSTANCE :
+C812 - DOES NOTHING
+C813 TRACEABILITY_LLR [BUS_FAILURE_HUB-REQ-0001]
+C814 TRACEABILITY_LLR [BUS_FAILURE_HUB-REQ-0012]
+E14 0 1179
+B815 1
+I816 BusFailureHub_initialize.ptu / D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu / BusFailureHub_2.ptu
+E11 11 D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu
+E12 11 1
+V817 local_CMemoryUtilities.set RA=FORM=CH0, INIT=MemoryUtilities_set, VA=INIT,
+E12 11 2
+V818 pCANMonitor.buildSubscribersListsLinkedToDU RA=FORM=CH0, INIT=CANMonitor_buildSubscribersListsLinkedToDU, VA=INIT,
+E12 11 3
+V819 pCANMonitor.getKccuFailureWithCockpitEffect RA=FORM=CH0, INIT=CANMonitor_getKccuFailureWithCockpitEffect, VA=INIT,
+E12 11 4
+V820 pCANMonitor.getLruOffInProgress RA=FORM=CH0, INIT=CANMonitor_getLruOffInProgress, VA=INIT,
+E12 11 5
+V821 pCANMonitor.getLruIsDisplayUnit RA=FORM=CH0, INIT=CANMonitor_getLruIsDisplayUnit, VA=INIT,
+E12 11 6
+V822 pCANMonitor.getBusSynthesizedFailure RA=FORM=CH0, INIT=CANMonitor_getBusSynthesizedFailure, VA=INIT,
+E12 11 7
+V823 pComponentConnections.getConnectedFacet RA=FORM=CH0, INIT=SharedDataDomainComponentConnections_getConnectedFacet, VA=INIT,
+E12 11 8
+V824 local_timerServices.createTimer RA=FORM=CH0, INIT=TimerServices_createTimer, VA=INIT,
+E12 11 9
+V825 local_CConfirmationHelper.initialize RA=FORM=CH0, INIT=ConfirmationHelper_initialize, VA=INIT,
+E12 11 10
+V826 pAFDXMonitor.getLocalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getLocalAFDXFailure, VA=INIT,
+E12 11 11
+V827 pAFDXMonitor.getRemoteAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getRemoteAFDXFailure, VA=INIT,
+E12 11 12
+V828 pCANMonitor.getBusFailure RA=FORM=CH0, INIT=CANMonitor_getBusFailure, VA=INIT,
+E12 11 13
+V829 pCANMonitor.getBusOfLru RA=FORM=CH0, INIT=CANMonitor_getBusOfLru, VA=INIT,
+E12 11 14
+V830 local_timerServices.reschedule RA=FORM=CH0, INIT=TimerServices_reschedule, VA=INIT,
+E12 11 15
+V831 local_timerServices.activate RA=FORM=CH0, INIT=TimerServices_activate, VA=INIT,
+E12 11 16
+V832 pAFDXMonitor.getMaintenanceMasterInformation RA=FORM=CH0, INIT=AFDXMonitor_getMaintenanceMasterInformation, VA=INIT,
+E12 11 17
+V833 pCANMonitor.getOneDuOn RA=FORM=CH0, INIT=CANMonitor_getOneDuOn, VA=INIT,
+E12 11 18
+V834 pCANMonitor.getBusGeneralFailure RA=FORM=CH0, INIT=CANMonitor_getBusGeneralFailure, VA=INIT,
+E12 11 19
+V835 pCANMonitor.getKccuAcquisitionReport RA=FORM=CH0, INIT=CANMonitor_getKccuAcquisitionReport, VA=INIT,
+E12 11 20
+V836 pAFDXMonitor.getTotalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getTotalAFDXFailure, VA=INIT,
+E12 11 21
+V837 local_timerServices.hasTimedout RA=FORM=CH0, INIT=TimerServices_hasTimedout, VA=INIT,
+E12 11 22
+V838 local_timerServices.deactivate RA=FORM=CH0, INIT=TimerServices_deactivate, VA=INIT,
+E12 11 23
+V839 local_failure.disappear RA=FORM=CH0, INIT=Failure_disappear, VA=INIT,
+E12 11 24
+V840 local_failure.appear RA=FORM=CH0, INIT=Failure_appear, VA=INIT,
+E12 0 1185
+V841 plLocalDisplayUnitLRUId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 1186
+V842 local_DULinkedToDUBy2CanBus.count RA=FORM=CU8, INIT=10, VA=INIT,
+E12 0 1187
+V843 local_CANSubscriberItem_DULinkedToDUBy2CanBus[0].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1187
+V844 local_CANSubscriberItem_DULinkedToDUBy2CanBus[1].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1187
+V845 local_CANSubscriberItem_DULinkedToDUBy2CanBus[2].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1187
+V846 local_CANSubscriberItem_DULinkedToDUBy2CanBus[3].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1187
+V847 local_CANSubscriberItem_DULinkedToDUBy2CanBus[4].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1187
+V848 local_CANSubscriberItem_DULinkedToDUBy2CanBus[5].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1187
+V849 local_CANSubscriberItem_DULinkedToDUBy2CanBus[6].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1187
+V850 local_CANSubscriberItem_DULinkedToDUBy2CanBus[7].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1187
+V851 local_CANSubscriberItem_DULinkedToDUBy2CanBus[8].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1187
+V852 local_CANSubscriberItem_DULinkedToDUBy2CanBus[9].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1198
+V853 local_DULinkedToDUBy2CanBus.items[0] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1198
+V854 local_DULinkedToDUBy2CanBus.items[1] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1198
+V855 local_DULinkedToDUBy2CanBus.items[2] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1198
+V856 local_DULinkedToDUBy2CanBus.items[3] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1198
+V857 local_DULinkedToDUBy2CanBus.items[4] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1198
+V858 local_DULinkedToDUBy2CanBus.items[5] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1198
+V859 local_DULinkedToDUBy2CanBus.items[6] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1198
+V860 local_DULinkedToDUBy2CanBus.items[7] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1198
+V861 local_DULinkedToDUBy2CanBus.items[8] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1198
+V862 local_DULinkedToDUBy2CanBus.items[9] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1200
+V863 local_CANBusItem.busId RA=FORM=CU0, INIT=CAN_BUS_ID_11, VA=INIT,
+E12 0 1200
+V864 local_CANBusItem.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 1200
+V865 local_CANBusItem.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1200
+V866 local_CANBusItem.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1200
+V867 local_CANBusItem.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 1200
+V868 local_CANBusItem.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 1200
+V869 local_CANBusItem.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1201
+V870 local_CANBusItem1.busId RA=FORM=CU0, INIT=CAN_BUS_ID_11, VA=INIT,
+E12 0 1201
+V871 local_CANBusItem1.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 1201
+V872 local_CANBusItem1.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1201
+V873 local_CANBusItem1.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1201
+V874 local_CANBusItem1.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 1201
+V875 local_CANBusItem1.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 1201
+V876 local_CANBusItem1.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E16 0 1284
+T877 BUS_FAILURE_HUB-UTP-0035
+F878 Nominal
+C879 PUID_TC [BUS_FAILURE_HUB-LLT-0035] FAILURE ON REMOTE DU FOR 2 DU CONNECTED BY 2 CAN BUSES WHEN CAN1 BUS IS FAULTY
+C880 OBJECTIVE :TO VERIFY:
+C881 STIMULI:
+C882 FOR CAN1 AND CAN2 BUS
+C883 - SET ISLOCALDUAFDXFAULTY STATUS TO K_BOOL_FALSE
+C884 - SET FIRSTBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_FALSE
+C885 - SET SECONDBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_TRUE
+C886 - SET ISCONCERNEDDUAFDXFAULTY STATUS TO K_BOOL_FALSE
+C887 - SET FAILUREFROMREMOTELRUONFIRSTBUSFAULTY STATUS TO K_BOOL_TRUE
+C888 - SET FAILUREFROMREMOTELRUONSECONDBUSFAULTY STATUS TO K_BOOL_TRUE
+C889 OBSERVABLE:
+C890 A BUSFAILUREHUB INSTANCE :
+C891 - TRIGGERS THE TIMER WITH ID 1
+C892 - RESCHEDULES TIMER FOR ALL DISPLAY UNITS WITH TIMER ID 1
+C893 - ACTIVATES TIMER ALL DISPLAY UNITS WITH TIMER ID 1
+C894 TRACEABILITY_LLR [BUS_FAILURE_HUB-REQ-0001]
+C895 TRACEABILITY_LLR [BUS_FAILURE_HUB-REQ-0013]
+E14 0 1312
+B896 1
+I897 BusFailureHub_initialize.ptu / D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu / BusFailureHub_2.ptu
+E11 12 D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu
+E12 12 1
+V898 local_CMemoryUtilities.set RA=FORM=CH0, INIT=MemoryUtilities_set, VA=INIT,
+E12 12 2
+V899 pCANMonitor.buildSubscribersListsLinkedToDU RA=FORM=CH0, INIT=CANMonitor_buildSubscribersListsLinkedToDU, VA=INIT,
+E12 12 3
+V900 pCANMonitor.getKccuFailureWithCockpitEffect RA=FORM=CH0, INIT=CANMonitor_getKccuFailureWithCockpitEffect, VA=INIT,
+E12 12 4
+V901 pCANMonitor.getLruOffInProgress RA=FORM=CH0, INIT=CANMonitor_getLruOffInProgress, VA=INIT,
+E12 12 5
+V902 pCANMonitor.getLruIsDisplayUnit RA=FORM=CH0, INIT=CANMonitor_getLruIsDisplayUnit, VA=INIT,
+E12 12 6
+V903 pCANMonitor.getBusSynthesizedFailure RA=FORM=CH0, INIT=CANMonitor_getBusSynthesizedFailure, VA=INIT,
+E12 12 7
+V904 pComponentConnections.getConnectedFacet RA=FORM=CH0, INIT=SharedDataDomainComponentConnections_getConnectedFacet, VA=INIT,
+E12 12 8
+V905 local_timerServices.createTimer RA=FORM=CH0, INIT=TimerServices_createTimer, VA=INIT,
+E12 12 9
+V906 local_CConfirmationHelper.initialize RA=FORM=CH0, INIT=ConfirmationHelper_initialize, VA=INIT,
+E12 12 10
+V907 pAFDXMonitor.getLocalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getLocalAFDXFailure, VA=INIT,
+E12 12 11
+V908 pAFDXMonitor.getRemoteAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getRemoteAFDXFailure, VA=INIT,
+E12 12 12
+V909 pCANMonitor.getBusFailure RA=FORM=CH0, INIT=CANMonitor_getBusFailure, VA=INIT,
+E12 12 13
+V910 pCANMonitor.getBusOfLru RA=FORM=CH0, INIT=CANMonitor_getBusOfLru, VA=INIT,
+E12 12 14
+V911 local_timerServices.reschedule RA=FORM=CH0, INIT=TimerServices_reschedule, VA=INIT,
+E12 12 15
+V912 local_timerServices.activate RA=FORM=CH0, INIT=TimerServices_activate, VA=INIT,
+E12 12 16
+V913 pAFDXMonitor.getMaintenanceMasterInformation RA=FORM=CH0, INIT=AFDXMonitor_getMaintenanceMasterInformation, VA=INIT,
+E12 12 17
+V914 pCANMonitor.getOneDuOn RA=FORM=CH0, INIT=CANMonitor_getOneDuOn, VA=INIT,
+E12 12 18
+V915 pCANMonitor.getBusGeneralFailure RA=FORM=CH0, INIT=CANMonitor_getBusGeneralFailure, VA=INIT,
+E12 12 19
+V916 pCANMonitor.getKccuAcquisitionReport RA=FORM=CH0, INIT=CANMonitor_getKccuAcquisitionReport, VA=INIT,
+E12 12 20
+V917 pAFDXMonitor.getTotalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getTotalAFDXFailure, VA=INIT,
+E12 12 21
+V918 local_timerServices.hasTimedout RA=FORM=CH0, INIT=TimerServices_hasTimedout, VA=INIT,
+E12 12 22
+V919 local_timerServices.deactivate RA=FORM=CH0, INIT=TimerServices_deactivate, VA=INIT,
+E12 12 23
+V920 local_failure.disappear RA=FORM=CH0, INIT=Failure_disappear, VA=INIT,
+E12 12 24
+V921 local_failure.appear RA=FORM=CH0, INIT=Failure_appear, VA=INIT,
+E12 0 1318
+V922 plLocalDisplayUnitLRUId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 1319
+V923 local_DULinkedToDUBy2CanBus.count RA=FORM=CU8, INIT=10, VA=INIT,
+E12 0 1320
+V924 local_CANSubscriberItem_DULinkedToDUBy2CanBus[0].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1320
+V925 local_CANSubscriberItem_DULinkedToDUBy2CanBus[1].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1320
+V926 local_CANSubscriberItem_DULinkedToDUBy2CanBus[2].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1320
+V927 local_CANSubscriberItem_DULinkedToDUBy2CanBus[3].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1320
+V928 local_CANSubscriberItem_DULinkedToDUBy2CanBus[4].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1320
+V929 local_CANSubscriberItem_DULinkedToDUBy2CanBus[5].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1320
+V930 local_CANSubscriberItem_DULinkedToDUBy2CanBus[6].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1320
+V931 local_CANSubscriberItem_DULinkedToDUBy2CanBus[7].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1320
+V932 local_CANSubscriberItem_DULinkedToDUBy2CanBus[8].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1320
+V933 local_CANSubscriberItem_DULinkedToDUBy2CanBus[9].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,L
+&RU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1331
+V934 local_DULinkedToDUBy2CanBus.items[0] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1331
+V935 local_DULinkedToDUBy2CanBus.items[1] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1331
+V936 local_DULinkedToDUBy2CanBus.items[2] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1331
+V937 local_DULinkedToDUBy2CanBus.items[3] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1331
+V938 local_DULinkedToDUBy2CanBus.items[4] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1331
+V939 local_DULinkedToDUBy2CanBus.items[5] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1331
+V940 local_DULinkedToDUBy2CanBus.items[6] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1331
+V941 local_DULinkedToDUBy2CanBus.items[7] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1331
+V942 local_DULinkedToDUBy2CanBus.items[8] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1331
+V943 local_DULinkedToDUBy2CanBus.items[9] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubsc
+&riberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy2
+&CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANSu
+&bscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToDU
+&By2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1333
+V944 local_CANBusItem.busId RA=FORM=CU0, INIT=CAN_BUS_ID_11, VA=INIT,
+E12 0 1333
+V945 local_CANBusItem.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 1333
+V946 local_CANBusItem.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1333
+V947 local_CANBusItem.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1333
+V948 local_CANBusItem.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 1333
+V949 local_CANBusItem.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 1333
+V950 local_CANBusItem.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1334
+V951 local_CANBusItem1.busId RA=FORM=CU0, INIT=CAN_BUS_ID_11, VA=INIT,
+E12 0 1334
+V952 local_CANBusItem1.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 1334
+V953 local_CANBusItem1.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1334
+V954 local_CANBusItem1.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1334
+V955 local_CANBusItem1.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 1334
+V956 local_CANBusItem1.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 1334
+V957 local_CANBusItem1.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E16 0 1418
+T958 BUS_FAILURE_HUB-UTP-0036
+F959 Nominal
+C960 PUID_TC [BUS_FAILURE_HUB-LLT-0036] FAILURE ON REMOTE DU FOR 2 DU CONNECTED BY 2 CAN BUSES WHEN CAN2 BUS IS FAULTY
+C961 OBJECTIVE :TO VERIFY:
+C962 STIMULI:
+C963 FOR CAN1 AND CAN2 BUS
+C964 - SET ISLOCALDUAFDXFAULTY STATUS TO K_BOOL_FALSE
+C965 - SET FIRSTBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_TRUE
+C966 - SET SECONDBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_FALSE
+C967 - SET ISCONCERNEDDUAFDXFAULTY STATUS TO K_BOOL_FALSE
+C968 - SET FAILUREFROMREMOTELRUONFIRSTBUSFAULTY STATUS TO K_BOOL_TRUE
+C969 - SET FAILUREFROMREMOTELRUONSECONDBUSFAULTY STATUS TO K_BOOL_TRUE
+C970 OBSERVABLE:
+C971 A BUSFAILUREHUB INSTANCE :
+C972 - TRIGGERS THE TIMER WITH ID 1
+C973 - RESCHEDULES TIMER FOR ALL DISPLAY UNITS WITH TIMER ID 1
+C974 - ACTIVATES TIMER ALL DISPLAY UNITS WITH TIMER ID 1
+C975 TRACEABILITY_LLR [BUS_FAILURE_HUB-REQ-0001]
+C976 TRACEABILITY_LLR [BUS_FAILURE_HUB-REQ-0013]
+E14 0 1449
+B977 1
+I978 BusFailureHub_initialize.ptu / D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu / BusFailureHub_2.ptu
+E11 13 D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu
+E12 13 1
+V979 local_CMemoryUtilities.set RA=FORM=CH0, INIT=MemoryUtilities_set, VA=INIT,
+E12 13 2
+V980 pCANMonitor.buildSubscribersListsLinkedToDU RA=FORM=CH0, INIT=CANMonitor_buildSubscribersListsLinkedToDU, VA=INIT,
+E12 13 3
+V981 pCANMonitor.getKccuFailureWithCockpitEffect RA=FORM=CH0, INIT=CANMonitor_getKccuFailureWithCockpitEffect, VA=INIT,
+E12 13 4
+V982 pCANMonitor.getLruOffInProgress RA=FORM=CH0, INIT=CANMonitor_getLruOffInProgress, VA=INIT,
+E12 13 5
+V983 pCANMonitor.getLruIsDisplayUnit RA=FORM=CH0, INIT=CANMonitor_getLruIsDisplayUnit, VA=INIT,
+E12 13 6
+V984 pCANMonitor.getBusSynthesizedFailure RA=FORM=CH0, INIT=CANMonitor_getBusSynthesizedFailure, VA=INIT,
+E12 13 7
+V985 pComponentConnections.getConnectedFacet RA=FORM=CH0, INIT=SharedDataDomainComponentConnections_getConnectedFacet, VA=INIT,
+E12 13 8
+V986 local_timerServices.createTimer RA=FORM=CH0, INIT=TimerServices_createTimer, VA=INIT,
+E12 13 9
+V987 local_CConfirmationHelper.initialize RA=FORM=CH0, INIT=ConfirmationHelper_initialize, VA=INIT,
+E12 13 10
+V988 pAFDXMonitor.getLocalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getLocalAFDXFailure, VA=INIT,
+E12 13 11
+V989 pAFDXMonitor.getRemoteAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getRemoteAFDXFailure, VA=INIT,
+E12 13 12
+V990 pCANMonitor.getBusFailure RA=FORM=CH0, INIT=CANMonitor_getBusFailure, VA=INIT,
+E12 13 13
+V991 pCANMonitor.getBusOfLru RA=FORM=CH0, INIT=CANMonitor_getBusOfLru, VA=INIT,
+E12 13 14
+V992 local_timerServices.reschedule RA=FORM=CH0, INIT=TimerServices_reschedule, VA=INIT,
+E12 13 15
+V993 local_timerServices.activate RA=FORM=CH0, INIT=TimerServices_activate, VA=INIT,
+E12 13 16
+V994 pAFDXMonitor.getMaintenanceMasterInformation RA=FORM=CH0, INIT=AFDXMonitor_getMaintenanceMasterInformation, VA=INIT,
+E12 13 17
+V995 pCANMonitor.getOneDuOn RA=FORM=CH0, INIT=CANMonitor_getOneDuOn, VA=INIT,
+E12 13 18
+V996 pCANMonitor.getBusGeneralFailure RA=FORM=CH0, INIT=CANMonitor_getBusGeneralFailure, VA=INIT,
+E12 13 19
+V997 pCANMonitor.getKccuAcquisitionReport RA=FORM=CH0, INIT=CANMonitor_getKccuAcquisitionReport, VA=INIT,
+E12 13 20
+V998 pAFDXMonitor.getTotalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getTotalAFDXFailure, VA=INIT,
+E12 13 21
+V999 local_timerServices.hasTimedout RA=FORM=CH0, INIT=TimerServices_hasTimedout, VA=INIT,
+E12 13 22
+V1000 local_timerServices.deactivate RA=FORM=CH0, INIT=TimerServices_deactivate, VA=INIT,
+E12 13 23
+V1001 local_failure.disappear RA=FORM=CH0, INIT=Failure_disappear, VA=INIT,
+E12 13 24
+V1002 local_failure.appear RA=FORM=CH0, INIT=Failure_appear, VA=INIT,
+E12 0 1451
+V1003 plLocalDisplayUnitLRUId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 1452
+V1004 local_DULinkedToDUBy2CanBus.count RA=FORM=CU8, INIT=10, VA=INIT,
+E12 0 1453
+V1005 local_CANSubscriberItem_DULinkedToDUBy2CanBus[0].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1453
+V1006 local_CANSubscriberItem_DULinkedToDUBy2CanBus[1].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1453
+V1007 local_CANSubscriberItem_DULinkedToDUBy2CanBus[2].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1453
+V1008 local_CANSubscriberItem_DULinkedToDUBy2CanBus[3].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1453
+V1009 local_CANSubscriberItem_DULinkedToDUBy2CanBus[4].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1453
+V1010 local_CANSubscriberItem_DULinkedToDUBy2CanBus[5].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1453
+V1011 local_CANSubscriberItem_DULinkedToDUBy2CanBus[6].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1453
+V1012 local_CANSubscriberItem_DULinkedToDUBy2CanBus[7].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1453
+V1013 local_CANSubscriberItem_DULinkedToDUBy2CanBus[8].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1453
+V1014 local_CANSubscriberItem_DULinkedToDUBy2CanBus[9].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1464
+V1015 local_DULinkedToDUBy2CanBus.items[0] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1464
+V1016 local_DULinkedToDUBy2CanBus.items[1] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1464
+V1017 local_DULinkedToDUBy2CanBus.items[2] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1464
+V1018 local_DULinkedToDUBy2CanBus.items[3] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1464
+V1019 local_DULinkedToDUBy2CanBus.items[4] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1464
+V1020 local_DULinkedToDUBy2CanBus.items[5] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1464
+V1021 local_DULinkedToDUBy2CanBus.items[6] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1464
+V1022 local_DULinkedToDUBy2CanBus.items[7] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1464
+V1023 local_DULinkedToDUBy2CanBus.items[8] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1464
+V1024 local_DULinkedToDUBy2CanBus.items[9] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1466
+V1025 local_CANBusItem.busId RA=FORM=CU0, INIT=CAN_BUS_ID_11, VA=INIT,
+E12 0 1466
+V1026 local_CANBusItem.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 1466
+V1027 local_CANBusItem.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1466
+V1028 local_CANBusItem.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1466
+V1029 local_CANBusItem.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 1466
+V1030 local_CANBusItem.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 1466
+V1031 local_CANBusItem.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1467
+V1032 local_CANBusItem1.busId RA=FORM=CU0, INIT=CAN_BUS_ID_11, VA=INIT,
+E12 0 1467
+V1033 local_CANBusItem1.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 1467
+V1034 local_CANBusItem1.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1467
+V1035 local_CANBusItem1.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1467
+V1036 local_CANBusItem1.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 1467
+V1037 local_CANBusItem1.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 1467
+V1038 local_CANBusItem1.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E16 0 1551
+T1039 BUS_FAILURE_HUB-UTP-0037
+F1040 Nominal
+C1041 PUID_TC [BUS_FAILURE_HUB-LLT-0037] FAILURES FOR 2 DU CONNECTED BY 2 CAN BUSES ON REMOTE DU/FIRST CAN BUS
+C1042 OBJECTIVE :TO VERIFY:
+C1043 STIMULI:
+C1044 FOR CAN1 AND CAN2 BUS
+C1045 - SET ISLOCALDUAFDXFAULTY STATUS TO K_BOOL_TRUE
+C1046 - SET FIRSTBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_FALSE
+C1047 - SET SECONDBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_TRUE
+C1048 - SET ISCONCERNEDDUAFDXFAULTY STATUS TO K_BOOL_FALSE
+C1049 - SET FAILUREFROMREMOTELRUONFIRSTBUSFAULTY STATUS TO K_BOOL_TRUE
+C1050 - SET FAILUREFROMREMOTELRUONSECONDBUSFAULTY STATUS TO K_BOOL_FALSE
+C1051 OBSERVABLE:
+C1052 A BUSFAILUREHUB INSTANCE :
+C1053 - TRIGGERS THE TIMER WITH ID 1
+C1054 - RESCHEDULES TIMER FOR CAN1 BUS WITH TIMER ID 1
+C1055 - ACTIVATES TIMER FOR CAN1 BUS WITH TIMER ID 1
+C1056 TRACEABILITY_LLR [BUS_FAILURE_HUB-REQ-0001]
+C1057 TRACEABILITY_LLR [BUS_FAILURE_HUB-REQ-0014]
+E14 0 1579
+B1058 1
+I1059 BusFailureHub_initialize.ptu / D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu / BusFailureHub_2.ptu
+E11 14 D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu
+E12 14 1
+V1060 local_CMemoryUtilities.set RA=FORM=CH0, INIT=MemoryUtilities_set, VA=INIT,
+E12 14 2
+V1061 pCANMonitor.buildSubscribersListsLinkedToDU RA=FORM=CH0, INIT=CANMonitor_buildSubscribersListsLinkedToDU, VA=INIT,
+E12 14 3
+V1062 pCANMonitor.getKccuFailureWithCockpitEffect RA=FORM=CH0, INIT=CANMonitor_getKccuFailureWithCockpitEffect, VA=INIT,
+E12 14 4
+V1063 pCANMonitor.getLruOffInProgress RA=FORM=CH0, INIT=CANMonitor_getLruOffInProgress, VA=INIT,
+E12 14 5
+V1064 pCANMonitor.getLruIsDisplayUnit RA=FORM=CH0, INIT=CANMonitor_getLruIsDisplayUnit, VA=INIT,
+E12 14 6
+V1065 pCANMonitor.getBusSynthesizedFailure RA=FORM=CH0, INIT=CANMonitor_getBusSynthesizedFailure, VA=INIT,
+E12 14 7
+V1066 pComponentConnections.getConnectedFacet RA=FORM=CH0, INIT=SharedDataDomainComponentConnections_getConnectedFacet, VA=INIT,
+E12 14 8
+V1067 local_timerServices.createTimer RA=FORM=CH0, INIT=TimerServices_createTimer, VA=INIT,
+E12 14 9
+V1068 local_CConfirmationHelper.initialize RA=FORM=CH0, INIT=ConfirmationHelper_initialize, VA=INIT,
+E12 14 10
+V1069 pAFDXMonitor.getLocalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getLocalAFDXFailure, VA=INIT,
+E12 14 11
+V1070 pAFDXMonitor.getRemoteAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getRemoteAFDXFailure, VA=INIT,
+E12 14 12
+V1071 pCANMonitor.getBusFailure RA=FORM=CH0, INIT=CANMonitor_getBusFailure, VA=INIT,
+E12 14 13
+V1072 pCANMonitor.getBusOfLru RA=FORM=CH0, INIT=CANMonitor_getBusOfLru, VA=INIT,
+E12 14 14
+V1073 local_timerServices.reschedule RA=FORM=CH0, INIT=TimerServices_reschedule, VA=INIT,
+E12 14 15
+V1074 local_timerServices.activate RA=FORM=CH0, INIT=TimerServices_activate, VA=INIT,
+E12 14 16
+V1075 pAFDXMonitor.getMaintenanceMasterInformation RA=FORM=CH0, INIT=AFDXMonitor_getMaintenanceMasterInformation, VA=INIT,
+E12 14 17
+V1076 pCANMonitor.getOneDuOn RA=FORM=CH0, INIT=CANMonitor_getOneDuOn, VA=INIT,
+E12 14 18
+V1077 pCANMonitor.getBusGeneralFailure RA=FORM=CH0, INIT=CANMonitor_getBusGeneralFailure, VA=INIT,
+E12 14 19
+V1078 pCANMonitor.getKccuAcquisitionReport RA=FORM=CH0, INIT=CANMonitor_getKccuAcquisitionReport, VA=INIT,
+E12 14 20
+V1079 pAFDXMonitor.getTotalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getTotalAFDXFailure, VA=INIT,
+E12 14 21
+V1080 local_timerServices.hasTimedout RA=FORM=CH0, INIT=TimerServices_hasTimedout, VA=INIT,
+E12 14 22
+V1081 local_timerServices.deactivate RA=FORM=CH0, INIT=TimerServices_deactivate, VA=INIT,
+E12 14 23
+V1082 local_failure.disappear RA=FORM=CH0, INIT=Failure_disappear, VA=INIT,
+E12 14 24
+V1083 local_failure.appear RA=FORM=CH0, INIT=Failure_appear, VA=INIT,
+E12 0 1585
+V1084 plLocalDisplayUnitLRUId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 1586
+V1085 local_DULinkedToDUBy2CanBus.count RA=FORM=CU8, INIT=10, VA=INIT,
+E12 0 1587
+V1086 local_CANSubscriberItem_DULinkedToDUBy2CanBus[0].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1587
+V1087 local_CANSubscriberItem_DULinkedToDUBy2CanBus[1].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1587
+V1088 local_CANSubscriberItem_DULinkedToDUBy2CanBus[2].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1587
+V1089 local_CANSubscriberItem_DULinkedToDUBy2CanBus[3].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1587
+V1090 local_CANSubscriberItem_DULinkedToDUBy2CanBus[4].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1587
+V1091 local_CANSubscriberItem_DULinkedToDUBy2CanBus[5].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1587
+V1092 local_CANSubscriberItem_DULinkedToDUBy2CanBus[6].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1587
+V1093 local_CANSubscriberItem_DULinkedToDUBy2CanBus[7].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1587
+V1094 local_CANSubscriberItem_DULinkedToDUBy2CanBus[8].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1587
+V1095 local_CANSubscriberItem_DULinkedToDUBy2CanBus[9].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1598
+V1096 local_DULinkedToDUBy2CanBus.items[0] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1598
+V1097 local_DULinkedToDUBy2CanBus.items[1] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1598
+V1098 local_DULinkedToDUBy2CanBus.items[2] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1598
+V1099 local_DULinkedToDUBy2CanBus.items[3] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1598
+V1100 local_DULinkedToDUBy2CanBus.items[4] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1598
+V1101 local_DULinkedToDUBy2CanBus.items[5] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1598
+V1102 local_DULinkedToDUBy2CanBus.items[6] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1598
+V1103 local_DULinkedToDUBy2CanBus.items[7] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1598
+V1104 local_DULinkedToDUBy2CanBus.items[8] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1598
+V1105 local_DULinkedToDUBy2CanBus.items[9] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1600
+V1106 local_CANBusItem.busId RA=FORM=CU0, INIT=CAN_BUS_ID_11, VA=INIT,
+E12 0 1600
+V1107 local_CANBusItem.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 1600
+V1108 local_CANBusItem.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1600
+V1109 local_CANBusItem.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1600
+V1110 local_CANBusItem.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 1600
+V1111 local_CANBusItem.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 1600
+V1112 local_CANBusItem.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1601
+V1113 local_CANBusItem1.busId RA=FORM=CU0, INIT=CAN_BUS_ID_21, VA=INIT,
+E12 0 1601
+V1114 local_CANBusItem1.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 1601
+V1115 local_CANBusItem1.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1601
+V1116 local_CANBusItem1.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1601
+V1117 local_CANBusItem1.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 1601
+V1118 local_CANBusItem1.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 1601
+V1119 local_CANBusItem1.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E16 0 1685
+T1120 BUS_FAILURE_HUB-UTP-0038
+F1121 Nominal
+C1122 PUID_TC [BUS_FAILURE_HUB-LLT-0038] FAILURES FOR 2 DU CONNECTED BY 2 CAN BUSES ON REMOTE DU/SECOND CAN BUS
+C1123 OBJECTIVE :TO VERIFY:
+C1124 STIMULI:
+C1125 FOR CAN1 AND CAN2 BUS
+C1126 - SET ISLOCALDUAFDXFAULTY STATUS TO K_BOOL_TRUE
+C1127 - SET FIRSTBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_TRUE
+C1128 - SET SECONDBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_FALSE
+C1129 - SET ISCONCERNEDDUAFDXFAULTY STATUS TO K_BOOL_FALSE
+C1130 - SET FAILUREFROMREMOTELRUONFIRSTBUSFAULTY STATUS TO K_BOOL_FALSE
+C1131 - SET FAILUREFROMREMOTELRUONSECONDBUSFAULTY STATUS TO K_BOOL_TRUE
+C1132 OBSERVABLE:
+C1133 A BUSFAILUREHUB INSTANCE :
+C1134 - TRIGGERS THE TIMER WITH ID 1
+C1135 - RESCHEDULES TIMER FOR CAN2 BUS WITH TIMER ID 1
+C1136 - ACTIVATES TIMER FOR CAN2 BUS WITH TIMER ID 1
+C1137 TRACEABILITY_LLR [BUS_FAILURE_HUB-REQ-0001]
+C1138 TRACEABILITY_LLR [BUS_FAILURE_HUB-REQ-0015]
+E14 0 1713
+B1139 1
+I1140 BusFailureHub_initialize.ptu / D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu / BusFailureHub_2.ptu
+E11 15 D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu
+E12 15 1
+V1141 local_CMemoryUtilities.set RA=FORM=CH0, INIT=MemoryUtilities_set, VA=INIT,
+E12 15 2
+V1142 pCANMonitor.buildSubscribersListsLinkedToDU RA=FORM=CH0, INIT=CANMonitor_buildSubscribersListsLinkedToDU, VA=INIT,
+E12 15 3
+V1143 pCANMonitor.getKccuFailureWithCockpitEffect RA=FORM=CH0, INIT=CANMonitor_getKccuFailureWithCockpitEffect, VA=INIT,
+E12 15 4
+V1144 pCANMonitor.getLruOffInProgress RA=FORM=CH0, INIT=CANMonitor_getLruOffInProgress, VA=INIT,
+E12 15 5
+V1145 pCANMonitor.getLruIsDisplayUnit RA=FORM=CH0, INIT=CANMonitor_getLruIsDisplayUnit, VA=INIT,
+E12 15 6
+V1146 pCANMonitor.getBusSynthesizedFailure RA=FORM=CH0, INIT=CANMonitor_getBusSynthesizedFailure, VA=INIT,
+E12 15 7
+V1147 pComponentConnections.getConnectedFacet RA=FORM=CH0, INIT=SharedDataDomainComponentConnections_getConnectedFacet, VA=INIT,
+E12 15 8
+V1148 local_timerServices.createTimer RA=FORM=CH0, INIT=TimerServices_createTimer, VA=INIT,
+E12 15 9
+V1149 local_CConfirmationHelper.initialize RA=FORM=CH0, INIT=ConfirmationHelper_initialize, VA=INIT,
+E12 15 10
+V1150 pAFDXMonitor.getLocalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getLocalAFDXFailure, VA=INIT,
+E12 15 11
+V1151 pAFDXMonitor.getRemoteAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getRemoteAFDXFailure, VA=INIT,
+E12 15 12
+V1152 pCANMonitor.getBusFailure RA=FORM=CH0, INIT=CANMonitor_getBusFailure, VA=INIT,
+E12 15 13
+V1153 pCANMonitor.getBusOfLru RA=FORM=CH0, INIT=CANMonitor_getBusOfLru, VA=INIT,
+E12 15 14
+V1154 local_timerServices.reschedule RA=FORM=CH0, INIT=TimerServices_reschedule, VA=INIT,
+E12 15 15
+V1155 local_timerServices.activate RA=FORM=CH0, INIT=TimerServices_activate, VA=INIT,
+E12 15 16
+V1156 pAFDXMonitor.getMaintenanceMasterInformation RA=FORM=CH0, INIT=AFDXMonitor_getMaintenanceMasterInformation, VA=INIT,
+E12 15 17
+V1157 pCANMonitor.getOneDuOn RA=FORM=CH0, INIT=CANMonitor_getOneDuOn, VA=INIT,
+E12 15 18
+V1158 pCANMonitor.getBusGeneralFailure RA=FORM=CH0, INIT=CANMonitor_getBusGeneralFailure, VA=INIT,
+E12 15 19
+V1159 pCANMonitor.getKccuAcquisitionReport RA=FORM=CH0, INIT=CANMonitor_getKccuAcquisitionReport, VA=INIT,
+E12 15 20
+V1160 pAFDXMonitor.getTotalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getTotalAFDXFailure, VA=INIT,
+E12 15 21
+V1161 local_timerServices.hasTimedout RA=FORM=CH0, INIT=TimerServices_hasTimedout, VA=INIT,
+E12 15 22
+V1162 local_timerServices.deactivate RA=FORM=CH0, INIT=TimerServices_deactivate, VA=INIT,
+E12 15 23
+V1163 local_failure.disappear RA=FORM=CH0, INIT=Failure_disappear, VA=INIT,
+E12 15 24
+V1164 local_failure.appear RA=FORM=CH0, INIT=Failure_appear, VA=INIT,
+E12 0 1719
+V1165 plLocalDisplayUnitLRUId RA=FORM=CU0, INIT=DU_ID_LC, VA=INIT,
+E12 0 1720
+V1166 local_DULinkedToDUBy2CanBus.count RA=FORM=CU8, INIT=10, VA=INIT,
+E12 0 1721
+V1167 local_CANSubscriberItem_DULinkedToDUBy2CanBus[0].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1721
+V1168 local_CANSubscriberItem_DULinkedToDUBy2CanBus[1].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1721
+V1169 local_CANSubscriberItem_DULinkedToDUBy2CanBus[2].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1721
+V1170 local_CANSubscriberItem_DULinkedToDUBy2CanBus[3].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1721
+V1171 local_CANSubscriberItem_DULinkedToDUBy2CanBus[4].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1721
+V1172 local_CANSubscriberItem_DULinkedToDUBy2CanBus[5].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1721
+V1173 local_CANSubscriberItem_DULinkedToDUBy2CanBus[6].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1721
+V1174 local_CANSubscriberItem_DULinkedToDUBy2CanBus[7].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1721
+V1175 local_CANSubscriberItem_DULinkedToDUBy2CanBus[8].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1721
+V1176 local_CANSubscriberItem_DULinkedToDUBy2CanBus[9].lruId RA=FORM=CU0, INIT={LRU_ID_DU_IL,LRU_ID_DU_IR,LRU_ID_DU_UC,LRU_ID_DU_LC,
+&LRU_ID_DU_OL,LRU_ID_DU_OR,LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1732
+V1177 local_DULinkedToDUBy2CanBus.items[0] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1732
+V1178 local_DULinkedToDUBy2CanBus.items[1] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1732
+V1179 local_DULinkedToDUBy2CanBus.items[2] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1732
+V1180 local_DULinkedToDUBy2CanBus.items[3] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1732
+V1181 local_DULinkedToDUBy2CanBus.items[4] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1732
+V1182 local_DULinkedToDUBy2CanBus.items[5] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1732
+V1183 local_DULinkedToDUBy2CanBus.items[6] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1732
+V1184 local_DULinkedToDUBy2CanBus.items[7] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1732
+V1185 local_DULinkedToDUBy2CanBus.items[8] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1732
+V1186 local_DULinkedToDUBy2CanBus.items[9] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[0],1=>&local_CANSubs
+&criberItem_DULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_DULinkedToDUBy
+&2CanBus[3],4=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[4],5=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[5],6=>&local_CANS
+&ubscriberItem_DULinkedToDUBy2CanBus[6],7=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[7],8=>&local_CANSubscriberItem_DULinkedToD
+&UBy2CanBus[8],9=>&local_CANSubscriberItem_DULinkedToDUBy2CanBus[9]}, VA=INIT,
+E12 0 1734
+V1187 local_CANBusItem.busId RA=FORM=CU0, INIT=CAN_BUS_ID_12, VA=INIT,
+E12 0 1734
+V1188 local_CANBusItem.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 1734
+V1189 local_CANBusItem.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1734
+V1190 local_CANBusItem.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1734
+V1191 local_CANBusItem.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 1734
+V1192 local_CANBusItem.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 1734
+V1193 local_CANBusItem.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1735
+V1194 local_CANBusItem1.busId RA=FORM=CU0, INIT=CAN_BUS_ID_22, VA=INIT,
+E12 0 1735
+V1195 local_CANBusItem1.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 1735
+V1196 local_CANBusItem1.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1735
+V1197 local_CANBusItem1.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1735
+V1198 local_CANBusItem1.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 1735
+V1199 local_CANBusItem1.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 1735
+V1200 local_CANBusItem1.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E16 0 1820
+T1201 BUS_FAILURE_HUB-UTP-0039
+F1202 Nominal
+C1203 PUID_TC [BUS_FAILURE_HUB-LLT-0039] FAILURE FOR THE KCCU CONNECTED TO DU BY 2 CAN BUSES
+C1204 OBJECTIVE :TO VERIFY:
+C1205 STIMULI:
+C1206 FOR CAN1 AND CAN2 BUS
+C1207 - SET FIRSTBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_FALSE
+C1208 - SET SECONDBUSSYNTHESIZEDFAILURE STATUS TO K_BOOL_FALSE
+C1209 - SET FAILUREFROMREMOTELRUONFIRSTBUSFAULTY STATUS TO K_BOOL_TRUE
+C1210 - SET FAILUREFROMREMOTELRUONSECONDBUSFAULTY STATUS TO K_BOOL_TRUE
+C1211 OBSERVABLE:
+C1212 A BUSFAILUREHUB INSTANCE :
+C1213 - CHECKS CONFIRMATION VALUE ON PVALUEID AND SETS PCONFIRMEDVALUE TO K_BOOL_FALSE
+C1214 TRACEABILITY_LLR [BUS_FAILURE_HUB-REQ-0001]
+C1215 TRACEABILITY_LLR [BUS_FAILURE_HUB-REQ-0016]
+E14 0 1844
+B1216 1
+I1217 BusFailureHub_initialize.ptu / D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu / BusFailureHub_2.ptu
+E11 16 D:\A350\UT\Class_BusFailureHub\Class_BusFailureHub\BusFailureHub_initialize.ptu
+E12 16 1
+V1218 local_CMemoryUtilities.set RA=FORM=CH0, INIT=MemoryUtilities_set, VA=INIT,
+E12 16 2
+V1219 pCANMonitor.buildSubscribersListsLinkedToDU RA=FORM=CH0, INIT=CANMonitor_buildSubscribersListsLinkedToDU, VA=INIT,
+E12 16 3
+V1220 pCANMonitor.getKccuFailureWithCockpitEffect RA=FORM=CH0, INIT=CANMonitor_getKccuFailureWithCockpitEffect, VA=INIT,
+E12 16 4
+V1221 pCANMonitor.getLruOffInProgress RA=FORM=CH0, INIT=CANMonitor_getLruOffInProgress, VA=INIT,
+E12 16 5
+V1222 pCANMonitor.getLruIsDisplayUnit RA=FORM=CH0, INIT=CANMonitor_getLruIsDisplayUnit, VA=INIT,
+E12 16 6
+V1223 pCANMonitor.getBusSynthesizedFailure RA=FORM=CH0, INIT=CANMonitor_getBusSynthesizedFailure, VA=INIT,
+E12 16 7
+V1224 pComponentConnections.getConnectedFacet RA=FORM=CH0, INIT=SharedDataDomainComponentConnections_getConnectedFacet, VA=INIT,
+E12 16 8
+V1225 local_timerServices.createTimer RA=FORM=CH0, INIT=TimerServices_createTimer, VA=INIT,
+E12 16 9
+V1226 local_CConfirmationHelper.initialize RA=FORM=CH0, INIT=ConfirmationHelper_initialize, VA=INIT,
+E12 16 10
+V1227 pAFDXMonitor.getLocalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getLocalAFDXFailure, VA=INIT,
+E12 16 11
+V1228 pAFDXMonitor.getRemoteAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getRemoteAFDXFailure, VA=INIT,
+E12 16 12
+V1229 pCANMonitor.getBusFailure RA=FORM=CH0, INIT=CANMonitor_getBusFailure, VA=INIT,
+E12 16 13
+V1230 pCANMonitor.getBusOfLru RA=FORM=CH0, INIT=CANMonitor_getBusOfLru, VA=INIT,
+E12 16 14
+V1231 local_timerServices.reschedule RA=FORM=CH0, INIT=TimerServices_reschedule, VA=INIT,
+E12 16 15
+V1232 local_timerServices.activate RA=FORM=CH0, INIT=TimerServices_activate, VA=INIT,
+E12 16 16
+V1233 pAFDXMonitor.getMaintenanceMasterInformation RA=FORM=CH0, INIT=AFDXMonitor_getMaintenanceMasterInformation, VA=INIT,
+E12 16 17
+V1234 pCANMonitor.getOneDuOn RA=FORM=CH0, INIT=CANMonitor_getOneDuOn, VA=INIT,
+E12 16 18
+V1235 pCANMonitor.getBusGeneralFailure RA=FORM=CH0, INIT=CANMonitor_getBusGeneralFailure, VA=INIT,
+E12 16 19
+V1236 pCANMonitor.getKccuAcquisitionReport RA=FORM=CH0, INIT=CANMonitor_getKccuAcquisitionReport, VA=INIT,
+E12 16 20
+V1237 pAFDXMonitor.getTotalAFDXFailure RA=FORM=CH0, INIT=AFDXMonitor_getTotalAFDXFailure, VA=INIT,
+E12 16 21
+V1238 local_timerServices.hasTimedout RA=FORM=CH0, INIT=TimerServices_hasTimedout, VA=INIT,
+E12 16 22
+V1239 local_timerServices.deactivate RA=FORM=CH0, INIT=TimerServices_deactivate, VA=INIT,
+E12 16 23
+V1240 local_failure.disappear RA=FORM=CH0, INIT=Failure_disappear, VA=INIT,
+E12 16 24
+V1241 local_failure.appear RA=FORM=CH0, INIT=Failure_appear, VA=INIT,
+R1242 4
+E12 0 1850
+V1243 plLocalDisplayUnitLRUId RA=FORM=CU0, INIT IN [LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,LRU_ID_KBD_RIGHT], VA=INIT,
+E12 0 1851
+V1244 local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[0].lruId RA=FORM=CU0, INIT={LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,L
+&RU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1851
+V1245 local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[1].lruId RA=FORM=CU0, INIT={LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,L
+&RU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1851
+V1246 local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[2].lruId RA=FORM=CU0, INIT={LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,L
+&RU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1851
+V1247 local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[3].lruId RA=FORM=CU0, INIT={LRU_ID_CCD_LEFT,LRU_ID_CCD_RIGHT,LRU_ID_KBD_LEFT,L
+&RU_ID_KBD_RIGHT}, VA=INIT,
+E12 0 1855
+V1248 local_KCCULinkedToDUBy2CanBus.items[0] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[0],1=>&local_CAN
+&SubscriberItem_KCCULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_KCCULi
+&nkedToDUBy2CanBus[3]}, VA=INIT,
+E12 0 1855
+V1249 local_KCCULinkedToDUBy2CanBus.items[1] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[0],1=>&local_CAN
+&SubscriberItem_KCCULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_KCCULi
+&nkedToDUBy2CanBus[3]}, VA=INIT,
+E12 0 1855
+V1250 local_KCCULinkedToDUBy2CanBus.items[2] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[0],1=>&local_CAN
+&SubscriberItem_KCCULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_KCCULi
+&nkedToDUBy2CanBus[3]}, VA=INIT,
+E12 0 1855
+V1251 local_KCCULinkedToDUBy2CanBus.items[3] RA=FORM=CH0, INIT={0=>&local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[0],1=>&local_CAN
+&SubscriberItem_KCCULinkedToDUBy2CanBus[1],2=>&local_CANSubscriberItem_KCCULinkedToDUBy2CanBus[2],3=>&local_CANSubscriberItem_KCCULi
+&nkedToDUBy2CanBus[3]}, VA=INIT,
+E12 0 1856
+V1252 local_KCCULinkedToDUBy2CanBus.count RA=FORM=CU8, INIT=4, VA=INIT,
+E12 0 1857
+V1253 local_CANBusItem.busId RA=FORM=CU0, INIT=CAN_BUS_ID_11, VA=INIT,
+E12 0 1857
+V1254 local_CANBusItem.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 1857
+V1255 local_CANBusItem.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1857
+V1256 local_CANBusItem.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1857
+V1257 local_CANBusItem.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 1857
+V1258 local_CANBusItem.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 1857
+V1259 local_CANBusItem.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1858
+V1260 local_CANBusItem1.busId RA=FORM=CU0, INIT=CAN_BUS_ID_12, VA=INIT,
+E12 0 1858
+V1261 local_CANBusItem1.sourceLruId RA=FORM=CU0, INIT=LRU_ID_DU_OL, VA=INIT,
+E12 0 1858
+V1262 local_CANBusItem1.failure RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1858
+V1263 local_CANBusItem1.isMonitoredMessageRefreshed.confirmedValue RA=FORM=CU8, INIT=1, VA=INIT,
+E12 0 1858
+V1264 local_CANBusItem1.isMonitoredMessageRefreshed.confirmationId RA=FORM=CD32, INIT=1, VA=INIT,
+E12 0 1858
+V1265 local_CANBusItem1.synthesizedFailure RA=FORM=CU8, INIT=2, VA=INIT,
+E12 0 1858
+V1266 local_CANBusItem1.isSynthesizedFailureRefreshed RA=FORM=CU8, INIT=1, VA=INIT,

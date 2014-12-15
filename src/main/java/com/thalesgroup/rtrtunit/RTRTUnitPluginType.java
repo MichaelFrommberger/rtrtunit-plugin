@@ -4,8 +4,8 @@ import hudson.Extension;
 
 import org.kohsuke.stapler.DataBoundConstructor;
 
-import com.thalesgroup.dtkit.metrics.hudson.api.descriptor.TestTypeDescriptor;
-import com.thalesgroup.dtkit.metrics.hudson.api.type.TestType;
+import org.jenkinsci.lib.dtkit.descriptor.TestTypeDescriptor;
+import org.jenkinsci.lib.dtkit.type.TestType;
 
 /**
  * RTRTUnitPluginType.
@@ -19,13 +19,17 @@ public class RTRTUnitPluginType extends TestType {
      * @param pattern the pattern where to search the file
      * @param faildedIfNotNew configuration option
      */
-    @DataBoundConstructor
     public RTRTUnitPluginType(final String pattern,
             final boolean faildedIfNotNew) {
         // Fix a bug due to the generation of temporary files by Xunit
         // but not done by our code.
         // Result: always failure of the build it deleteOuputFiles=true
         super(pattern, faildedIfNotNew, false);
+    }
+    
+    @DataBoundConstructor
+    public RTRTUnitPluginType(String pattern, boolean skipNoTestFiles, boolean failIfNotNew, boolean deleteOutputFiles, boolean stopProcessingIfError) {
+        super(pattern, skipNoTestFiles, failIfNotNew, deleteOutputFiles, stopProcessingIfError);
     }
 
     /**
@@ -62,6 +66,11 @@ public class RTRTUnitPluginType extends TestType {
         public final String getId() {
             return RTRTUnitPluginType.class.getCanonicalName();
         }
+    }
+    
+    @Override
+    public Object readResolve() {
+    	return super.readResolve();
     }
 
 }

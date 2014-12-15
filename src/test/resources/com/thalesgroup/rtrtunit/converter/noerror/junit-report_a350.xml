@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <testsuites>
     <testsuite errors="0" failures="0" name="a350_rtrt7" tests="12">
-		<testcase classname="a350_rtrt7" name="UTP-TOS-0037" time="0.202"/>
-		<testcase classname="a350_rtrt7" name="UTP-TOS-0038" time="0.0030"/>
-		<testcase classname="a350_rtrt7" name="UTP-TOS-0039" time="0.0030"/>
-		<testcase classname="a350_rtrt7" name="UTP-TOS-0040" time="0.0020"/>
-		<testcase classname="a350_rtrt7" name="UTP-TOS-0041" time="0.0030"/>
-		<testcase classname="a350_rtrt7" name="UTP-TOS-0042" time="0.0030"/>
-		<testcase classname="a350_rtrt7" name="UTP-TOS-0043" time="0.0020"/>
-		<testcase classname="a350_rtrt7" name="UTP-TOS-0044" time="0.0020"/>
-		<testcase classname="a350_rtrt7" name="UTP-TOS-0045" time="0.0030"/>
-		<testcase classname="a350_rtrt7" name="UTP-TOS-0046" time="0.0020"/>
-		<testcase classname="a350_rtrt7" name="UTP-TOS-0047" time="0.0020"/>
-		<testcase classname="a350_rtrt7" name="UTP-TOS-0048" time="0.0010"/>
+		<testcase classname="TOSManagerComponent" name="UTP-TOS-0037" time="0.202"/>
+		<testcase classname="TOSManagerComponent" name="UTP-TOS-0038" time="0.003"/>
+		<testcase classname="TOSManagerComponent" name="UTP-TOS-0039" time="0.003"/>
+		<testcase classname="TOSManagerComponent" name="UTP-TOS-0040" time="0.002"/>
+		<testcase classname="TOSManagerComponent" name="UTP-TOS-0041" time="0.003"/>
+		<testcase classname="TOSManagerComponent" name="UTP-TOS-0042" time="0.003"/>
+		<testcase classname="TOSManagerComponent" name="UTP-TOS-0043" time="0.002"/>
+		<testcase classname="TOSManagerComponent" name="UTP-TOS-0044" time="0.002"/>
+		<testcase classname="TOSManagerComponent" name="UTP-TOS-0045" time="0.003"/>
+		<testcase classname="TOSManagerComponent" name="UTP-TOS-0046" time="0.002"/>
+		<testcase classname="TOSManagerComponent" name="UTP-TOS-0047" time="0.002"/>
+		<testcase classname="TOSManagerComponent" name="UTP-TOS-0048" time="0.001"/>
     </testsuite>
 </testsuites>

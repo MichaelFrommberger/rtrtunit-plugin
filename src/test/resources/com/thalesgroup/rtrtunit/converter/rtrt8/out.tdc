@@ -1,0 +1,146 @@
+************************************************************************
+* TOOL : Unit Test Compiler VERSION 8.0.0.4.101.013                    *
+*                                                                      *
+* COMMAND : attolprepro                                                *
+*   D:\ThalesControlData472T1\jenkins\jobs\TEST_RTRT_C\workspace\Testrtp\Testing_C\ptu\double.ptu  *
+*   cvisual10\Tdouble.c /LANGUAGE=C /TARGET=PC/NT /FAST                *
+*   /INCL=cvisual10 /DEFINE=WIN32,_DEBUG,_WINDOWS,_MBCS,               *
+*   _CRT_SECURE_NO_DEPRECATE /RESTRICTION=ANSI /NOSIMULATION           *
+*   /STD_DEFINE=C:\Atgl\IBM\TESTRE~1\v80\targets\CVISUA~1\ana\atus_c.def *
+*                                                                      *
+* FILE :                                                               *
+*   D:\ThalesControlData472T1\jenkins\jobs\TEST_RTRT_C\workspace\Testrtp\Testing_C\cvisual10\Tdouble.tdc *
+*                                                                      *
+* DATE : Tue Apr 01 12:28:49 2014                                      *
+************************************************************************
+E11 0 D:\ThalesControlData472T1\jenkins\jobs\TEST_RTRT_C\workspace\Testrtp\Testing_C\ptu\double.ptu
+C0 attolprepro D:\ThalesControlData472T1\jenkins\jobs\TEST_RTRT_C\workspace\Testrtp\Testing_C\ptu\double.ptu cvisual10\Tdouble.c /LANGUAGE=C /TARGET=PC/NT /FAST /INCL=cvisual10 /DEFINE=WIN32,_DEBUG,_WINDOWS,_MBCS,_CRT_SECURE_NO_DEPRECATE /RESTRICTION=ANSI /NOSIMULATION /STD_DEFINE=C:\Atgl\IBM\TESTRE~1\v80\targets\CVISUA~1\ana\atus_c.def
+H0 Tue Apr 01 12:28:49 2014
+E7 PC/NT
+E8 8.0.0.4.101.013
+E9 C C
+E6  double
+E4  
+E5  
+E1 Test_runtime_double
+E2 
+E10 
+E0 Test_runtime_double ,  , 
+E17 0 70
+E16 0 72
+O1 add_sub_1
+T2 1
+F3 nominal
+E14 0 75
+B4 1
+E12 0 77
+V5 v_double_1 RA=FORM=C, INIT=6.12545525458458, VA=init,
+E12 0 78
+V6 v_double_2 RA=FORM=C, INIT=6.12545525458458, VA=init,
+E12 0 79
+V7 v_double_3 RA=FORM=C, INIT=6.12545525458458, VA=init,
+E12 0 80
+V8 v_double_4 RA=FORM=C, INIT=6.12545525458458, VA=init,
+E12 0 82
+V9 res_1 RA=FORM=C, INIT=0.0, VA=2*6.12545525458458 - 0.00000001 +/- 0.00001,
+E12 0 83
+V10 res_2 RA=FORM=C, INIT=10.0, VA=0.0 +/- 0.01*(0.0 )/100.0,
+E17 0 96
+E16 0 98
+O11 mul_div_1
+T12 1
+F13 nominal
+E14 0 101
+B14 1
+E12 0 103
+V15 v_double_1 RA=FORM=C, INIT=6.12545525458458, VA=init,
+E12 0 104
+V16 v_double_2 RA=FORM=C, INIT=6.12545525458458, VA=init,
+E12 0 105
+V17 v_double_3 RA=FORM=C, INIT=6.12545525458458, VA=init,
+E12 0 106
+V18 v_double_4 RA=FORM=C, INIT=6.12545525458458, VA=init,
+E12 0 108
+V19 res_1 RA=FORM=C, INIT=0.0, VA=6.12545525458458*6.12545525458458 - 0.0000001 +/- 0.00001,
+E12 0 109
+V20 res_2 RA=FORM=C, INIT=10.0, VA=1.0 +/- 0.01*(1.0 )/100.0,
+E17 0 121
+E16 0 123
+O21 FORMAT_Test
+T22 1
+F23 nominal
+E14 0 126
+B24 1
+E12 0 131
+V25 v_double_1 RA=FORM=CF4, INIT=6.12545525458458, VA=init,
+E12 0 132
+V26 v_double_2 RA=FORM=CE4, INIT=6.12545525458458, VA=init,
+E12 0 133
+V27 v_double_3 RA=FORM=C, INIT=6.12545525458458, VA=init,
+E12 0 134
+V28 v_double_4 RA=FORM=C, INIT=6.12545525458458, VA=init,
+E12 0 136
+V29 res_1 RA=FORM=C, INIT=0.0, VA=6.12545525458458*6.12545525458458 - 0.0000001 +/- 0.00001,
+E12 0 137
+V30 res_2 RA=FORM=C, INIT=10.0, VA=1.0 +/- 0.01*(1.0 )/100.0,
+E17 0 148
+E16 0 154
+O31 INITIALI
+S32 extern
+T33 1
+F34 nominal
+E14 0 157
+B35 1
+E12 0 158
+V36 RANDOM RA=FORM=C, INIT=2.0, VA=INIT,
+E12 0 159
+V37 ZERO RA=FORM=C, INIT=RANDOM-RANDOM, VA=INIT,
+E12 0 160
+V38 ONE RA=FORM=C, INIT=RANDOM/RANDOM, VA=INIT,
+E12 0 161
+V39 MONE RA=FORM=C, INIT=ZERO - ONE, VA=INIT,
+E12 0 162
+V40 TWO RA=FORM=C, INIT=ONE+ONE, VA=INIT,
+E12 0 163
+V41 MTWO RA=FORM=C, INIT=MONE * TWO, VA=INIT,
+E12 0 164
+V42 ONEHALF RA=FORM=C, INIT=ONE / TWO, VA=INIT,
+E12 0 165
+V43 MONEHALF RA=FORM=C, INIT=MONE * ONEHALF, VA=INIT,
+E12 0 166
+V44 FIVE RA=FORM=C, INIT=ONE+TWO+TWO, VA=INIT,
+E12 0 167
+V45 ONEFIFTH RA=FORM=C, INIT=ONE + (ONE/TWO), VA=INIT,
+E12 0 168
+V46 MONEFIFTH RA=FORM=C, INIT=MONE * ONEFIFTH, VA=INIT,
+E12 0 169
+V47 TEN RA=FORM=C, INIT=FIVE+FIVE, VA=INIT,
+E12 0 170
+V48 ONEHUNDRED RA=FORM=C, INIT=TEN * TEN, VA=INIT,
+E12 0 171
+V49 ONEHUNDREDTH RA=FORM=C, INIT=ONE/ONEHUNDRED, VA=INIT,
+E12 0 172
+V50 EPSI RA=FORM=C, INIT=(ONEHUNDREDTH * ONEHUNDREDTH)/TEN, VA=INIT,
+E12 0 173
+V51 NUMERIQUE_BIG RA=FORM=C, INIT=calc_big(ONEHUNDRED), VA=INIT,
+E12 0 174
+V52 NUMERIQUE_SML RA=FORM=C, INIT=calc_big(MONEFIFTH), VA=INIT,
+E12 0 175
+V53 TWO_THEN_THREE RA=FORM=C, INIT=TWO * TWO * TWO, VA=INIT,
+E12 0 176
+V54 TWO_THEN_SEVEN RA=FORM=C, INIT=TWO_THEN_THREE * TWO_THEN_THREE * TWO, VA=INIT,
+E12 0 177
+V55 TWO_THEN_FIFTEEN RA=FORM=C, INIT=TWO_THEN_SEVEN * TWO_THEN_SEVEN * TWO, VA=INIT,
+E12 0 178
+V56 TWO_THEN_THIRTYONE RA=FORM=C, INIT=TWO_THEN_FIFTEEN * TWO_THEN_FIFTEEN * TWO, VA=INIT,
+E17 0 187
+E16 0 192
+O57 Src_Cov_Double
+S58 extern
+T59 1
+F60 nominal
+C61 Test of source.c with coverage :
+E14 0 195
+B62 1
+E12 0 198
+V63 coverage RA=FORM=CD32, INIT=0, VA=0,

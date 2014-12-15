@@ -56,5 +56,28 @@ public class RTRTUnitConversionTest extends AbstractRTRTUnitConversionTest {
     public void rtrtUnitTestConversionWithLVar() throws Exception {
         conversion(RTRTUnitInputMetric.class, "withlvar/out.rio");
     }
-     
+
+    @Test
+    public void testWithFailedStubCallNumber() throws Exception {
+    	conversionAndValidation(
+    				RTRTUnitInputMetric.class,
+    				"failedstubcount/out.rio",
+    				"failedstubcount/junit-report.xml");
+    }
+
+    @Test
+    public void testRtrt8() throws Exception {
+    	conversionAndValidation(
+    				RTRTUnitInputMetric.class,
+    				"rtrt8/out.rio",
+    				"rtrt8/junit-report.xml");
+    }
+
+    @Test
+    public void testAda() throws Exception {
+    	conversionAndValidation(
+    				RTRTUnitInputMetric.class,
+    				"ada/out.rio",
+    				"ada/junit-report.xml");
+    }
 }

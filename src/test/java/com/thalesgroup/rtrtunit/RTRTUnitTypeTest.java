@@ -7,8 +7,8 @@ import java.lang.reflect.Method;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.thalesgroup.dtkit.metrics.model.InputMetric;
-import com.thalesgroup.hudson.plugins.xunit.types.XUnitType;
+import org.jenkinsci.lib.dtkit.model.InputMetric;
+import org.jenkinsci.lib.dtkit.type.TestType;
 import com.thalesgroup.rtrtunit.RTRTUnitPluginType;
 import com.thalesgroup.rtrtunit.RTRTUnitType;
 
@@ -19,7 +19,7 @@ public class RTRTUnitTypeTest {
 
         // An old instance can be created and the its getDescriptor method
         // returns null
-        XUnitType rtrtUnitType = new RTRTUnitType(pattern, faildedIfNotNew);
+    	TestType rtrtUnitType = new RTRTUnitType(pattern, faildedIfNotNew);
         Assert.assertNull(rtrtUnitType.getDescriptor());
 
         // Test new Object type
@@ -32,8 +32,6 @@ public class RTRTUnitTypeTest {
 
         Assert.assertEquals(rtrtUnitType.getPattern(), rtrtUnitPluginType
                 .getPattern());
-        Assert.assertEquals(rtrtUnitType.isDeleteJUnitFiles(),
-                rtrtUnitPluginType.isDeleteOutputFiles());
         Assert.assertEquals(rtrtUnitType.isFaildedIfNotNew(),
                 rtrtUnitPluginType.isFaildedIfNotNew());
 

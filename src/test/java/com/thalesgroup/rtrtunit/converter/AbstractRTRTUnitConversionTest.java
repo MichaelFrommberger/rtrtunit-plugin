@@ -8,9 +8,9 @@ import org.custommonkey.xmlunit.XMLUnit;
 import org.junit.Assert;
 import org.junit.Before;
 
-import com.thalesgroup.dtkit.metrics.model.InputMetric;
-import com.thalesgroup.dtkit.metrics.model.InputMetricFactory;
-import com.thalesgroup.dtkit.util.validator.ValidationException;
+import org.jenkinsci.lib.dtkit.model.InputMetric;
+import org.jenkinsci.lib.dtkit.model.InputMetricFactory;
+import org.jenkinsci.lib.dtkit.util.validator.ValidationException;
 import com.thalesgroup.rtrtunit.tdcreader.TdcException;
 
 public class AbstractRTRTUnitConversionTest {
@@ -38,7 +38,9 @@ public class AbstractRTRTUnitConversionTest {
         Diff myDiff = new Diff(XMLUtil.readXmlAsString(new File(this.getClass()
                 .getResource(expectedResultPath).toURI())), XMLUtil
                 .readXmlAsString(outputXMLFile));
-        Assert.assertTrue("Conversion did not work" + myDiff, myDiff.similar());
+        Assert.assertTrue(
+        		"Conversion failed, see: " + outputXMLFile.getAbsolutePath(),
+        		myDiff.similar());
 
         // The generated output file must be valid
         Assert.assertTrue(inputMetric.validateOutputFile(outputXMLFile));

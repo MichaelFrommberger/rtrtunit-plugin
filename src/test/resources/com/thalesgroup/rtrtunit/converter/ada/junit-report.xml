@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites>
+    <testsuite name="out" tests="4" failures="1" errors="0">
+        <testcase name="1" time="0.0" classname="INIT_REF"/>
+        <testcase name="2" time="0.0" classname="INIT_REF"/>
+        <testcase name="3" time="0.0" classname="INIT_REF">
+            <failure type="Error" message="1 variables failed"/>
+            <system-err>ADA_EX.RESULT failed. The obtained value 6 is different from the expected value 0.&#xD;
+</system-err>
+        </testcase>
+        <testcase name="4" time="0.0" classname="INIT_REF"/>
+    </testsuite>
+</testsuites>

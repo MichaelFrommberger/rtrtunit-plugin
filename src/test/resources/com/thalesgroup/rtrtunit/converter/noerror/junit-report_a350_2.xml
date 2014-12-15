@@ -1,82 +1,82 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <testsuites>
     <testsuite name="a350_rtrt7_2" tests="41" failures="9" errors="0">
-        <testcase name="UTP-ANF-NDC-0001" time="1.986" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0002" time="0.075" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0003" time="0.075" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0004" time="0.081" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0005" time="0.074" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0006" time="0.081" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0007" time="0.075" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0008" time="0.074" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0009" time="0.076" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0010" time="0.075" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0011" time="0.072" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0012" time="0.076" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0013" time="0.074" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0014" time="0.074" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0052" time="0.075" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0016" time="0.09" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0017" time="0.081" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0018" time="0.074" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0019" time="0.074" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0032" time="0.074" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0035" time="0.073" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0033" time="0.075" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0034" time="0.075" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0046" time="0.074" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0047" time="0.074" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0048" time="0.075" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0020" time="0.101" classname="a350_rtrt7_2">
+        <testcase name="UTP-ANF-NDC-0001" time="1.986" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0002" time="0.075" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0003" time="0.075" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0004" time="0.081" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0005" time="0.074" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0006" time="0.081" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0007" time="0.075" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0008" time="0.074" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0009" time="0.076" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0010" time="0.075" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0011" time="0.072" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0012" time="0.076" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0013" time="0.074" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0014" time="0.074" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0052" time="0.075" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0016" time="0.09" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0017" time="0.081" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0018" time="0.074" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0019" time="0.074" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0032" time="0.074" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0035" time="0.073" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0033" time="0.075" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0034" time="0.075" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0046" time="0.074" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0047" time="0.074" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0048" time="0.075" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0020" time="0.101" classname="MapAirportData">
             <failure type="Error" message="1 variables failed"/>
-            <system-err>ICAO_CODE_AVAIL failed. The obtained value 1 is different from the expected value 0.&#xD;
+            <system-err>ICAO_CODE_AVAIL failed. The obtained value 0 is different from the expected value 1.&#xD;
 </system-err>
         </testcase>
-        <testcase name="UTP-ANF-NDC-0021" time="0.097" classname="a350_rtrt7_2">
+        <testcase name="UTP-ANF-NDC-0021" time="0.097" classname="MapAirportData">
             <failure type="Error" message="1 variables failed"/>
-            <system-err>ICAO_CODE_AVAIL failed. The obtained value 1 is different from the expected value 0.&#xD;
+            <system-err>ICAO_CODE_AVAIL failed. The obtained value 0 is different from the expected value 1.&#xD;
 </system-err>
         </testcase>
-        <testcase name="UTP-ANF-NDC-0022" time="0.099" classname="a350_rtrt7_2">
+        <testcase name="UTP-ANF-NDC-0022" time="0.099" classname="MapAirportData">
             <failure type="Error" message="1 variables failed"/>
-            <system-err>ICAO_CODE_AVAIL failed. The obtained value 1 is different from the expected value 0.&#xD;
+            <system-err>ICAO_CODE_AVAIL failed. The obtained value 0 is different from the expected value 1.&#xD;
 </system-err>
         </testcase>
-        <testcase name="UTP-ANF-NDC-0023" time="0.097" classname="a350_rtrt7_2">
+        <testcase name="UTP-ANF-NDC-0023" time="0.097" classname="MapAirportData">
             <failure type="Error" message="1 variables failed"/>
-            <system-err>ICAO_CODE_AVAIL failed. The obtained value 1 is different from the expected value 0.&#xD;
+            <system-err>ICAO_CODE_AVAIL failed. The obtained value 0 is different from the expected value 1.&#xD;
 </system-err>
         </testcase>
-        <testcase name="UTP-ANF-NDC-0024" time="0.095" classname="a350_rtrt7_2">
+        <testcase name="UTP-ANF-NDC-0024" time="0.095" classname="MapAirportData">
             <failure type="Error" message="1 variables failed"/>
-            <system-err>ICAO_CODE_AVAIL failed. The obtained value 1 is different from the expected value 0.&#xD;
+            <system-err>ICAO_CODE_AVAIL failed. The obtained value 0 is different from the expected value 1.&#xD;
 </system-err>
         </testcase>
-        <testcase name="UTP-ANF-NDC-0025" time="0.093" classname="a350_rtrt7_2">
+        <testcase name="UTP-ANF-NDC-0025" time="0.093" classname="MapAirportData">
             <failure type="Error" message="1 variables failed"/>
-            <system-err>ICAO_CODE_AVAIL failed. The obtained value 1 is different from the expected value 0.&#xD;
+            <system-err>ICAO_CODE_AVAIL failed. The obtained value 0 is different from the expected value 1.&#xD;
 </system-err>
         </testcase>
-        <testcase name="UTP-ANF-NDC-0026" time="0.095" classname="a350_rtrt7_2">
+        <testcase name="UTP-ANF-NDC-0026" time="0.095" classname="MapAirportData">
             <failure type="Error" message="1 variables failed"/>
-            <system-err>ICAO_CODE_AVAIL failed. The obtained value 1 is different from the expected value 0.&#xD;
+            <system-err>ICAO_CODE_AVAIL failed. The obtained value 0 is different from the expected value 1.&#xD;
 </system-err>
         </testcase>
-        <testcase name="UTP-ANF-NDC-0027" time="0.094" classname="a350_rtrt7_2">
+        <testcase name="UTP-ANF-NDC-0027" time="0.094" classname="MapAirportData">
             <failure type="Error" message="1 variables failed"/>
-            <system-err>ICAO_CODE_AVAIL failed. The obtained value 1 is different from the expected value 0.&#xD;
+            <system-err>ICAO_CODE_AVAIL failed. The obtained value 0 is different from the expected value 1.&#xD;
 </system-err>
         </testcase>
-        <testcase name="UTP-ANF-NDC-0028" time="0.094" classname="a350_rtrt7_2">
+        <testcase name="UTP-ANF-NDC-0028" time="0.094" classname="MapAirportData">
             <failure type="Error" message="1 variables failed"/>
-            <system-err>ICAO_CODE_AVAIL failed. The obtained value 1 is different from the expected value 0.&#xD;
+            <system-err>ICAO_CODE_AVAIL failed. The obtained value 0 is different from the expected value 1.&#xD;
 </system-err>
         </testcase>
-        <testcase name="UTP-ANF-NDC-0029" time="0.097" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0030" time="0.076" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0031" time="0.101" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0053" time="0.079" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0073" time="0.093" classname="a350_rtrt7_2"/>
-        <testcase name="UTP-ANF-NDC-0072" time="0.07" classname="a350_rtrt7_2"/>
+        <testcase name="UTP-ANF-NDC-0029" time="0.097" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0030" time="0.076" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0031" time="0.101" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0053" time="0.079" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0073" time="0.093" classname="MapAirportData"/>
+        <testcase name="UTP-ANF-NDC-0072" time="0.07" classname="MapAirportData"/>
     </testsuite>
 </testsuites>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites>
+    <testsuite name="out" tests="5" failures="0" errors="0">
+        <testcase name="1" time="0.003" classname="add_sub_1"/>
+        <testcase name="1" time="0.001" classname="mul_div_1"/>
+        <testcase name="1" time="0.001" classname="FORMAT_Test"/>
+        <testcase name="1" time="0.001" classname="INITIALI"/>
+        <testcase name="1" time="0.066" classname="Src_Cov_Double"/>
+    </testsuite>
+</testsuites>

@@ -4,7 +4,7 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 
-import com.thalesgroup.dtkit.metrics.model.InputType;
+import org.jenkinsci.lib.dtkit.model.InputType;
 
 /**
  * Unitary Test for the InputMetric.
@@ -20,8 +20,6 @@ public class RTRTUnitInputMetricTest {
         
         Assert.assertEquals(InputType.TEST, inputMetric.getToolType());
         Assert.assertEquals("RTRTUnit", inputMetric.getToolName());
-        Assert.assertEquals("1.0", inputMetric.getToolVersion());
-        
     }
 
 }
