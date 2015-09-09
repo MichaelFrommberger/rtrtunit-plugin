@@ -66,8 +66,12 @@ public class RTRTUnitInputMetric extends InputMetricOther {
     @Override
     public final String getToolVersion() {
         if (version == null) {
-            version = Hudson.getInstance().getPluginManager()
-                    .getPlugin("rtrtunit").getVersion();
+        	if (Hudson.getInstance()!=null){
+        		version = Hudson.getInstance().getPluginManager().getPlugin("rtrtunit").getVersion();
+        	}
+        	else {
+        		version = "N/A";
+        	}
         }
         return version;
     }
