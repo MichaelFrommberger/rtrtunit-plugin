@@ -214,6 +214,11 @@ public class SyntaxRioCheckerTest {
     }
 
     @Test
+    public void testValidation21() throws Exception {
+        testChecker("out21.rio");
+    }
+
+    @Test
     public void testValidationA350rtrt7() throws Exception {
     	testChecker("a350_rtrt7.rio");
     }
