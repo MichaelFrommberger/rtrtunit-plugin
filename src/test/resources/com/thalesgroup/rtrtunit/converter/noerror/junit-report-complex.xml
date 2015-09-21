@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites>
+    <testsuite name="complex" tests="11" failures="0" errors="0">
+        <testcase name="1" time="0.0" classname="A429_DBS_INIT_PCB_SPL"/>
+        <testcase name="2" time="0.0" classname="A429_DBS_INIT_PCB_SPL"/>
+        <testcase name="3" time="0.0" classname="A429_DBS_INIT_PCB_SPL"/>
+        <testcase name="4" time="0.0" classname="A429_DBS_INIT_PCB_SPL"/>
+        <testcase name="5" time="0.0" classname="A429_DBS_INIT_PCB_SPL"/>
+        <testcase name="6" time="0.0" classname="A429_DBS_INIT_PCB_SPL"/>
+        <testcase name="7" time="0.0" classname="A429_DBS_INIT_PCB_SPL"/>
+        <testcase name="8" time="0.0" classname="A429_DBS_INIT_PCB_SPL"/>
+        <testcase name="9" time="0.0" classname="A429_DBS_INIT_PCB_SPL"/>
+        <testcase name="10" time="0.0" classname="A429_DBS_INIT_PCB_SPL"/>
+        <testcase name="11" time="0.0" classname="A429_DBS_INIT_PCB_SPL"/>
+    </testsuite>
+</testsuites>

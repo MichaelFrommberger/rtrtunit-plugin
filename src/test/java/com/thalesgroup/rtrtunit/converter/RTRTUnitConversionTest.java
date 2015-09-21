@@ -73,6 +73,15 @@ public class RTRTUnitConversionTest extends AbstractRTRTUnitConversionTest {
     				"rtrt8/junit-report.xml");
     }
 
+
+    @Test
+    public void testComplexRio() throws Exception {
+    	conversionAndValidation(
+    				RTRTUnitInputMetric.class,
+    				"noerror/complex.rio",
+    				"noerror/junit-report-complex.xml");
+    }
+
     @Test
     public void testAda() throws Exception {
     	conversionAndValidation(
