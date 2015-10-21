@@ -43,7 +43,7 @@ public class RTRTUnitType extends TestType {
      */
     @Override
     public Object readResolve() {
-    	return super.readResolve();
+    	return new RTRTUnitPluginType(this.getPattern(), this.isFaildedIfNotNew());
     }
 
 }

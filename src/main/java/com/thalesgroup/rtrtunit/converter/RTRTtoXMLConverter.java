@@ -5,12 +5,14 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.math.BigDecimal;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
 import org.jenkinsci.lib.dtkit.util.converter.ConversionException;
+
 import com.thalesgroup.rtrtunit.errreader.ErrorReader;
 import com.thalesgroup.rtrtunit.junit.Failure;
 import com.thalesgroup.rtrtunit.junit.ObjectFactory;
@@ -252,23 +254,18 @@ public class RTRTtoXMLConverter {
                 // in the if above
                 currentTest = rioData.getTests().get(test);
 
-                // {
                 // NEW TEST
-
                 // Get the number of the test and find its name into .tdc
                 // a. The number of the test is in the currentTest variable
                 // b. The name of the test is stored into the tdcReader
                 testcase = objFactory.createTestcase();
                 testcase.setClassname(tdcReader.getTestedServiceName(currentTest.getName()));
                 testcase.setName(tdcReader.getTestName(currentTest.getName()));
-
-                // }
-                // {
                 // TIME
-                testcase.setTime(currentTest.getTime());
-                // }
-
-                // {
+                // strip trailing decimal 0
+                BigDecimal testTime = new BigDecimal(currentTest.getTime());
+                testTime = testTime.stripTrailingZeros();
+                testcase.setTime(testTime.toPlainString());
                 // VARIABLES
                 if (currentTest.getNbFailedVariables() > 0) {
                     // An error occurred with some variables
@@ -295,7 +292,6 @@ public class RTRTtoXMLConverter {
                     }
                 }
                 // else no error for this variable
-                // }
             }
 
             // Must write the last test!
