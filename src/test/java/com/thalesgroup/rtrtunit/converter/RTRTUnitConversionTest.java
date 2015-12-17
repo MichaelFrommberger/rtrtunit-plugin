@@ -89,4 +89,12 @@ public class RTRTUnitConversionTest extends AbstractRTRTUnitConversionTest {
     				"ada/out.rio",
     				"ada/junit-report.xml");
     }
+
+    @Test
+    public void testFuseau() throws Exception {
+    	conversionAndValidation(
+    				RTRTUnitInputMetric.class,
+    				"fuseau/out.rio",
+    				"fuseau/junit-report.xml");
+    }
 }

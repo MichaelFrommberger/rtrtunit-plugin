@@ -85,7 +85,11 @@ TOKEN:
   <MAVAR: "MA=""\""(["a"-"z","A"-"Z","-","_",",","0"-"9","%","\\","|","@","<",">"])*"\"" > |
   <MACHAR: "MA=""\'"("\\")?(["a"-"z","A"-"Z","0"-"9"])"\'">
 }
-    
+
+TOKEN:
+{
+  <FUSEAU: (["a"-"z","A"-"Z","-","_",",","0"-"9","/"])*>
+}
 
 void S(): {}
 {
@@ -103,10 +107,11 @@ void Date(): {}
 {
 	Date1() | Date2()
 }
+
 void Date1(): {}
 {
-  // <Day> <Month> <monthDay> <hh:mm:ss> <year>
-  DAY() MONTH() <NUM> <HMSTIME> <NUM>
+  // <Day> <Month> <monthDay> <hh:mm:ss> [fuseau horaire] <year>
+  DAY() MONTH() <NUM> <HMSTIME> [<FUSEAU>] <NUM>
 }
 
 void Date2(): {}
