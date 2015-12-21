@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites>
+    <testsuite errors="0" failures="0" tests="7" name="out">
+        <testcase classname="BLOC_CONTROLEUR" time="0.039" name="1"/>
+        <testcase classname="BLOC_CONTROLEUR" time="0.002" name="2"/>
+        <testcase classname="BLOC_CONTROLEUR" time="0.01" name="3"/>
+        <testcase classname="BLOC_CONTROLEUR" time="0.026" name="4"/>
+        <testcase classname="BLOC_CONTROLEUR" time="0.027" name="5"/>
+        <testcase classname="BLOC_CONTROLEUR" time="0.028" name="6"/>
+        <testcase classname="BLOC_CONTROLEUR" time="0.0" name="7"/>
+    </testsuite>
+</testsuites>

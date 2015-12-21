@@ -1,0 +1,883 @@
+************************************************************************
+* TOOL : Unit Test Compiler VERSION 2003.06.13 : 321.001               *
+*                                                                      *
+*                                                                      *
+* DATE : Tue Dec  1 16:11:30 2015                                      *
+************************************************************************
+E11 0 /view/xtlsuscpu30_PROD_TU_NON_INSTRUMENTES_jenkins/cc_ADS/ADS_FANS_A/TEST/LLT/PROCEDURES/BLOC_CONTROLEUR.ptu
+C0 attolprepro /view/xtlsuscpu30_PROD_TU_NON_INSTRUMENTES_jenkins/cc_ADS/ADS_FANS_A/TEST/LLT/PROCEDURES/BLOC_CONTROLEUR.ptu /view/xtlsuscpu30_PROD_TU_NON_INSTRUMENTES_jenkins/cc_ADS/ADS_FANS_A/TEST/LLT/tui_BLOC_CONTROLEUR.c -LANGUAGE=C -TARGET=SUN_SOLARIS -FAST -EXTEST=1_LITTLEENDIAN -INCL=/view/xtlsuscpu30_PROD_TU_NON_INSTRUMENTES_jenkins/cc_ADS/ADS_FANS_A/TEST/LLT/TDP/csolgnu2_95/lib,/view/xtlsuscpu30_PROD_TU_NON_INSTRUMENTES_jenkins/cc_ADS/ADS_FANS_A/TEST/LLT/../../CODE/INCLUDE,../../../ADS_SPE_ATSU/SASIMs/0000902_AA/0000902_AA_HOTE/inc,../../../ADS_SPE_ATSU/SASIMs/AIB_Include_Complement,/usr/include -DEFINE=SUN_SOLARIS -RESTRICTION=ANSI
+H0 Tue Dec  1 16:11:30 2015
+E7 SUN_SOLARIS
+E8 2003.06.13 : 321.001
+E9 C C
+E6  BLOC_CONTROLEUR
+E4  
+E5  
+E1 BLOC_CONTROLEUR
+E2 2.6
+E10 2.6
+E0 BLOC_CONTROLEUR , 2.6 , 2.6
+E17 0 163
+E16 0 166
+O1 BLOC_CONTROLEUR
+S2 extern
+T3 1
+F4 fonctionnel
+E14 0 169
+B5 1
+E12 0 172
+V6 pLib RA=FORM=CH0, INIT=&aLib[0], VA=init,
+E12 0 174
+V7 pMGF RA=FORM=CH0, INIT=&aBLOC[0], VA=init,
+E12 0 175
+V8 pCM RA=FORM=CH0, INIT=&aBLOC[        0x1400 ], VA=init,
+E12 0 176
+V9 pEV RA=FORM=CH0, INIT=&aBLOC[        0x1400 +         0x2400 ], VA=init,
+E12 0 177
+V10 pOBPM RA=FORM=CH0, INIT=&aBLOC[        0x1400 +         0x2400 +         0x1C00 ], VA=init,
+E12 0 178
+V11 pHMIM RA=FORM=CH0, INIT=&aBLOC[        0x1400 +         0x2400 +         0x1C00 +       0x100 ], VA=init,
+C12 reception de 1  signal  pour CM ,  instance 3
+C13 reception de 3  signaux pour MGF,  instance 2
+C14 reception de 4  signaux pour EV,   instance 2
+C15 reception de 2  signaux pour OBPM, instance 4
+C16 reception de 3  signaux pour HMIM, instance 1
+C17 ==============================================
+E12 0 188
+V18 eErrRecFifoCM RA=FORM=CU0, INIT=NOERROR, VA=init,
+E12 0 189
+V19 SignalCM.eId RA=FORM=CU0, INIT=ATC_HMIM_REGISTER_CF, VA=init,
+E12 0 190
+V20 SignalCM.sInstance RA=FORM=CU8, INIT=3, VA=init,
+E12 0 192
+V21 SignalCM.uiLg RA=FORM=CU32, INIT=0, VA=init,
+E12 0 193
+V22 eErrRecFifoMGF RA=FORM=CU0, INIT=NOERROR, VA=init,
+E12 0 194
+V23 SignalMGF.eId RA=FORM=CU0, INIT=TCF_DISCONNECT, VA=init,
+E12 0 195
+V24 SignalMGF.sInstance RA=FORM=CU8, INIT=2, VA=init,
+E12 0 197
+V25 SignalMGF.uiLg RA=FORM=CU32, INIT=0, VA=init,
+E12 0 198
+V26 eErrRecFifoEV RA=FORM=CU0, INIT=NOERROR, VA=init,
+E12 0 199
+V27 SignalEV.eId RA=FORM=CU0, INIT=AGCM_T_DISCONNECT_ID, VA=init,
+E12 0 200
+V28 SignalEV.sInstance RA=FORM=CU8, INIT=2, VA=init,
+E12 0 202
+V29 SignalEV.uiLg RA=FORM=CU32, INIT=0, VA=init,
+E12 0 203
+V30 eErrRecFifoOBPM RA=FORM=CU0, INIT=NOERROR, VA=init,
+E12 0 204
+V31 SignalOBPM.eId RA=FORM=CU0, INIT=ADUP_ADS_ON, VA=init,
+E12 0 205
+V32 SignalOBPM.sInstance RA=FORM=CU8, INIT=2, VA=init,
+E12 0 207
+V33 SignalOBPM.uiLg RA=FORM=CU32, INIT=0, VA=init,
+E12 0 208
+V34 eErrRecFifoHMIM RA=FORM=CU0, INIT=NOERROR, VA=init,
+E12 0 209
+V35 SignalHMIM.eId RA=FORM=CU0, INIT=CM_ASSOC_INFO_RS, VA=init,
+E12 0 210
+V36 SignalHMIM.sInstance RA=FORM=CU8, INIT=1, VA=init,
+E12 0 211
+V37 SignalHMIM.uiLg RA=FORM=CU32, INIT=sizeof (T_HMIM_OneConnection), VA=init,
+E12 0 214
+V38 uiNbSignauxCM RA=FORM=CU32, INIT=1, VA=0,
+E12 0 215
+V39 uiNbSignauxMGF RA=FORM=CU32, INIT=3, VA=0,
+E12 0 216
+V40 uiNbSignauxEV RA=FORM=CU32, INIT=4, VA=0,
+E12 0 217
+V41 uiNbSignauxOBPM RA=FORM=CU32, INIT=2, VA=0,
+E12 0 218
+V42 uiNbSignauxHMIM RA=FORM=CU32, INIT=3, VA=0,
+E12 0 221
+V43 pLib->sFifo_MGF.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=TRUE,
+E12 0 222
+V44 pLib->sFifo_CM.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=TRUE,
+E12 0 223
+V45 pLib->sFifo_EV.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=TRUE,
+E12 0 224
+V46 pLib->sFifo_OBPM.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=TRUE,
+E12 0 225
+V47 pLib->sFifo_HMIM.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=TRUE,
+E12 0 227
+V48 mut_wait RA=FORM=CH0, INIT=0, VA=&pLib->sFifos_BLOC_Mngt.sMutex,
+E12 0 228
+V49 cond_signal RA=FORM=CH0, INIT=0, VA=&pLib->sFifos_BLOC_Mngt.sCond,
+E12 0 231
+V50 eId_AutomateCM RA=FORM=CU0, INIT=-1, VA=SignalCM.eId,
+E12 0 233
+V51 sInstance_AutomateCM RA=FORM=CU8, INIT=-1, VA=SignalCM.sInstance,
+E12 0 234
+V52 eId_AutomateMGF RA=FORM=CU0, INIT=-1, VA=SignalMGF.eId,
+E12 0 236
+V53 sPointEntree_AutomateMGF RA=FORM=CU8, INIT=-1, VA=SignalMGF.sInstance,
+E12 0 237
+V54 eId_AutomateEV RA=FORM=CU0, INIT=-1, VA=SignalEV.eId,
+E12 0 239
+V55 sInstance_AutomateEV RA=FORM=CU8, INIT=-1, VA=SignalEV.sInstance,
+E12 0 240
+V56 eId_AutomateOBPM RA=FORM=CU0, INIT=-1, VA=SignalOBPM.eId,
+E12 0 242
+V57 sInstance_AutomateOBPM RA=FORM=CU8, INIT=-1, VA=SignalOBPM.sInstance,
+E12 0 243
+V58 eId_AutomateHMIM RA=FORM=CU0, INIT=-1, VA=SignalHMIM.eId,
+E12 0 244
+V59 sInstance_AutomateHMIM RA=FORM=CU8, INIT=-1, VA=SignalHMIM.sInstance,
+E12 0 247
+V60 uiIndiceAppelAutomate RA=FORM=CU32, INIT=0, VA=13,
+E12 0 248
+V61 aListAppelAutomate[0] RA=FORM=CU0, INIT=0, VA=CM,
+E12 0 249
+V62 aListAppelAutomate[1] RA=FORM=CU0, INIT=0, VA=MGF,
+E12 0 249
+V63 aListAppelAutomate[2] RA=FORM=CU0, INIT=0, VA=MGF,
+E12 0 249
+V64 aListAppelAutomate[3] RA=FORM=CU0, INIT=0, VA=MGF,
+E12 0 250
+V65 aListAppelAutomate[4] RA=FORM=CU0, INIT=0, VA=EV,
+E12 0 250
+V66 aListAppelAutomate[5] RA=FORM=CU0, INIT=0, VA=EV,
+E12 0 250
+V67 aListAppelAutomate[6] RA=FORM=CU0, INIT=0, VA=EV,
+E12 0 250
+V68 aListAppelAutomate[7] RA=FORM=CU0, INIT=0, VA=EV,
+E12 0 251
+V69 aListAppelAutomate[8] RA=FORM=CU0, INIT=0, VA=OBPM,
+E12 0 251
+V70 aListAppelAutomate[9] RA=FORM=CU0, INIT=0, VA=OBPM,
+E12 0 252
+V71 aListAppelAutomate[10] RA=FORM=CU0, INIT=0, VA=HMIM,
+E12 0 252
+V72 aListAppelAutomate[11] RA=FORM=CU0, INIT=0, VA=HMIM,
+E12 0 252
+V73 aListAppelAutomate[12] RA=FORM=CU0, INIT=0, VA=HMIM,
+E12 0 255
+V74 mut_lock RA=FORM=CH0, INIT=0, VA=&pLib->sFifos_BLOC_Mngt.sMutex,
+E12 0 256
+V75 mut_unlock RA=FORM=CH0, INIT=0, VA=&pLib->sFifos_BLOC_Mngt.sMutex,
+E12 0 259
+V76 uiNb_BITE RA=FORM=CU32, INIT=0, VA=init,
+E12 0 261
+V77 bBoucle_Bloc RA=FORM=CU0, INIT=TRUE, VA=FALSE,
+E16 0 269
+T78 2
+F79 fonctionnel
+E14 0 272
+B80 1
+E12 0 274
+V81 pLib RA=FORM=CH0, INIT=&aLib[0], VA=init,
+E12 0 275
+V82 pMGF RA=FORM=CH0, INIT=&aBLOC[0], VA=init,
+E12 0 276
+V83 pCM RA=FORM=CH0, INIT=&aBLOC[        0x1400 ], VA=init,
+E12 0 277
+V84 pEV RA=FORM=CH0, INIT=&aBLOC[        0x1400 +         0x2400 ], VA=init,
+E12 0 278
+V85 pOBPM RA=FORM=CH0, INIT=&aBLOC[        0x1400 +         0x2400 +         0x1C00 ], VA=init,
+E12 0 279
+V86 pHMIM RA=FORM=CH0, INIT=&aBLOC[        0x1400 +         0x2400 +         0x1C00 +       0x100 ], VA=init,
+C87 erreur sur reception de 1  signal  pour CM ,  instance 3
+C88 =>reception de 3  signaux pour MGF,  instance 2 (non traites)
+C89 =>reception de 4  signaux pour EV,   instance 2 (non traites)
+C90 =>reception de 2  signaux pour OBPM, instance 4 (non traites)
+C91 =>reception de 1  signal  pour HMIM, instance 3 (non traites)
+C92 =========================================================
+E12 0 288
+V93 eErrRecFifoCM RA=FORM=CU0, INIT=ERRORCOPYCMREC, VA=init,
+E12 0 289
+V94 SignalCM.eId RA=FORM=CU0, INIT=ATC_HMIM_REGISTER_CF, VA=init,
+E12 0 290
+V95 SignalCM.sInstance RA=FORM=CU8, INIT=3, VA=init,
+E12 0 292
+V96 SignalCM.uiLg RA=FORM=CU32, INIT=0, VA=init,
+E12 0 293
+V97 eErrRecFifoMGF RA=FORM=CU0, INIT=NOERROR, VA=init,
+E12 0 294
+V98 SignalMGF.eId RA=FORM=CU0, INIT=TCF_DISCONNECT, VA=init,
+E12 0 295
+V99 SignalMGF.sInstance RA=FORM=CU8, INIT=2, VA=init,
+E12 0 297
+V100 SignalMGF.uiLg RA=FORM=CU32, INIT=0, VA=init,
+E12 0 298
+V101 eErrRecFifoEV RA=FORM=CU0, INIT=NOERROR, VA=init,
+E12 0 299
+V102 SignalEV.eId RA=FORM=CU0, INIT=AGCM_T_DISCONNECT_ID, VA=init,
+E12 0 300
+V103 SignalEV.sInstance RA=FORM=CU8, INIT=2, VA=init,
+E12 0 302
+V104 SignalEV.uiLg RA=FORM=CU32, INIT=0, VA=init,
+E12 0 303
+V105 eErrRecFifoOBPM RA=FORM=CU0, INIT=NOERROR, VA=init,
+E12 0 304
+V106 SignalOBPM.eId RA=FORM=CU0, INIT=ADUP_ADS_ON, VA=init,
+E12 0 305
+V107 SignalOBPM.sInstance RA=FORM=CU8, INIT=2, VA=init,
+E12 0 307
+V108 SignalOBPM.uiLg RA=FORM=CU32, INIT=0, VA=init,
+E12 0 308
+V109 eErrRecFifoHMIM RA=FORM=CU0, INIT=NOERROR, VA=init,
+E12 0 309
+V110 SignalHMIM.eId RA=FORM=CU0, INIT=CM_ASSOC_INFO_RS, VA=init,
+E12 0 310
+V111 SignalHMIM.sInstance RA=FORM=CU8, INIT=3, VA=init,
+E12 0 311
+V112 SignalHMIM.uiLg RA=FORM=CU32, INIT=sizeof(T_HMIM_OneConnection), VA=init,
+E12 0 314
+V113 uiNbSignauxCM RA=FORM=CU32, INIT=1, VA=init-1,
+E12 0 315
+V114 uiNbSignauxMGF RA=FORM=CU32, INIT=3, VA=init,
+E12 0 316
+V115 uiNbSignauxEV RA=FORM=CU32, INIT=4, VA=init,
+E12 0 317
+V116 uiNbSignauxOBPM RA=FORM=CU32, INIT=2, VA=init,
+E12 0 318
+V117 uiNbSignauxHMIM RA=FORM=CU32, INIT=1, VA=init,
+E12 0 321
+V118 pLib->sFifo_CM.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=init,
+E12 0 322
+V119 pLib->sFifo_MGF.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=init,
+E12 0 323
+V120 pLib->sFifo_EV.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=init,
+E12 0 324
+V121 pLib->sFifo_OBPM.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=init,
+E12 0 325
+V122 pLib->sFifo_HMIM.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=init,
+E12 0 327
+V123 mut_wait RA=FORM=CH0, INIT=0, VA=init,
+E12 0 328
+V124 cond_signal RA=FORM=CH0, INIT=0, VA=init,
+E12 0 332
+V125 uiIndiceAppelAutomate RA=FORM=CU32, INIT=0, VA=1,
+E12 0 333
+V126 aListAppelAutomate[0] RA=FORM=CU0, INIT=0, VA=2,
+E12 0 334
+V127 aListAppelAutomate[1] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 334
+V128 aListAppelAutomate[2] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 334
+V129 aListAppelAutomate[3] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 335
+V130 aListAppelAutomate[4] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 335
+V131 aListAppelAutomate[5] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 335
+V132 aListAppelAutomate[6] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 335
+V133 aListAppelAutomate[7] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 336
+V134 aListAppelAutomate[8] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 336
+V135 aListAppelAutomate[9] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 337
+V136 aListAppelAutomate[10] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 340
+V137 mut_lock RA=FORM=CH0, INIT=0, VA=&pLib->sFifos_BLOC_Mngt.sMutex,
+E12 0 343
+V138 uiNb_BITE RA=FORM=CU32, INIT=0, VA=1,
+E12 0 344
+V139 uiRef_BITE RA=FORM=CU32, INIT=0, VA=0xC0D08005,
+E12 0 345
+V140 iNumAppel_BITE RA=FORM=CD16, INIT=-1, VA=0x0,
+E12 0 346
+V141 eRessource_BITE RA=FORM=CU0, INIT=-1, VA=LIB_RECEPTION_FIFO,
+E12 0 347
+V142 eRaison_BITE RA=FORM=CD32, INIT=0, VA=eErrRecFifoCM,
+E12 0 348
+V143 eCommand_BITE RA=FORM=CU0, INIT=-1, VA=NOP,
+E12 0 350
+V144 bBoucle_Bloc RA=FORM=CU0, INIT=TRUE, VA=FALSE,
+E16 0 360
+T145 3
+F146 fonctionnel
+E14 0 363
+B147 1
+E12 0 365
+V148 pLib RA=FORM=CH0, INIT=&aLib[0], VA=init,
+E12 0 366
+V149 pMGF RA=FORM=CH0, INIT=&aBLOC[0], VA=init,
+E12 0 367
+V150 pCM RA=FORM=CH0, INIT=&aBLOC[        0x1400 ], VA=init,
+E12 0 368
+V151 pEV RA=FORM=CH0, INIT=&aBLOC[        0x1400 +         0x2400 ], VA=init,
+E12 0 369
+V152 pOBPM RA=FORM=CH0, INIT=&aBLOC[        0x1400 +         0x2400 +         0x1C00 ], VA=init,
+E12 0 370
+V153 pHMIM RA=FORM=CH0, INIT=&aBLOC[        0x1400 +         0x2400 +         0x1C00 +       0x100 ], VA=init,
+C154 reception de 1  signal  pour CM ,  instance 3
+C155 erreur sur reception sur 1 (/3) signal pour MGF,  instance 2
+C156 =>reception de 4  signaux pour EV,   instance 2 (non traites)
+C157 =>reception de 2  signaux pour OBPM, instance 4 (non traites)
+C158 =>reception de 1  signal pour HMIM, instance 3 (non traites)
+C159 =========================================================
+E12 0 379
+V160 eErrRecFifoCM RA=FORM=CU0, INIT=NOERROR, VA=init,
+E12 0 380
+V161 SignalCM.eId RA=FORM=CU0, INIT=ATC_HMIM_REGISTER_CF, VA=init,
+E12 0 381
+V162 SignalCM.sInstance RA=FORM=CU8, INIT=3, VA=init,
+E12 0 383
+V163 SignalCM.uiLg RA=FORM=CU32, INIT=0, VA=init,
+E12 0 384
+V164 eErrRecFifoMGF RA=FORM=CU0, INIT=ERRORCOPYMGFREC, VA=init,
+E12 0 385
+V165 SignalMGF.eId RA=FORM=CU0, INIT=TCF_DISCONNECT, VA=init,
+E12 0 386
+V166 SignalMGF.sInstance RA=FORM=CU8, INIT=2, VA=init,
+E12 0 388
+V167 SignalMGF.uiLg RA=FORM=CU32, INIT=0, VA=init,
+E12 0 389
+V168 eErrRecFifoEV RA=FORM=CU0, INIT=NOERROR, VA=init,
+E12 0 390
+V169 SignalEV.eId RA=FORM=CU0, INIT=AGCM_T_DISCONNECT_ID, VA=init,
+E12 0 391
+V170 SignalEV.sInstance RA=FORM=CU8, INIT=2, VA=init,
+E12 0 393
+V171 SignalEV.uiLg RA=FORM=CU32, INIT=0, VA=init,
+E12 0 394
+V172 eErrRecFifoOBPM RA=FORM=CU0, INIT=NOERROR, VA=init,
+E12 0 395
+V173 SignalOBPM.eId RA=FORM=CU0, INIT=ADUP_ADS_ON, VA=init,
+E12 0 396
+V174 SignalOBPM.sInstance RA=FORM=CU8, INIT=2, VA=init,
+E12 0 398
+V175 SignalOBPM.uiLg RA=FORM=CU32, INIT=0, VA=init,
+E12 0 399
+V176 eErrRecFifoHMIM RA=FORM=CU0, INIT=NOERROR, VA=init,
+E12 0 400
+V177 SignalHMIM.eId RA=FORM=CU0, INIT=CM_ASSOC_INFO_RS, VA=init,
+E12 0 401
+V178 SignalHMIM.sInstance RA=FORM=CU8, INIT=3, VA=init,
+E12 0 402
+V179 SignalHMIM.uiLg RA=FORM=CU32, INIT=sizeof(T_HMIM_OneConnection), VA=init,
+E12 0 405
+V180 uiNbSignauxCM RA=FORM=CU32, INIT=1, VA=0,
+E12 0 406
+V181 uiNbSignauxMGF RA=FORM=CU32, INIT=3, VA=init-1,
+E12 0 407
+V182 uiNbSignauxEV RA=FORM=CU32, INIT=4, VA=init,
+E12 0 408
+V183 uiNbSignauxOBPM RA=FORM=CU32, INIT=2, VA=init,
+E12 0 409
+V184 uiNbSignauxHMIM RA=FORM=CU32, INIT=1, VA=init,
+E12 0 413
+V185 pLib->sFifo_CM.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=TRUE,
+E12 0 414
+V186 pLib->sFifo_MGF.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=init,
+E12 0 415
+V187 pLib->sFifo_EV.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=init,
+E12 0 416
+V188 pLib->sFifo_OBPM.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=init,
+E12 0 417
+V189 pLib->sFifo_HMIM.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=init,
+E12 0 420
+V190 mut_wait RA=FORM=CH0, INIT=0, VA=init,
+E12 0 421
+V191 cond_signal RA=FORM=CH0, INIT=0, VA=init,
+E12 0 425
+V192 uiIndiceAppelAutomate RA=FORM=CU32, INIT=0, VA=2,
+E12 0 426
+V193 aListAppelAutomate[0] RA=FORM=CU0, INIT=0, VA=CM,
+E12 0 427
+V194 aListAppelAutomate[1] RA=FORM=CU0, INIT=0, VA=MGF,
+E12 0 428
+V195 aListAppelAutomate[2] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 428
+V196 aListAppelAutomate[3] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 429
+V197 aListAppelAutomate[4] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 429
+V198 aListAppelAutomate[5] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 429
+V199 aListAppelAutomate[6] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 429
+V200 aListAppelAutomate[7] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 430
+V201 aListAppelAutomate[8] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 430
+V202 aListAppelAutomate[9] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 431
+V203 aListAppelAutomate[10] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 435
+V204 mut_lock RA=FORM=CH0, INIT=0, VA=&pLib->sFifos_BLOC_Mngt.sMutex,
+E12 0 436
+V205 mut_unlock RA=FORM=CH0, INIT=0, VA=&pLib->sFifos_BLOC_Mngt.sMutex,
+E12 0 439
+V206 uiNb_BITE RA=FORM=CU32, INIT=0, VA=1,
+E12 0 440
+V207 uiRef_BITE RA=FORM=CU32, INIT=0, VA=0xC0D08005,
+E12 0 441
+V208 iNumAppel_BITE RA=FORM=CD16, INIT=-1, VA=0x10,
+E12 0 442
+V209 eRessource_BITE RA=FORM=CU0, INIT=-1, VA=LIB_RECEPTION_FIFO,
+E12 0 443
+V210 eRaison_BITE RA=FORM=CD32, INIT=0, VA=eErrRecFifoMGF,
+E12 0 444
+V211 eCommand_BITE RA=FORM=CU0, INIT=-1, VA=NOP,
+E12 0 446
+V212 bBoucle_Bloc RA=FORM=CU0, INIT=TRUE, VA=FALSE,
+E16 0 456
+T213 4
+F214 fonctionnel
+E14 0 459
+B215 1
+E12 0 461
+V216 pLib RA=FORM=CH0, INIT=&aLib[0], VA=init,
+E12 0 463
+V217 pMGF RA=FORM=CH0, INIT=&aBLOC[0], VA=init,
+E12 0 464
+V218 pCM RA=FORM=CH0, INIT=&aBLOC[        0x1400 ], VA=init,
+E12 0 465
+V219 pEV RA=FORM=CH0, INIT=&aBLOC[        0x1400 +         0x2400 ], VA=init,
+E12 0 466
+V220 pOBPM RA=FORM=CH0, INIT=&aBLOC[        0x1400 +         0x2400 +         0x1C00 ], VA=init,
+E12 0 467
+V221 pHMIM RA=FORM=CH0, INIT=&aBLOC[        0x1400 +         0x2400 +         0x1C00 +       0x100 ], VA=init,
+C222 reception de 1  signal  pour CM ,  instance 3
+C223 reception de 3  signaux pour MGF,  instance 2
+C224 erreur su reception de 1(/4)  signal pour EV,   instance 2
+C225 =>reception de 2  signaux pour OBPM, instance 4 (non traites)
+C226 =>reception de 4  signaux pour HMIM, instance 2 (non traites)
+C227 =========================================================
+E12 0 475
+V228 eErrRecFifoCM RA=FORM=CU0, INIT=NOERROR, VA=init,
+E12 0 476
+V229 SignalCM.eId RA=FORM=CU0, INIT=ATC_HMIM_REGISTER_CF, VA=init,
+E12 0 477
+V230 SignalCM.sInstance RA=FORM=CU8, INIT=3, VA=init,
+E12 0 479
+V231 SignalCM.uiLg RA=FORM=CU32, INIT=0, VA=init,
+E12 0 480
+V232 eErrRecFifoMGF RA=FORM=CU0, INIT=NOERROR, VA=init,
+E12 0 481
+V233 SignalMGF.eId RA=FORM=CU0, INIT=TCF_DISCONNECT, VA=init,
+E12 0 482
+V234 SignalMGF.sInstance RA=FORM=CU8, INIT=2, VA=init,
+E12 0 484
+V235 SignalMGF.uiLg RA=FORM=CU32, INIT=0, VA=init,
+E12 0 485
+V236 eErrRecFifoEV RA=FORM=CU0, INIT=ERRORCOPYEVREC, VA=init,
+E12 0 486
+V237 SignalEV.eId RA=FORM=CU0, INIT=AGCM_T_DISCONNECT_ID, VA=init,
+E12 0 487
+V238 SignalEV.sInstance RA=FORM=CU8, INIT=2, VA=init,
+E12 0 489
+V239 SignalEV.uiLg RA=FORM=CU32, INIT=0, VA=init,
+E12 0 490
+V240 eErrRecFifoOBPM RA=FORM=CU0, INIT=NOERROR, VA=init,
+E12 0 491
+V241 SignalOBPM.eId RA=FORM=CU0, INIT=ADUP_ADS_ON, VA=init,
+E12 0 492
+V242 SignalOBPM.sInstance RA=FORM=CU8, INIT=4, VA=init,
+E12 0 494
+V243 SignalOBPM.uiLg RA=FORM=CU32, INIT=0, VA=init,
+E12 0 495
+V244 eErrRecFifoHMIM RA=FORM=CU0, INIT=NOERROR, VA=init,
+E12 0 496
+V245 SignalHMIM.eId RA=FORM=CU0, INIT=CM_ASSOC_INFO_RS, VA=init,
+E12 0 497
+V246 SignalHMIM.sInstance RA=FORM=CU8, INIT=2, VA=init,
+E12 0 498
+V247 SignalHMIM.uiLg RA=FORM=CU32, INIT=sizeof(T_HMIM_OneConnection), VA=init,
+E12 0 501
+V248 uiNbSignauxCM RA=FORM=CU32, INIT=1, VA=0,
+E12 0 502
+V249 uiNbSignauxMGF RA=FORM=CU32, INIT=3, VA=0,
+E12 0 503
+V250 uiNbSignauxEV RA=FORM=CU32, INIT=4, VA=init-1,
+E12 0 504
+V251 uiNbSignauxOBPM RA=FORM=CU32, INIT=2, VA=init,
+E12 0 505
+V252 uiNbSignauxHMIM RA=FORM=CU32, INIT=4, VA=init,
+E12 0 508
+V253 pLib->sFifo_CM.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=TRUE,
+E12 0 509
+V254 pLib->sFifo_MGF.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=TRUE,
+E12 0 510
+V255 pLib->sFifo_EV.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=init,
+E12 0 511
+V256 pLib->sFifo_OBPM.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=init,
+E12 0 512
+V257 pLib->sFifo_HMIM.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=init,
+E12 0 514
+V258 mut_wait RA=FORM=CH0, INIT=0, VA=init,
+E12 0 515
+V259 cond_signal RA=FORM=CH0, INIT=0, VA=init,
+E12 0 520
+V260 uiIndiceAppelAutomate RA=FORM=CU32, INIT=0, VA=5,
+E12 0 521
+V261 aListAppelAutomate[0] RA=FORM=CU0, INIT=0, VA=CM,
+E12 0 522
+V262 aListAppelAutomate[1] RA=FORM=CU0, INIT=0, VA=MGF,
+E12 0 522
+V263 aListAppelAutomate[2] RA=FORM=CU0, INIT=0, VA=MGF,
+E12 0 522
+V264 aListAppelAutomate[3] RA=FORM=CU0, INIT=0, VA=MGF,
+E12 0 523
+V265 aListAppelAutomate[4] RA=FORM=CU0, INIT=0, VA=EV,
+E12 0 524
+V266 aListAppelAutomate[5] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 524
+V267 aListAppelAutomate[6] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 524
+V268 aListAppelAutomate[7] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 525
+V269 aListAppelAutomate[8] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 525
+V270 aListAppelAutomate[9] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 526
+V271 aListAppelAutomate[10] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 526
+V272 aListAppelAutomate[11] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 526
+V273 aListAppelAutomate[12] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 526
+V274 aListAppelAutomate[13] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 530
+V275 mut_lock RA=FORM=CH0, INIT=0, VA=&pLib->sFifos_BLOC_Mngt.sMutex,
+E12 0 531
+V276 mut_unlock RA=FORM=CH0, INIT=0, VA=&pLib->sFifos_BLOC_Mngt.sMutex,
+E12 0 534
+V277 uiNb_BITE RA=FORM=CU32, INIT=0, VA=1,
+E12 0 535
+V278 uiRef_BITE RA=FORM=CU32, INIT=0, VA=0xC0D08005,
+E12 0 536
+V279 iNumAppel_BITE RA=FORM=CD16, INIT=-1, VA=0x20,
+E12 0 537
+V280 eRessource_BITE RA=FORM=CU0, INIT=-1, VA=LIB_RECEPTION_FIFO,
+E12 0 538
+V281 eRaison_BITE RA=FORM=CD32, INIT=0, VA=eErrRecFifoEV,
+E12 0 539
+V282 eCommand_BITE RA=FORM=CU0, INIT=-1, VA=NOP,
+E12 0 541
+V283 bBoucle_Bloc RA=FORM=CU0, INIT=TRUE, VA=FALSE,
+E16 0 550
+T284 5
+F285 fonctionnel
+E14 0 553
+B286 1
+E12 0 555
+V287 pLib RA=FORM=CH0, INIT=&aLib[0], VA=init,
+E12 0 556
+V288 pMGF RA=FORM=CH0, INIT=&aBLOC[0], VA=init,
+E12 0 557
+V289 pCM RA=FORM=CH0, INIT=&aBLOC[        0x1400 ], VA=init,
+E12 0 558
+V290 pEV RA=FORM=CH0, INIT=&aBLOC[        0x1400 +         0x2400 ], VA=init,
+E12 0 559
+V291 pOBPM RA=FORM=CH0, INIT=&aBLOC[        0x1400 +         0x2400 +         0x1C00 ], VA=init,
+E12 0 560
+V292 pHMIM RA=FORM=CH0, INIT=&aBLOC[        0x1400 +         0x2400 +         0x1C00 +       0x100 ], VA=init,
+C293 reception de 1  signal  pour CM ,  instance 3
+C294 reception de 3  signaux pour MGF,  instance 2
+C295 reception de 4  signal pour EV,   instance 2
+C296 erreur sur reception de 1 (/2) signal pour OBPM, instance 4
+C297 => reception de 4 signaux pour HMIM, instance 2 (non traites)
+C298 =========================================================
+E12 0 569
+V299 eErrRecFifoCM RA=FORM=CU0, INIT=NOERROR, VA=init,
+E12 0 570
+V300 SignalCM.eId RA=FORM=CU0, INIT=ATC_HMIM_REGISTER_CF, VA=init,
+E12 0 571
+V301 SignalCM.sInstance RA=FORM=CU8, INIT=3, VA=init,
+E12 0 573
+V302 SignalCM.uiLg RA=FORM=CU32, INIT=0, VA=init,
+E12 0 574
+V303 eErrRecFifoMGF RA=FORM=CU0, INIT=NOERROR, VA=init,
+E12 0 575
+V304 SignalMGF.eId RA=FORM=CU0, INIT=TCF_DISCONNECT, VA=init,
+E12 0 576
+V305 SignalMGF.sInstance RA=FORM=CU8, INIT=2, VA=init,
+E12 0 578
+V306 SignalMGF.uiLg RA=FORM=CU32, INIT=0, VA=init,
+E12 0 579
+V307 eErrRecFifoEV RA=FORM=CU0, INIT=NOERROR, VA=init,
+E12 0 580
+V308 SignalEV.eId RA=FORM=CU0, INIT=AGCM_T_DISCONNECT_ID, VA=init,
+E12 0 581
+V309 SignalEV.sInstance RA=FORM=CU8, INIT=2, VA=init,
+E12 0 583
+V310 SignalEV.uiLg RA=FORM=CU32, INIT=0, VA=init,
+E12 0 584
+V311 eErrRecFifoOBPM RA=FORM=CU0, INIT=ERRORCOPYOBPMREC, VA=init,
+E12 0 585
+V312 SignalOBPM.eId RA=FORM=CU0, INIT=ADUP_ADS_ON, VA=init,
+E12 0 586
+V313 SignalOBPM.sInstance RA=FORM=CU8, INIT=2, VA=init,
+E12 0 588
+V314 SignalOBPM.uiLg RA=FORM=CU32, INIT=0, VA=init,
+E12 0 589
+V315 eErrRecFifoHMIM RA=FORM=CU0, INIT=NOERROR, VA=init,
+E12 0 590
+V316 SignalHMIM.eId RA=FORM=CU0, INIT=CM_ASSOC_INFO_RS, VA=init,
+E12 0 591
+V317 SignalHMIM.sInstance RA=FORM=CU8, INIT=2, VA=init,
+E12 0 592
+V318 SignalHMIM.uiLg RA=FORM=CU32, INIT=0, VA=init,
+E12 0 595
+V319 uiNbSignauxCM RA=FORM=CU32, INIT=1, VA=0,
+E12 0 596
+V320 uiNbSignauxMGF RA=FORM=CU32, INIT=3, VA=0,
+E12 0 597
+V321 uiNbSignauxEV RA=FORM=CU32, INIT=4, VA=0,
+E12 0 598
+V322 uiNbSignauxOBPM RA=FORM=CU32, INIT=2, VA=init-1,
+E12 0 599
+V323 uiNbSignauxHMIM RA=FORM=CU32, INIT=4, VA=4,
+E12 0 603
+V324 pLib->sFifo_CM.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=TRUE,
+E12 0 604
+V325 pLib->sFifo_MGF.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=TRUE,
+E12 0 605
+V326 pLib->sFifo_EV.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=TRUE,
+E12 0 606
+V327 pLib->sFifo_OBPM.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=init,
+E12 0 607
+V328 pLib->sFifo_HMIM.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=init,
+E12 0 609
+V329 mut_wait RA=FORM=CH0, INIT=0, VA=init,
+E12 0 610
+V330 cond_signal RA=FORM=CH0, INIT=0, VA=init,
+E12 0 615
+V331 uiIndiceAppelAutomate RA=FORM=CU32, INIT=0, VA=9,
+E12 0 616
+V332 aListAppelAutomate[0] RA=FORM=CU0, INIT=0, VA=CM,
+E12 0 617
+V333 aListAppelAutomate[1] RA=FORM=CU0, INIT=0, VA=MGF,
+E12 0 617
+V334 aListAppelAutomate[2] RA=FORM=CU0, INIT=0, VA=MGF,
+E12 0 617
+V335 aListAppelAutomate[3] RA=FORM=CU0, INIT=0, VA=MGF,
+E12 0 618
+V336 aListAppelAutomate[4] RA=FORM=CU0, INIT=0, VA=EV,
+E12 0 618
+V337 aListAppelAutomate[5] RA=FORM=CU0, INIT=0, VA=EV,
+E12 0 618
+V338 aListAppelAutomate[6] RA=FORM=CU0, INIT=0, VA=EV,
+E12 0 618
+V339 aListAppelAutomate[7] RA=FORM=CU0, INIT=0, VA=EV,
+E12 0 619
+V340 aListAppelAutomate[8] RA=FORM=CU0, INIT=0, VA=OBPM,
+E12 0 620
+V341 aListAppelAutomate[9] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 621
+V342 aListAppelAutomate[10] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 621
+V343 aListAppelAutomate[11] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 621
+V344 aListAppelAutomate[12] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 621
+V345 aListAppelAutomate[13] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 625
+V346 mut_lock RA=FORM=CH0, INIT=0, VA=&pLib->sFifos_BLOC_Mngt.sMutex,
+E12 0 626
+V347 mut_unlock RA=FORM=CH0, INIT=0, VA=&pLib->sFifos_BLOC_Mngt.sMutex,
+E12 0 629
+V348 uiNb_BITE RA=FORM=CU32, INIT=0, VA=1,
+E12 0 630
+V349 uiRef_BITE RA=FORM=CU32, INIT=0, VA=0xC0D08005,
+E12 0 631
+V350 iNumAppel_BITE RA=FORM=CD16, INIT=-1, VA=0x30,
+E12 0 632
+V351 eRessource_BITE RA=FORM=CU0, INIT=-1, VA=LIB_RECEPTION_FIFO,
+E12 0 633
+V352 eRaison_BITE RA=FORM=CD32, INIT=0, VA=eErrRecFifoOBPM,
+E12 0 634
+V353 eCommand_BITE RA=FORM=CU0, INIT=-1, VA=NOP,
+E12 0 636
+V354 bBoucle_Bloc RA=FORM=CU0, INIT=TRUE, VA=FALSE,
+E16 0 646
+T355 6
+F356 fonctionnel
+E14 0 649
+B357 1
+E12 0 651
+V358 pLib RA=FORM=CH0, INIT=&aLib[0], VA=init,
+E12 0 652
+V359 pMGF RA=FORM=CH0, INIT=&aBLOC[0], VA=init,
+E12 0 653
+V360 pCM RA=FORM=CH0, INIT=&aBLOC[        0x1400 ], VA=init,
+E12 0 654
+V361 pEV RA=FORM=CH0, INIT=&aBLOC[        0x1400 +         0x2400 ], VA=init,
+E12 0 655
+V362 pOBPM RA=FORM=CH0, INIT=&aBLOC[        0x1400 +         0x2400 +         0x1C00 ], VA=init,
+E12 0 656
+V363 pHMIM RA=FORM=CH0, INIT=&aBLOC[        0x1400 +         0x2400 +         0x1C00 +       0x100 ], VA=init,
+C364 reception de 1  signal  pour CM ,  instance 3
+C365 reception de 3  signaux pour MGF,  instance 2
+C366 reception de 4  signal pour EV,   instance 2
+C367 reception de 1  signal pour OBPM, instance 4
+C368 => erreur sur reception de 1(/4) signaux pour HMIM, instance 2
+C369 =========================================================
+E12 0 665
+V370 eErrRecFifoCM RA=FORM=CU0, INIT=NOERROR, VA=init,
+E12 0 666
+V371 SignalCM.eId RA=FORM=CU0, INIT=ATC_HMIM_REGISTER_CF, VA=init,
+E12 0 667
+V372 SignalCM.sInstance RA=FORM=CU8, INIT=3, VA=init,
+E12 0 669
+V373 SignalCM.uiLg RA=FORM=CU32, INIT=0, VA=init,
+E12 0 670
+V374 eErrRecFifoMGF RA=FORM=CU0, INIT=NOERROR, VA=init,
+E12 0 671
+V375 SignalMGF.eId RA=FORM=CU0, INIT=TCF_DISCONNECT, VA=init,
+E12 0 672
+V376 SignalMGF.sInstance RA=FORM=CU8, INIT=2, VA=init,
+E12 0 674
+V377 SignalMGF.uiLg RA=FORM=CU32, INIT=0, VA=init,
+E12 0 675
+V378 eErrRecFifoEV RA=FORM=CU0, INIT=NOERROR, VA=init,
+E12 0 676
+V379 SignalEV.eId RA=FORM=CU0, INIT=AGCM_T_DISCONNECT_ID, VA=init,
+E12 0 677
+V380 SignalEV.sInstance RA=FORM=CU8, INIT=2, VA=init,
+E12 0 679
+V381 SignalEV.uiLg RA=FORM=CU32, INIT=0, VA=init,
+E12 0 680
+V382 eErrRecFifoOBPM RA=FORM=CU0, INIT=NOERROR, VA=init,
+E12 0 681
+V383 SignalOBPM.eId RA=FORM=CU0, INIT=ADUP_ADS_ON, VA=init,
+E12 0 682
+V384 SignalOBPM.sInstance RA=FORM=CU8, INIT=2, VA=init,
+E12 0 684
+V385 SignalOBPM.uiLg RA=FORM=CU32, INIT=0, VA=init,
+E12 0 685
+V386 eErrRecFifoHMIM RA=FORM=CU0, INIT=ERRORCOPYHMIMREC, VA=init,
+E12 0 686
+V387 SignalHMIM.eId RA=FORM=CU0, INIT=CM_ASSOC_INFO_RS, VA=init,
+E12 0 687
+V388 SignalHMIM.sInstance RA=FORM=CU8, INIT=2, VA=init,
+E12 0 688
+V389 SignalHMIM.uiLg RA=FORM=CU32, INIT=0, VA=init,
+E12 0 691
+V390 uiNbSignauxCM RA=FORM=CU32, INIT=1, VA=0,
+E12 0 692
+V391 uiNbSignauxMGF RA=FORM=CU32, INIT=3, VA=0,
+E12 0 693
+V392 uiNbSignauxEV RA=FORM=CU32, INIT=4, VA=0,
+E12 0 694
+V393 uiNbSignauxOBPM RA=FORM=CU32, INIT=1, VA=0,
+E12 0 695
+V394 uiNbSignauxHMIM RA=FORM=CU32, INIT=4, VA=init-1,
+E12 0 699
+V395 pLib->sFifo_CM.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=TRUE,
+E12 0 700
+V396 pLib->sFifo_MGF.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=TRUE,
+E12 0 701
+V397 pLib->sFifo_EV.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=TRUE,
+E12 0 702
+V398 pLib->sFifo_OBPM.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=TRUE,
+E12 0 703
+V399 pLib->sFifo_HMIM.bFifoVide RA=FORM=CU0, INIT=FALSE, VA=init,
+E12 0 705
+V400 mut_wait RA=FORM=CH0, INIT=0, VA=init,
+E12 0 706
+V401 cond_signal RA=FORM=CH0, INIT=0, VA=init,
+E12 0 709
+V402 uiIndiceAppelAutomate RA=FORM=CU32, INIT=0, VA=10,
+E12 0 710
+V403 aListAppelAutomate[0] RA=FORM=CU0, INIT=0, VA=CM,
+E12 0 711
+V404 aListAppelAutomate[1] RA=FORM=CU0, INIT=0, VA=MGF,
+E12 0 711
+V405 aListAppelAutomate[2] RA=FORM=CU0, INIT=0, VA=MGF,
+E12 0 711
+V406 aListAppelAutomate[3] RA=FORM=CU0, INIT=0, VA=MGF,
+E12 0 712
+V407 aListAppelAutomate[4] RA=FORM=CU0, INIT=0, VA=EV,
+E12 0 712
+V408 aListAppelAutomate[5] RA=FORM=CU0, INIT=0, VA=EV,
+E12 0 712
+V409 aListAppelAutomate[6] RA=FORM=CU0, INIT=0, VA=EV,
+E12 0 712
+V410 aListAppelAutomate[7] RA=FORM=CU0, INIT=0, VA=EV,
+E12 0 713
+V411 aListAppelAutomate[8] RA=FORM=CU0, INIT=0, VA=OBPM,
+E12 0 714
+V412 aListAppelAutomate[9] RA=FORM=CU0, INIT=0, VA=HMIM,
+E12 0 715
+V413 aListAppelAutomate[10] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 715
+V414 aListAppelAutomate[11] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 715
+V415 aListAppelAutomate[12] RA=FORM=CU0, INIT=0, VA=init,
+E12 0 718
+V416 mut_lock RA=FORM=CH0, INIT=0, VA=&pLib->sFifos_BLOC_Mngt.sMutex,
+E12 0 719
+V417 mut_unlock RA=FORM=CH0, INIT=0, VA=&pLib->sFifos_BLOC_Mngt.sMutex,
+E12 0 722
+V418 uiNb_BITE RA=FORM=CU32, INIT=0, VA=1,
+E12 0 723
+V419 uiRef_BITE RA=FORM=CU32, INIT=0, VA=0xC0D08005,
+E12 0 724
+V420 iNumAppel_BITE RA=FORM=CD16, INIT=-1, VA=0x40,
+E12 0 725
+V421 eRessource_BITE RA=FORM=CU0, INIT=-1, VA=LIB_RECEPTION_FIFO,
+E12 0 726
+V422 eRaison_BITE RA=FORM=CD32, INIT=0, VA=eErrRecFifoHMIM,
+E12 0 727
+V423 eCommand_BITE RA=FORM=CU0, INIT=-1, VA=NOP,
+E12 0 729
+V424 bBoucle_Bloc RA=FORM=CU0, INIT=TRUE, VA=FALSE,
+E16 0 739
+T425 7
+F426 fonctionnel
+E14 0 742
+B427 1
+E12 0 744
+V428 pLib RA=FORM=CH0, INIT=&aLib[0], VA=init,
+E12 0 745
+V429 pMGF RA=FORM=CH0, INIT=&aBLOC[0], VA=init,
+E12 0 746
+V430 pCM RA=FORM=CH0, INIT=&aBLOC[        0x1400 ], VA=init,
+E12 0 747
+V431 pEV RA=FORM=CH0, INIT=&aBLOC[        0x1400 +         0x2400 ], VA=init,
+E12 0 748
+V432 pOBPM RA=FORM=CH0, INIT=&aBLOC[        0x1400 +         0x2400 +         0x1C00 ], VA=init,
+E12 0 749
+V433 pHMIM RA=FORM=CH0, INIT=&aBLOC[        0x1400 +         0x2400 +         0x1C00 +       0x100 ], VA=init,
+C434 Verification de la RAM (tout type de coupure)
+C435 ======================
+C436 reception de 0 signaux
+C437 ==============================================
+E12 0 757
+V438 uiNbSignauxCM RA=FORM=CU32, INIT=0, VA=init,
+E12 0 758
+V439 uiNbSignauxMGF RA=FORM=CU32, INIT=0, VA=init,
+E12 0 759
+V440 uiNbSignauxEV RA=FORM=CU32, INIT=0, VA=init,
+E12 0 760
+V441 uiNbSignauxOBPM RA=FORM=CU32, INIT=0, VA=init,
+E12 0 761
+V442 uiNbSignauxHMIM RA=FORM=CU32, INIT=0, VA=init,
+E12 0 764
+V443 pLib->sFifo_MGF.bFifoVide RA=FORM=CU0, INIT=TRUE, VA=TRUE,
+E12 0 765
+V444 pLib->sFifo_CM.bFifoVide RA=FORM=CU0, INIT=TRUE, VA=TRUE,
+E12 0 766
+V445 pLib->sFifo_EV.bFifoVide RA=FORM=CU0, INIT=TRUE, VA=TRUE,
+E12 0 767
+V446 pLib->sFifo_OBPM.bFifoVide RA=FORM=CU0, INIT=TRUE, VA=TRUE,
+E12 0 768
+V447 pLib->sFifo_HMIM.bFifoVide RA=FORM=CU0, INIT=TRUE, VA=TRUE,
+E12 0 770
+V448 mut_wait RA=FORM=CH0, INIT=0, VA=&pLib->sFifos_BLOC_Mngt.sMutex,
+E12 0 771
+V449 cond_signal RA=FORM=CH0, INIT=0, VA=&pLib->sFifos_BLOC_Mngt.sCond,
+E12 0 775
+V450 eId_AutomateCM RA=FORM=CU0, INIT=-1, VA=init,
+E12 0 777
+V451 eId_AutomateMGF RA=FORM=CU0, INIT=-1, VA=init,
+E12 0 779
+V452 eId_AutomateEV RA=FORM=CU0, INIT=-1, VA=init,
+E12 0 781
+V453 eId_AutomateOBPM RA=FORM=CU0, INIT=-1, VA=init,
+E12 0 782
+V454 eId_AutomateHMIM RA=FORM=CU0, INIT=-1, VA=init,
+E12 0 785
+V455 uiNb_BITE RA=FORM=CU32, INIT=0, VA=init,
+E12 0 787
+V456 bBoucle_Bloc RA=FORM=CU0, INIT=TRUE, VA=FALSE,
