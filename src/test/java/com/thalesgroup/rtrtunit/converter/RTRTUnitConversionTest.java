@@ -13,6 +13,12 @@ public class RTRTUnitConversionTest extends AbstractRTRTUnitConversionTest {
     }
 
     @Test
+    public void rtrtUnitTestNoError2() throws Exception {
+        conversionAndValidation(RTRTUnitInputMetric.class, "noerror/out2.rio",
+                "noerror/junit-report2.xml");
+    }
+
+    @Test
     public void rtrt7UnitTestNoError() throws Exception {
         conversionAndValidation(RTRTUnitInputMetric.class, "noerror/a350_rtrt7.rio",
                 "noerror/junit-report_a350.xml");
