@@ -20,9 +20,9 @@ import com.thalesgroup.rtrtunit.junit.Testcase;
 import com.thalesgroup.rtrtunit.junit.Testsuite;
 import com.thalesgroup.rtrtunit.junit.Testsuites;
 import com.thalesgroup.rtrtunit.rioreader.RioFailedVariable;
+import com.thalesgroup.rtrtunit.rioreader.RioReader;
 import com.thalesgroup.rtrtunit.rioreader.RioStructure;
 import com.thalesgroup.rtrtunit.rioreader.RioTest;
-import com.thalesgroup.rtrtunit.rioreader.SyntaxRioReader;
 import com.thalesgroup.rtrtunit.tdcreader.TdcException;
 import com.thalesgroup.rtrtunit.tdcreader.TdcReader;
 
@@ -78,10 +78,6 @@ public class RTRTtoXMLConverter {
 
     // JavaCC reader
     /**
-     * Reader rio file.
-     */
-    private SyntaxRioReader rioReader;
-    /**
      * Rio structure.
      */
     private RioStructure rioData;
@@ -132,14 +128,7 @@ public class RTRTtoXMLConverter {
         testError = false;
 
         // RIO file
-        try {
-            rioReader = new SyntaxRioReader(new FileInputStream(inputFile));
-            rioData = rioReader.read();
-        } catch (FileNotFoundException e) {
-            System.out.println("The file " + inputFile.getAbsolutePath()
-                    + " cannot be read");
-            e.printStackTrace();
-        }
+        rioData = new RioReader().read(inputFile);
 
         // TDC file
         String sTDC = inputFile.getAbsolutePath().substring(0,

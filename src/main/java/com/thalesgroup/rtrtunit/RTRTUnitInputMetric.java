@@ -3,17 +3,13 @@ package com.thalesgroup.rtrtunit;
 import hudson.model.Hudson;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.List;
 import java.util.Map;
 
 import javax.xml.transform.Source;
 import javax.xml.transform.stream.StreamSource;
 
-import org.jenkinsci.plugins.xunit.types.model.JUnitModel;
 import org.jenkinsci.lib.dtkit.model.InputMetricOther;
 import org.jenkinsci.lib.dtkit.model.InputType;
 import org.jenkinsci.lib.dtkit.model.OutputMetric;
@@ -21,8 +17,10 @@ import org.jenkinsci.lib.dtkit.util.converter.ConversionException;
 import org.jenkinsci.lib.dtkit.util.validator.ValidationError;
 import org.jenkinsci.lib.dtkit.util.validator.ValidationException;
 import org.jenkinsci.lib.dtkit.util.validator.ValidationService;
+import org.jenkinsci.plugins.xunit.types.model.JUnitModel;
+
 import com.thalesgroup.rtrtunit.converter.RTRTtoXMLConverter;
-import com.thalesgroup.rtrtunit.riochecker.SyntaxRioChecker;
+import com.thalesgroup.rtrtunit.rioreader.RioReader;
 import com.thalesgroup.rtrtunit.tdcreader.TdcException;
 
 /**
@@ -33,7 +31,9 @@ import com.thalesgroup.rtrtunit.tdcreader.TdcException;
  */
 public class RTRTUnitInputMetric extends InputMetricOther {
 
-    /**
+	private static final long serialVersionUID = -1339080252033826104L;
+
+	/**
      * Version du plugin.
      */
     private String version = null;
@@ -113,30 +113,21 @@ public class RTRTUnitInputMetric extends InputMetricOther {
      * @param inputFile
      *            the .rio file
      * @return true if the file is correct
-     * @see SyntaxRioChecker
+     * @see RioReader
      */
     @Override
     public final boolean validateInputFile(final File inputFile) {
-        InputStream is = null;
-        try {
-            is = new FileInputStream(inputFile);
-        } catch (FileNotFoundException e) {
-            throw new ValidationException("The file "
-                    + inputFile.getAbsolutePath() + " cannot be read");
-        }
         String nameTest = inputFile.getAbsolutePath().substring(0,
                 inputFile.getAbsolutePath().lastIndexOf('.'));
         File errFile = new File(nameTest + ".err");
         if (errFile.exists()) {
             return true;
         }
-        boolean validation = false;
-        try {
-            validation = new SyntaxRioChecker(is).validate();
-        } catch (Exception e) {
-            throw new ValidationException(e);
-        }
-        return validation;
+		// check thath TDC file exists
+		File inputTdcFile = new File(inputFile.getAbsolutePath().substring(0,
+				inputFile.getAbsolutePath().lastIndexOf('.'))
+                + ".tdc");
+		return inputTdcFile.exists() && new RioReader().validate(inputFile);
     }
 
     /**
@@ -173,5 +164,4 @@ public class RTRTUnitInputMetric extends InputMetricOther {
     public final OutputMetric getOutputFormatType() {
         return JUnitModel.LATEST;
     }
-
 }
