@@ -1,17 +1,12 @@
 package com.thalesgroup.rtrtunit.riochecker;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.net.URISyntaxException;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.thalesgroup.rtrtunit.riochecker.SyntaxRioChecker;
-import com.thalesgroup.rtrtunit.riochecker.SimpleCharStream;
+import com.thalesgroup.rtrtunit.rioreader.RioReader;
 
 /**
  * Unitary Test for RioChecker
@@ -21,88 +16,11 @@ import com.thalesgroup.rtrtunit.riochecker.SimpleCharStream;
  */
 public class SyntaxRioCheckerTest {
 
-    @Test
-    public void testBaseMethods() throws Exception {
-
-        File file = null;
-        InputStream ips = null;
-        InputStreamReader ipsr = null;
-        BufferedReader br = null;
-
-        try {
-            file = new File(this.getClass().getResource("out.rio").toURI());
-            ips = new FileInputStream(file);
-            ipsr = new InputStreamReader(ips);
-            br = new BufferedReader(ipsr);
-        } catch (FileNotFoundException e) {
-            System.out.println(e.getMessage());
-            e.printStackTrace();
-        }
-
-        SyntaxRioChecker rioChecker = new SyntaxRioChecker(br);
-        rioChecker.ReInit(br);
-
-        Token token = rioChecker.getNextToken();
-        Assert.assertNotNull(token);
-        Assert.assertEquals("H0", token.image);
-
-        token = rioChecker.getToken(2);
-        Assert.assertNotNull(token);
-        Assert.assertEquals("Feb", token.toString());
-
-        rioChecker.enable_tracing();
-        rioChecker.disable_tracing();
-
-    }
-
-    @Test
-    public void testSimpleCharStream() throws Exception {
-
-        File file = null;
-        InputStream ips = null;
-        InputStream ips2 = null;
-
-        try {
-            file = new File(this.getClass().getResource("out.rio").toURI());
-            ips = new FileInputStream(file);
-            ips2 = new FileInputStream(file);
-
-        } catch (FileNotFoundException e) {
-            System.out.println(e.getMessage());
-            e.printStackTrace();
-        }
-
-        SyntaxRioChecker rioChecker = new SyntaxRioChecker(ips);
-        SimpleCharStream scs = new SimpleCharStream(ips2);
-        SyntaxRioCheckerTokenManager srctm = new SyntaxRioCheckerTokenManager(
-                scs);
-        SyntaxRioChecker rioCheckerSecond = new SyntaxRioChecker(srctm);
-
-        rioChecker.ReInit(ips);
-        Token token, token2, endToken;
-
-        token = rioChecker.getNextToken();
-        token2 = rioCheckerSecond.getNextToken();
-        endToken = new Token(0);
-        while (token.kind != endToken.kind ) {
-            Assert.assertEquals(token.image, token2.image);
-            token = rioChecker.getNextToken();
-            token2 = rioCheckerSecond.getNextToken();
-        }
-        Assert.assertEquals(endToken.kind, token.kind);
-    }
-
     private void testChecker(final String rioFileName) throws Exception {
-        InputStream ips = null;
-        try {
-        	File file = new File(this.getClass().getResource(rioFileName).toURI());
-            ips = new FileInputStream(file);
-        } catch (FileNotFoundException e) {
-            System.out.println(e.getMessage());
-            e.printStackTrace();
-        }
-        SyntaxRioChecker rioChecker = new SyntaxRioChecker(ips);
-        Assert.assertTrue(rioChecker.validate());
+    	File file;
+    	file = new File(this.getClass().getResource(rioFileName).toURI());
+        RioReader rioChecker = new RioReader();
+        Assert.assertTrue(rioChecker.validate(file));
     }
 
     @Test
@@ -221,6 +139,11 @@ public class SyntaxRioCheckerTest {
     @Test
     public void testValidation22() throws Exception {
         testChecker("out22.rio");
+    }
+
+    @Test
+    public void testValidation23() throws Exception {
+        testChecker("out23.rio");
     }
 
     @Test
