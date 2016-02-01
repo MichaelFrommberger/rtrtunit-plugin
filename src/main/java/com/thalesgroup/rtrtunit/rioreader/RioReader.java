@@ -4,9 +4,10 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import org.apache.commons.lang.StringUtils;
 import org.jenkinsci.lib.dtkit.util.validator.ValidationException;
 
 /**
@@ -35,14 +36,13 @@ public class RioReader {
 		AtomicInteger lineNb = new AtomicInteger(1);
 		try {
 			parseLines(reader, rioStructure, lineNb);
-		} catch (Throwable e) {
+		} catch (Exception e) {
 			try {
 				reader.close();
 			} catch (IOException e2) {
 			}
 			String message = " Error reading file " + inputRioFile.getName()
 					+ ", line " + lineNb.get() + ": " + e.getMessage();
-			System.out.println(message);
 			throw new ValidationException(message, e);
 		}
 		try {
@@ -77,7 +77,7 @@ public class RioReader {
 		AtomicInteger lineNb = new AtomicInteger(1);
 		try {
 			parseLines(reader, rioStructure, lineNb);
-		} catch (Throwable e) {
+		} catch (Exception e) {
 			System.out.println(" Error reading file " + inputRioFile.getName()
 					+ ", line " + lineNb.get() + ": " + e.getMessage());
 		}
@@ -126,7 +126,7 @@ public class RioReader {
 			} else if (currentLineString.startsWith("V")) {
 				// Vxxx obtainedValue RA=(T|F) [MI=xx MA=xx]
 				RioFailedVariable variable = new RioFailedVariable();
-				String[] tokens = StringUtils.split(currentLineString, " ");
+				String[] tokens = tokenizeVariableLine(currentLineString);
 				// check arguments
 				if (tokens.length < 3) {
 					throw new RioException("Expecting at least two arguments on 'V' line");
@@ -176,5 +176,60 @@ public class RioReader {
 		if (rioStructure.getNbTests() < 1) {
 			throw new RioException("File has no test result");
 		}
+	}
+	
+	private String[] tokenizeVariableLine(final String line) {
+		String trimedLine = line.trim();
+		List<String> tokens = new ArrayList<String>();
+		String currentToken = null;
+		boolean insideDoubleQuotes = false;
+		boolean insideQuotes = false;
+		for (int i = 0 ; i < trimedLine.length() ; i++) {
+			char c = trimedLine.charAt(i);
+			if ((currentToken == null) && (c == ' ')) {
+				// just a token separator space
+			} else {
+				// inside a token
+				if (currentToken == null) {
+					// first token character
+					currentToken = new String();
+				}
+				// check quotes
+				if (!insideQuotes && !insideDoubleQuotes && (c == '\'')) {
+					// beginning of a quoted string
+					insideQuotes = true;
+					currentToken += c;
+				} else if (!insideQuotes && !insideDoubleQuotes && (c == '"')) {
+					// beginning of a double-quoted string
+					insideDoubleQuotes = true;
+					currentToken += c;
+				} else if (insideDoubleQuotes || insideQuotes) {
+					// inside a (doubled)quoted token
+					currentToken += c;
+					if (insideDoubleQuotes && (c == '"')
+							|| insideQuotes && (c == '\'')) {
+						// final (double)quote
+						insideDoubleQuotes = false;
+						insideQuotes = false;
+					}
+				} else {
+					// not in a quoted string
+					if (c == ' ') {
+						// end of token
+						tokens.add(currentToken);
+						currentToken = null;
+					} else {
+						// collect character
+						currentToken += c;
+					}
+				}
+			}
+		}
+		// collect final token
+		if (currentToken != null) {
+			tokens.add(currentToken);
+		}
+		String[] result = new String[tokens.size()];
+		return tokens.toArray(result);
 	}
 }

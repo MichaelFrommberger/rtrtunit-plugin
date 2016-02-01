@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites>
+    <testsuite name="out3" tests="33" failures="0" errors="0">
+        <testcase name="1_1" time="0.336" classname="CM_FORMATREPORT"/>
+        <testcase name="1_2" time="0.281" classname="CM_FORMATREPORT"/>
+        <testcase name="2" time="0.28" classname="CM_FORMATREPORT"/>
+        <testcase name="3" time="0.239" classname="CM_FORMATREPORT"/>
+        <testcase name="4" time="0.286" classname="CM_FORMATREPORT"/>
+        <testcase name="5" time="0.28" classname="CM_FORMATREPORT"/>
+        <testcase name="6_1" time="0.281" classname="CM_FORMATREPORT"/>
+        <testcase name="6_2" time="0.285" classname="CM_FORMATREPORT"/>
+        <testcase name="7" time="0.29" classname="CM_FORMATREPORT"/>
+        <testcase name="8" time="0.282" classname="CM_FORMATREPORT"/>
+        <testcase name="9" time="0.284" classname="CM_FORMATREPORT"/>
+        <testcase name="10" time="0.283" classname="CM_FORMATREPORT"/>
+        <testcase name="11" time="0.289" classname="CM_FORMATREPORT"/>
+        <testcase name="12" time="0.297" classname="CM_FORMATREPORT"/>
+        <testcase name="13" time="0.279" classname="CM_FORMATREPORT"/>
+        <testcase name="14" time="0.277" classname="CM_FORMATREPORT"/>
+        <testcase name="15" time="0.28" classname="CM_FORMATREPORT"/>
+        <testcase name="16" time="0.278" classname="CM_FORMATREPORT"/>
+        <testcase name="17" time="0.268" classname="CM_FORMATREPORT"/>
+        <testcase name="18" time="0.248" classname="CM_FORMATREPORT"/>
+        <testcase name="18BIS" time="0.258" classname="CM_FORMATREPORT"/>
+        <testcase name="18TER" time="0.266" classname="CM_FORMATREPORT"/>
+        <testcase name="19_1" time="0.278" classname="CM_FORMATREPORT"/>
+        <testcase name="19_2" time="0.307" classname="CM_FORMATREPORT"/>
+        <testcase name="20" time="0.285" classname="CM_FORMATREPORT"/>
+        <testcase name="21" time="0.281" classname="CM_FORMATREPORT"/>
+        <testcase name="22" time="0.277" classname="CM_FORMATREPORT"/>
+        <testcase name="23" time="0.057" classname="CM_FORMATREPORT"/>
+        <testcase name="24" time="0.025" classname="CM_FORMATREPORT"/>
+        <testcase name="25" time="0.058" classname="CM_FORMATREPORT"/>
+        <testcase name="26" time="0.058" classname="CM_FORMATREPORT"/>
+        <testcase name="27" time="0.092" classname="CM_FORMATREPORT"/>
+        <testcase name="28" time="0.118" classname="CM_FORMATREPORT"/>
+    </testsuite>
+</testsuites>
